@@ -352,7 +352,6 @@ GameObject:
   - component: {fileID: 501469910}
   - component: {fileID: 501469909}
   - component: {fileID: 501469908}
-  - component: {fileID: 501469907}
   - component: {fileID: 501469911}
   m_Layer: 0
   m_Name: CinemachineCamera
@@ -361,21 +360,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &501469907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501469906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollowZoom
-  Width: 2
-  Damping: 1
-  FovRange: {x: 3, y: 60}
 --- !u!114 &501469908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +529,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 11.383273
+  field of view: 60
   orthographic: 1
   orthographic size: 6.8296146
   m_Depth: -1
