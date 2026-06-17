@@ -1238,6 +1238,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundCheckRadius: 0.2
+  afterimagePrefab: {fileID: 1437562994499158253, guid: 8ec405d29cea19f42b7ae9b548ee0280, type: 3}
+  afterimageSpawnRate: 0.05
 --- !u!1 &1611898206
 GameObject:
   m_ObjectHideFlags: 0

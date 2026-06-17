@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -29,11 +30,21 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     private bool isGrounded;
 
+    [Header("Dash Effects")]
+    [SerializeField] private GameObject afterimagePrefab; // Masukkan prefab tadi ke sini
+    [SerializeField] private float afterimageSpawnRate = 0.05f; // Seberapa sering bayangan muncul saat dash
+    private float nextSpawnTime;
+
+    // Object Pool Sederhana
+    private List<AfterimageFade> afterimagePool = new List<AfterimageFade>();
+
     private Rigidbody2D rb;
+    private SpriteRenderer playerSR;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerSR = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -44,6 +55,11 @@ public class PlayerController : MonoBehaviour
             if (dashTimeLeft <= 0)
             {
                 isDashing = false;
+            }
+            if (Time.time >= nextSpawnTime)
+            {
+                SpawnAfterimage();
+                nextSpawnTime = Time.time + afterimageSpawnRate;
             }
             return; 
         }
@@ -90,6 +106,8 @@ public class PlayerController : MonoBehaviour
             lastDashTime = Time.time;
             
             rb.linearVelocity = Vector2.zero; 
+            SpawnAfterimage(); // Spawn pertama langsung saat tombol ditekan
+            nextSpawnTime = Time.time + afterimageSpawnRate;
         }
     }
 
@@ -127,6 +145,31 @@ public class PlayerController : MonoBehaviour
             comboStep = 0;
             // animator.SetInteger("ComboStep", 0);
         }
+    }
+
+    private void SpawnAfterimage()
+    {
+        // Cari objek yang sedang 'mati' di pool
+        AfterimageFade poolable = null;
+        for (int i = 0; i < afterimagePool.Count; i++)
+        {
+            if (!afterimagePool[i].gameObject.activeInHierarchy)
+            {
+                poolable = afterimagePool[i];
+                break;
+            }
+        }
+
+        // Jika tidak ada yang mati, buat baru
+        if (poolable == null)
+        {
+            GameObject newObj = Instantiate(afterimagePrefab);
+            poolable = newObj.GetComponent<AfterimageFade>();
+            afterimagePool.Add(poolable); // Masukkan ke pool
+        }
+
+        // Aktifkan bayangan dengan posisi & sprite player saat ini
+        poolable.SetAfterimage(playerSR.sprite, transform.position, transform.rotation, transform.localScale);
     }
 
     private void Flip()
