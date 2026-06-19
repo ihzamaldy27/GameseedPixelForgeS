@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShootingComponent : MonoBehaviour
+public class ShootingComponent
 {
     private readonly Transform _firePoint;
     private readonly GameObject _bulletPrefab;

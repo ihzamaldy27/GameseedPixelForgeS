@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlaneControlComponent : MonoBehaviour
+public class PlaneControlComponent
 {
     private readonly Transform _transform;
     private readonly float _speed;
