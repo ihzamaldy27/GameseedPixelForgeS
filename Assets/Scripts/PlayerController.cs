@@ -232,10 +232,21 @@ public class PlayerController : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
+            // 1. Cek & Kirim data posisi penyerang DULU (jika musuh mendukung Knockback)
+            IKnockbackable knockbackable = enemy.GetComponent<IKnockbackable>();
+            if (knockbackable != null)
+            {
+                knockbackable.ApplyKnockback(transform.position);
+            }
+
+            // 2. Cek & Eksekusi Damage (Mode Minigames & Gameplay)
             IDamageable damageable = enemy.GetComponent<IDamageable>();
             if (damageable != null)
             {
-                Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}!");
+                int finalDamage = Mathf.RoundToInt(damageAmount);
+                damageable.TakeDamage(finalDamage);
+                
+                Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}! (Kirim {finalDamage} Damage)");
             }
         }
     }
