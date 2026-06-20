@@ -19,10 +19,23 @@ public class PlayerController : MonoBehaviour
     private float dashTimeLeft;
     private float lastDashTime = -100f;
 
-    [Header("Combat (3x Combo)")]
-    public float comboResetTime = 1f;
+    [Header("Komponen")]
+    public Animator playerAnim;       // Animator karakter utama
+    public Animator vfxAnim;          // Animator objek SlashVFX
+    public Transform attackPoint;     // Titik tengah area serangan
+
+    [Header("Pengaturan Combat")]
+    public float attackRange = 0.8f;
+    public LayerMask enemyLayer;
+    public float damageAmount = 10f;
+
+    [Header("Sistem Combo")]
+    public float maxComboDelay = 0.6f; // Waktu maksimal pemain boleh menunda klik berikutnya
+    
     private int comboStep = 0;
-    private float lastAttackTime;
+    private int currentAnimatingStep = 0; // TAMBAHAN: Untuk melacak animasi yang sedang diputar
+    private float lastClickedTime;
+    private bool isAttacking = false;
 
     [Header("Ground Detection")]
     public Transform groundCheck;
@@ -31,11 +44,10 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
 
     [Header("Dash Effects")]
-    [SerializeField] private GameObject afterimagePrefab; // Masukkan prefab tadi ke sini
-    [SerializeField] private float afterimageSpawnRate = 0.05f; // Seberapa sering bayangan muncul saat dash
+    [SerializeField] private GameObject afterimagePrefab; 
+    [SerializeField] private float afterimageSpawnRate = 0.05f; 
     private float nextSpawnTime;
 
-    // Object Pool Sederhana
     private List<AfterimageFade> afterimagePool = new List<AfterimageFade>();
 
     private Rigidbody2D rb;
@@ -64,6 +76,13 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
+        // Reset kombo jika pemain terlalu lama tidak menekan tombol attack
+        if (Time.time - lastClickedTime > maxComboDelay && !isAttacking)
+        {
+            comboStep = 0;
+            currentAnimatingStep = 0;
+        }
+
         CheckGrounded();
         ResetCombo();
     }
@@ -72,7 +91,6 @@ public class PlayerController : MonoBehaviour
     {
         if (isDashing)
         {
-            // Eksekusi physics dash
             rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * dashSpeed, 0f);
             return;
         }
@@ -86,14 +104,14 @@ public class PlayerController : MonoBehaviour
     // --- INPUT SYSTEM CALLBACKS ---
     public void OnMove(InputValue value)
     {
-    moveInput = value.Get<Vector2>();
+        moveInput = value.Get<Vector2>();
     }
 
     public void OnJump(InputValue value)
     {
-    if (value.isPressed && isGrounded && !isDashing)
+        if (value.isPressed && isGrounded && !isDashing)
         {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
 
@@ -106,29 +124,45 @@ public class PlayerController : MonoBehaviour
             lastDashTime = Time.time;
             
             rb.linearVelocity = Vector2.zero; 
-            SpawnAfterimage(); // Spawn pertama langsung saat tombol ditekan
+            SpawnAfterimage(); 
             nextSpawnTime = Time.time + afterimageSpawnRate;
         }
     }
 
     public void OnAttack(InputValue value)
     {
-        if (value.isPressed && !isDashing && isGrounded) // Asumsi attack hanya di tanah
+        if (value.isPressed)
         {
-            lastAttackTime = Time.time;
-            comboStep++;
-            
-            if (comboStep > 3) 
-            {
-                comboStep = 1; // Kembali ke serangan pertama jika melebihi 3
-            }
+            lastClickedTime = Time.time;
 
-            Debug.Log($"Eksekusi Attack Combo: {comboStep}");
-            
-            // TODO: Panggil Animator di sini
-            // animator.SetInteger("ComboStep", comboStep);
-            // animator.SetTrigger("Attack");
+            // Jika sedang idle, mulai serangan dari 1
+            if (!isAttacking)
+            {
+                comboStep = 1;
+                TriggerAttackAnimation();
+            }
+            else // Jika sedang menyerang, tambahkan antrean combo
+            {
+                comboStep++;
+                comboStep = Mathf.Clamp(comboStep, 1, 3);
+            }
         }
+    }
+
+    private void TriggerAttackAnimation()
+    {
+        isAttacking = true;
+        currentAnimatingStep++; // Naikkan step animasi yang sedang berjalan
+        
+        // Memicu animasi karakter
+        playerAnim.SetInteger("ComboStep", currentAnimatingStep);
+        playerAnim.SetTrigger("Attack");
+
+        // // Opsional: Memicu animasi VFX hanya jika animatornya ada
+        // if (vfxAnim != null)
+        // {
+        //     vfxAnim.SetTrigger("Slash" + currentAnimatingStep); 
+        // }
     }
 
     // --- UTILITY METHODS ---
@@ -139,17 +173,16 @@ public class PlayerController : MonoBehaviour
 
     private void ResetCombo()
     {
-        // Reset kombo jika pemain tidak menyerang dalam waktu tertentu
-        if (comboStep > 0 && Time.time - lastAttackTime > comboResetTime)
+        if (comboStep > 0 && Time.time - lastClickedTime > maxComboDelay && !isAttacking)
         {
             comboStep = 0;
-            // animator.SetInteger("ComboStep", 0);
+            currentAnimatingStep = 0;
+            playerAnim.SetInteger("ComboStep", 0);
         }
     }
 
     private void SpawnAfterimage()
     {
-        // Cari objek yang sedang 'mati' di pool
         AfterimageFade poolable = null;
         for (int i = 0; i < afterimagePool.Count; i++)
         {
@@ -160,15 +193,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Jika tidak ada yang mati, buat baru
         if (poolable == null)
         {
             GameObject newObj = Instantiate(afterimagePrefab);
             poolable = newObj.GetComponent<AfterimageFade>();
-            afterimagePool.Add(poolable); // Masukkan ke pool
+            afterimagePool.Add(poolable);
         }
 
-        // Aktifkan bayangan dengan posisi & sprite player saat ini
         poolable.SetAfterimage(playerSR.sprite, transform.position, transform.rotation, transform.localScale);
     }
 
@@ -180,13 +211,49 @@ public class PlayerController : MonoBehaviour
         transform.localScale = scale;
     }
     
-    // Untuk melihat radius GroundCheck di Editor
     private void OnDrawGizmosSelected()
     {
         if (groundCheck != null)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+    }
+
+    public void ExecuteDamageHitbox()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            IDamageable damageable = enemy.GetComponent<IDamageable>();
+            if (damageable != null)
+            {
+                Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}!");
+            }
+        }
+    }
+
+    public void EndAttackStep()
+    {
+        // Cek apakah pemain sudah menekan tombol lagi dan MASIH ADA sisa combo
+        if (comboStep > currentAnimatingStep && (Time.time - lastClickedTime <= maxComboDelay))
+        {
+            TriggerAttackAnimation();
+        }
+        else
+        {
+            // Jika mentok di combo ke-3 atau waktu tunggu habis, hentikan serangan
+            isAttacking = false;
+            comboStep = 0;
+            currentAnimatingStep = 0;
+            playerAnim.SetInteger("ComboStep", 0);
         }
     }
 }
