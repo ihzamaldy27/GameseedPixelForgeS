@@ -1,10 +1,18 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerController : MonoBehaviour
+// 1. TAMBAHKAN IDamageable DI SINI
+public class PlayerController : MonoBehaviour, IDamageable 
 {
+    [Header("Health & Status")]
+    public int maxHealth = 100;
+    public float invincibilityDuration = 1.5f; // I-frame agar player tidak langsung mati saat dikeroyok
+    private HealthComponent health;
+    private Color originalColor;
+
     [Header("Movement")]
     public float moveSpeed = 8f;
     public float jumpForce = 15f;
@@ -20,9 +28,9 @@ public class PlayerController : MonoBehaviour
     private float lastDashTime = -100f;
 
     [Header("Komponen")]
-    public Animator playerAnim;       // Animator karakter utama
-    public Animator vfxAnim;          // Animator objek SlashVFX
-    public Transform attackPoint;     // Titik tengah area serangan
+    public Animator playerAnim;       
+    public Animator vfxAnim;          
+    public Transform attackPoint;     
 
     [Header("Pengaturan Combat")]
     public float attackRange = 0.8f;
@@ -30,10 +38,10 @@ public class PlayerController : MonoBehaviour
     public float damageAmount = 10f;
 
     [Header("Sistem Combo")]
-    public float maxComboDelay = 0.6f; // Waktu maksimal pemain boleh menunda klik berikutnya
+    public float maxComboDelay = 0.6f; 
     
     private int comboStep = 0;
-    private int currentAnimatingStep = 0; // TAMBAHAN: Untuk melacak animasi yang sedang diputar
+    private int currentAnimatingStep = 0; 
     private float lastClickedTime;
     private bool isAttacking = false;
 
@@ -57,10 +65,23 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerSR = GetComponent<SpriteRenderer>();
+
+        // 2. INISIALISASI SISTEM HEALTH
+        if (playerSR != null) originalColor = playerSR.color;
+        
+        health = new HealthComponent(maxHealth, invincibilityDuration);
+        health.OnDamaged += HandleDamage;
+        health.OnDeath += HandleDeath;
     }
 
     void Update()
     {
+        // Jika player sudah mati, hentikan semua kontrol dan update
+        if (health != null && health.IsDead) return;
+
+        // 3. UPDATE TIMER KEBAL PLAYER
+        health.UpdateInvincibility(Time.deltaTime);
+
         if (isDashing)
         {
             dashTimeLeft -= Time.deltaTime;
@@ -76,7 +97,6 @@ public class PlayerController : MonoBehaviour
             return; 
         }
 
-        // Reset kombo jika pemain terlalu lama tidak menekan tombol attack
         if (Time.time - lastClickedTime > maxComboDelay && !isAttacking)
         {
             comboStep = 0;
@@ -89,6 +109,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (health != null && health.IsDead) return; // Cegah gerak fisika saat mati
+
         if (isDashing)
         {
             rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * dashSpeed, 0f);
@@ -101,18 +123,65 @@ public class PlayerController : MonoBehaviour
         else if (moveInput.x < 0 && isFacingRight) Flip();
     }
 
-    // --- INPUT SYSTEM CALLBACKS ---
-    public void OnMove(InputValue value)
+    // --- IMPLEMENTASI IDamageable UNTUK PLAYER ---
+    public void TakeDamage(int damage)
     {
-        moveInput = value.Get<Vector2>();
+        // Fungsi ini akan dipanggil otomatis oleh EnemyMelee saat memukul
+        // Jika player sedang dash (Dodge), kamu bisa membatalkan damage dengan cara uncomment baris di bawah:
+        if (isDashing) return; 
+
+        health.TakeDamage(damage);
     }
+
+    private void HandleDamage(int currentHP)
+    {
+        Debug.Log($"<color=red>PLAYER TERKENA HIT!</color> Sisa HP: {currentHP} / {health.MaxHP}");
+        
+        // Memutar animasi kedip merah
+        StartCoroutine(FlashHit());
+    }
+
+    private void HandleDeath()
+    {
+        Debug.Log("<color=black>PLAYER MATI! (GAME OVER)</color>");
+        
+        health.OnDamaged -= HandleDamage;
+        health.OnDeath -= HandleDeath;
+        
+        // Matikan velocity agar player jatuh ke tanah dan tidak meluncur
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        
+        // Matikan script ini agar player tidak bisa dikontrol lagi
+        this.enabled = false;
+
+        // TODO: Panggil animasi mati (misal: playerAnim.SetTrigger("Die"); )
+        // TODO: Munculkan panel UI Game Over
+    }
+
+    private IEnumerator FlashHit()
+    {
+        if (playerSR != null)
+        {
+            // Berkedip merah beberapa kali untuk menandakan durasi kebal (I-frames)
+            for (int i = 0; i < 3; i++)
+            {
+                playerSR.color = new Color(1f, 0.5f, 0.5f, 0.5f); // Merah transparan
+                yield return new WaitForSeconds(0.1f);
+                playerSR.color = originalColor;
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
+    // ----------------------------------------------
+
+
+    // --- INPUT SYSTEM CALLBACKS ---
+    public void OnMove(InputValue value) { moveInput = value.Get<Vector2>(); }
 
     public void OnJump(InputValue value)
     {
         if (value.isPressed && isGrounded && !isDashing)
-        {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
     }
 
     public void OnDash(InputValue value)
@@ -122,7 +191,6 @@ public class PlayerController : MonoBehaviour
             isDashing = true;
             dashTimeLeft = dashDuration;
             lastDashTime = Time.time;
-            
             rb.linearVelocity = Vector2.zero; 
             SpawnAfterimage(); 
             nextSpawnTime = Time.time + afterimageSpawnRate;
@@ -134,14 +202,12 @@ public class PlayerController : MonoBehaviour
         if (value.isPressed)
         {
             lastClickedTime = Time.time;
-
-            // Jika sedang idle, mulai serangan dari 1
             if (!isAttacking)
             {
                 comboStep = 1;
                 TriggerAttackAnimation();
             }
-            else // Jika sedang menyerang, tambahkan antrean combo
+            else
             {
                 comboStep++;
                 comboStep = Mathf.Clamp(comboStep, 1, 3);
@@ -149,23 +215,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // --- FUNGSI COMBAT & LAINNYA ---
     private void TriggerAttackAnimation()
     {
         isAttacking = true;
-        currentAnimatingStep++; // Naikkan step animasi yang sedang berjalan
-        
-        // Memicu animasi karakter
+        currentAnimatingStep++; 
         playerAnim.SetInteger("ComboStep", currentAnimatingStep);
         playerAnim.SetTrigger("Attack");
-
-        // // Opsional: Memicu animasi VFX hanya jika animatornya ada
-        // if (vfxAnim != null)
-        // {
-        //     vfxAnim.SetTrigger("Slash" + currentAnimatingStep); 
-        // }
     }
 
-    // --- UTILITY METHODS ---
     private void CheckGrounded()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -186,20 +244,14 @@ public class PlayerController : MonoBehaviour
         AfterimageFade poolable = null;
         for (int i = 0; i < afterimagePool.Count; i++)
         {
-            if (!afterimagePool[i].gameObject.activeInHierarchy)
-            {
-                poolable = afterimagePool[i];
-                break;
-            }
+            if (!afterimagePool[i].gameObject.activeInHierarchy) { poolable = afterimagePool[i]; break; }
         }
-
         if (poolable == null)
         {
             GameObject newObj = Instantiate(afterimagePrefab);
             poolable = newObj.GetComponent<AfterimageFade>();
             afterimagePool.Add(poolable);
         }
-
         poolable.SetAfterimage(playerSR.sprite, transform.position, transform.rotation, transform.localScale);
     }
 
@@ -218,7 +270,6 @@ public class PlayerController : MonoBehaviour
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
-
         if (attackPoint != null)
         {
             Gizmos.color = Color.red;
@@ -229,23 +280,16 @@ public class PlayerController : MonoBehaviour
     public void ExecuteDamageHitbox()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
-
         foreach (Collider2D enemy in hitEnemies)
         {
-            // 1. Cek & Kirim data posisi penyerang DULU (jika musuh mendukung Knockback)
             IKnockbackable knockbackable = enemy.GetComponent<IKnockbackable>();
-            if (knockbackable != null)
-            {
-                knockbackable.ApplyKnockback(transform.position);
-            }
+            if (knockbackable != null) knockbackable.ApplyKnockback(transform.position);
 
-            // 2. Cek & Eksekusi Damage (Mode Minigames & Gameplay)
             IDamageable damageable = enemy.GetComponent<IDamageable>();
             if (damageable != null)
             {
                 int finalDamage = Mathf.RoundToInt(damageAmount);
                 damageable.TakeDamage(finalDamage);
-                
                 Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}! (Kirim {finalDamage} Damage)");
             }
         }
@@ -253,14 +297,12 @@ public class PlayerController : MonoBehaviour
 
     public void EndAttackStep()
     {
-        // Cek apakah pemain sudah menekan tombol lagi dan MASIH ADA sisa combo
         if (comboStep > currentAnimatingStep && (Time.time - lastClickedTime <= maxComboDelay))
         {
             TriggerAttackAnimation();
         }
         else
         {
-            // Jika mentok di combo ke-3 atau waktu tunggu habis, hentikan serangan
             isAttacking = false;
             comboStep = 0;
             currentAnimatingStep = 0;
