@@ -10,6 +10,9 @@ public class WaveManager : MonoBehaviour
     [Header("Spawner Settings")]
     public Transform spawnPoint; // spawn position reference (e.g., right edge)
 
+    [Header("Pool Reference")]
+    public EnemyPool enemyPool; // assign in inspector
+
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
 
@@ -49,19 +52,23 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemy(SpawnEvent spawn)
     {
-        if (spawn.enemyPrefab == null) return;
+        if (spawn.enemyPrefab == null || enemyPool == null) return;
 
-        // Calculate spawn world position (add spawnPoint offset)
+        // Get enemy from pool
+        EnemyController enemy = enemyPool.GetEnemy();
+        // Set the owner pool so it knows where to return
+        enemy.SetOwnerPool(enemyPool);
+
+        // Position it
         Vector3 spawnPos = spawnPoint.position + (Vector3)spawn.spawnPosition;
-        GameObject enemyObj = Instantiate(spawn.enemyPrefab, spawnPos, Quaternion.identity);
+        enemy.transform.position = spawnPos;
 
-        // Get EnemyController and set its movement pattern based on the event
-        EnemyController enemy = enemyObj.GetComponent<EnemyController>();
-        if (enemy != null)
-        {
-            IMovementPattern pattern = CreatePattern(spawn);
-            enemy.SetMovementPattern(pattern);
-        }
+        // Reset internal state
+        enemy.ResetState();
+
+        // Set movement pattern based on spawn event
+        IMovementPattern pattern = CreatePattern(spawn);
+        enemy.SetMovementPattern(pattern);
     }
 
     private IMovementPattern CreatePattern(SpawnEvent spawn)

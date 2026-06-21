@@ -16,6 +16,15 @@ public class EnemyController : MonoBehaviour, IDamageable
     private HealthComponent _health;
     private ShootingComponent _shooting; // optional
 
+    // Reference to the pool that owns this instance
+    private EnemyPool _ownerPool;
+
+    // Setter for pool owner (called by pool when getting)
+    public void SetOwnerPool(EnemyPool pool)
+    {
+        _ownerPool = pool;
+    }
+
     // Setter for the movement pattern (called by WaveManager after instantiation)
     public void SetMovementPattern(IMovementPattern pattern)
     {
@@ -28,6 +37,28 @@ public class EnemyController : MonoBehaviour, IDamageable
         _health.OnDeath += HandleDeath;
 
         // If bulletPrefab is assigned, enable shooting
+        if (bulletPrefab != null && firePoint != null)
+        {
+            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+        }
+    }
+
+    // Call this before reusing the enemy
+    public void ResetState()
+    {
+        // Reset health (create new HealthComponent or reset internally)
+        _health = new HealthComponent(maxHP, invincibilityDuration);
+        _health.OnDeath += HandleDeath;
+
+        // Reset any other state (e.g., position, rotation)
+        transform.position = Vector3.zero;
+        transform.rotation = Quaternion.identity;
+
+        // Reset movement pattern to null (must be set by spawner)
+        _movementPattern = null;
+
+        // Optionally reset shooting cooldown if ShootingComponent exposes reset
+        // For simplicity, we recreate the shooting component
         if (bulletPrefab != null && firePoint != null)
         {
             _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
@@ -58,8 +89,16 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void HandleDeath()
     {
-        // Destroy the enemy and trigger any death effects
-        Destroy(gameObject);
+        // Return to pool instead of destroying
+        if (_ownerPool != null)
+        {
+            _ownerPool.ReturnEnemy(this);
+        }
+        else
+        {
+            // Fallback: destroy if no pool
+            Destroy(gameObject);
+        }
     }
 
     private void OnDestroy()
