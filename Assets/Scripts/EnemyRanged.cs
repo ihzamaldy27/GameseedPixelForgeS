@@ -2,11 +2,10 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable 
+public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable 
 {
-    // --- STATE MACHINE ---
     public enum EnemyState { Patrol, Idle, Chase, Telegraph, Attack, Cooldown, Stunned }
-    [Header("Current State (Lihat di Inspector)")]
+    [Header("Current State")]
     public EnemyState currentState = EnemyState.Patrol;
 
     [Header("Movement & Patrol")]
@@ -17,33 +16,32 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
     public LayerMask groundLayer;
 
     [Header("Detection & Chase")]
-    public float chaseSpeed = 4f;
-    public float sightDistance = 8f; 
-    public float awarenessRadius = 3f; // Radius pendengaran
+    public float chaseSpeed = 3f;
+    public float sightDistance = 10f; // Jarak pandang biasanya lebih jauh dari Melee
+    public float awarenessRadius = 4f; 
+    public float shootRange = 7f; // Jarak berhenti untuk mulai menembak
     public LayerMask playerLayer;
     public Transform eyePosition; 
 
     [Header("Combat & Attack")]
-    public float attackRange = 1.2f;
-    public int attackDamage = 10;
-    public float telegraphDuration = 0.5f; 
-    public float attackCooldown = 2f;      
+    public GameObject bulletPrefab;
+    public Transform firePoint; // Titik keluarnya peluru
+    public float telegraphDuration = 0.6f; // Waktu membidik
+    public float attackCooldown = 2.5f;      
     
-    // --- TAMBAHAN: Variabel VFX ---
     [Header("VFX & Animation")]
-    public Animator vfxAnim; // Animator untuk SlashVFX
-    public string[] slashTriggerNames = { "Slash1", "Slash2", "Slash3" };
+    public Animator enemyAnim; // Jika ada animasi menembak
+    public string shootTriggerName = "Shoot";
 
     [Header("Telegraph Warning")]
     public bool useWarningSign = true;     
     public GameObject warningSignObject;   
 
     [Header("Status & Knockback")]
-    public int maxHealth = 30;
-    public float knockbackForce = 5f;
+    public int maxHealth = 25; // Ranged biasanya HP-nya lebih kecil dari Melee
+    public float knockbackForce = 6f;
     public float stunDuration = 0.4f; 
 
-    // Private variables
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private HealthComponent health;
@@ -82,7 +80,7 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
                 if (stateTimer <= 0) 
                 {
                     Flip(); 
-                    SwitchState(EnemyState.Patrol);
+                    SwitchState(EnemyState.Patrol); // <--- Paksa kembali ke jalan setelah muter
                 }
                 DetectPlayer();
                 break;
@@ -142,12 +140,16 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
             return;
         }
 
-        // Cek jarak dengan target
         float distanceToPlayer = Vector2.Distance(transform.position, targetPlayer.position);
+        int chaseDir = targetPlayer.position.x > transform.position.x ? 1 : -1;
 
-        if (distanceToPlayer <= attackRange)
+        // Pastikan musuh selalu menghadap player saat di mode Chase
+        if ((chaseDir > 0 && !isFacingRight) || (chaseDir < 0 && isFacingRight)) Flip();
+
+        // Jika player sudah masuk jarak tembak
+        if (distanceToPlayer <= shootRange)
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Berhenti lari
             SwitchState(EnemyState.Telegraph);
             stateTimer = telegraphDuration;
             
@@ -160,80 +162,53 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
         }
         else
         {
-            int chaseDir = targetPlayer.position.x > transform.position.x ? 1 : -1;
+            // Maju mendekat jika masih terlalu jauh
             rb.linearVelocity = new Vector2(chaseDir * chaseSpeed, rb.linearVelocity.y);
-            
-            if ((chaseDir > 0 && !isFacingRight) || (chaseDir < 0 && isFacingRight)) Flip();
         }
     }
 
     private void ExecuteAttack()
     {
-        // Memulai fungsi Coroutine untuk memberikan jeda waktu
-        StartCoroutine(AttackRoutine());
-    }
-
-    private IEnumerator AttackRoutine()
-    {
         if (warningSignObject != null) warningSignObject.SetActive(false);
 
-        // 1. Picu animasi VFX secara acak (DENGAN ANTI-STACKING)
-        if (vfxAnim != null && slashTriggerNames.Length > 0)
+        if (enemyAnim != null)
         {
-            // BERSIIHKAN SEMUA ANTREAN TRIGGER TERLEBIH DAHULU
-            foreach (string triggerName in slashTriggerNames)
-            {
-                vfxAnim.ResetTrigger(triggerName);
-            }
-
-            // BARU PILIH DAN AKTIFKAN SATU TRIGGER SECARA ACAK
-            int randomIndex = Random.Range(0, slashTriggerNames.Length);
-            vfxAnim.SetTrigger(slashTriggerNames[randomIndex]);
+            enemyAnim.SetTrigger(shootTriggerName);
         }
 
-        // 2. Berikan jeda sepersekian detik agar animasi pedang berayun dulu
-        yield return new WaitForSeconds(0.15f); 
-
-        // 3. Pastikan musuh tidak sedang kena stun/mati saat jeda berlangsung
-        if (currentState == EnemyState.Telegraph)
+        // --- FIX LOGIKA ARRAH PELURU ---
+        if (bulletPrefab != null && firePoint != null)
         {
-            Collider2D playerHit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
-            if (playerHit != null)
-            {
-                IDamageable playerDamageable = playerHit.GetComponent<IDamageable>();
-                if (playerDamageable != null)
-                {
-                    playerDamageable.TakeDamage(attackDamage);
-                }
-            }
-
-            SwitchState(EnemyState.Cooldown);
-            stateTimer = attackCooldown;
+            // Jika musuh hadap kanan, pakai rotasi normal (0). Jika kiri, putar 180 derajat di sumbu Y.
+            Quaternion bulletRotation = isFacingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
+            
+            // Instansiasi peluru dengan rotasi baru yang sudah disesuaikan
+            Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
+        // -------------------------------
+
+        SwitchState(EnemyState.Cooldown);
+        stateTimer = attackCooldown;
     }
 
-    private void SwitchState(EnemyState newState)
-    {
-        currentState = newState;
-    }
+    private void SwitchState(EnemyState newState) { currentState = newState; }
 
     private void Flip()
     {
         isFacingRight = !isFacingRight;
+        
+        // Membalik objek secara keseluruhan (termasuk firePoint)
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+        
+        // Catatan: Jika musuh berbalik (scale X jadi negatif), 
+        // rotasi Y dari Transform secara teknis terbalik sehingga peluru akan meluncur ke arah yang benar.
     }
 
-    public void ApplyKnockback(Vector2 sourcePosition)
-    {
-        lastHitPosition = sourcePosition;
-    }
+    public void ApplyKnockback(Vector2 sourcePosition) { lastHitPosition = sourcePosition; }
 
-    public void TakeDamage(int damage)
-    {
-        health.TakeDamage(damage);
-    }
+    public void TakeDamage(int damage) { health.TakeDamage(damage); }
 
     private void HandleDamage(int currentHP)
     {
@@ -279,19 +254,9 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
         }
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(transform.position, shootRange);
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, awarenessRadius);
-    }
-
-    public void ExecuteDamageHitbox()
-    {
-        // Dibiarkan kosong karena logika damage Enemy sudah ditangani oleh ExecuteAttack()
-    }
-
-    public void EndAttackStep()
-    {
-        // Dibiarkan kosong karena Enemy menggunakan sistem Timer (State Machine) untuk kembali ke Patrol
     }
 }
