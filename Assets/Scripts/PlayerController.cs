@@ -103,6 +103,11 @@ public class PlayerController : MonoBehaviour, IDamageable
             currentAnimatingStep = 0;
         }
 
+        if (playerAnim != null)
+        {
+            playerAnim.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        }
+
         CheckGrounded();
         ResetCombo();
     }
@@ -176,7 +181,14 @@ public class PlayerController : MonoBehaviour, IDamageable
 
 
     // --- INPUT SYSTEM CALLBACKS ---
-    public void OnMove(InputValue value) { moveInput = value.Get<Vector2>(); }
+    public void OnMove(InputValue value) 
+    {
+        moveInput = value.Get<Vector2>();
+        // if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing)
+        // {
+        //     playerAnim.SetFloat("Speed", Mathf.Abs(moveInput.x));
+        // } 
+    }
 
     public void OnJump(InputValue value)
     {
