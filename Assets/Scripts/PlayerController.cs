@@ -103,9 +103,17 @@ public class PlayerController : MonoBehaviour, IDamageable
             currentAnimatingStep = 0;
         }
 
+        // --- UPDATE PENGIRIMAN DATA KE ANIMATOR ---
         if (playerAnim != null)
         {
+            // Kirim kecepatan horizontal untuk animasi lari
             playerAnim.SetFloat("Speed", Mathf.Abs(moveInput.x));
+            
+            // Kirim status pijakan tanah
+            playerAnim.SetBool("IsGrounded", isGrounded);
+            
+            // Kirim kecepatan vertikal (positif saat naik, negatif saat turun)
+            playerAnim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
 
         CheckGrounded();
