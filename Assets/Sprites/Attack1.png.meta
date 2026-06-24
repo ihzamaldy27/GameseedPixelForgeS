@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Gameseed_Attack-Up_0
+      name: Attack1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -144,16 +144,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 492dd6797e53d2ab0800000000000000
-      internalID: -5031305939908701548
+      spriteID: 0cbd878c3d142a045a01e53ebf0ccf4a
+      internalID: 389160785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Gameseed_Attack-Up_1
+      name: Attack1_1
       rect:
         serializedVersion: 2
         x: 364
@@ -166,16 +166,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8aa803e759a9d4ad0800000000000000
-      internalID: -2716345033376626008
+      spriteID: 5ea9c36193277d146b39b229262f1564
+      internalID: 374858068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Gameseed_Attack-Up_2
+      name: Attack1_2
       rect:
         serializedVersion: 2
         x: 728
@@ -188,16 +188,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d87850d124e3f68a0800000000000000
-      internalID: -6309756099247110259
+      spriteID: 340d9342db60eaf4585abff19271f84d
+      internalID: 707836802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Gameseed_Attack-Up_3
+      name: Attack1_3
       rect:
         serializedVersion: 2
         x: 1092
@@ -210,16 +210,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0dbd9901546751c40800000000000000
-      internalID: 5482418160396786640
+      spriteID: 7b27db4e4c3c04f479837771f4892d01
+      internalID: 1257470347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Gameseed_Attack-Up_4
+      name: Attack1_4
       rect:
         serializedVersion: 2
         x: 1456
@@ -232,10 +232,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 580cd52956707d8a0800000000000000
-      internalID: -6280543022516158331
+      spriteID: 6bc0c333f21f08e4c9f9937b370403db
+      internalID: -1596945090
       vertices: []
       indices: 
       edges: []
@@ -256,11 +256,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Gameseed_Attack-Up_0: -5031305939908701548
-      MC_Gameseed_Attack-Up_1: -2716345033376626008
-      MC_Gameseed_Attack-Up_2: -6309756099247110259
-      MC_Gameseed_Attack-Up_3: 5482418160396786640
-      MC_Gameseed_Attack-Up_4: -6280543022516158331
+      Attack1_0: 389160785
+      Attack1_1: 374858068
+      Attack1_2: 707836802
+      Attack1_3: 1257470347
+      Attack1_4: -1596945090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
