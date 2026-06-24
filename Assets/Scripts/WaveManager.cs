@@ -10,8 +10,8 @@ public class WaveManager : MonoBehaviour
     [Header("Spawner Settings")]
     public Transform spawnPoint; // spawn position reference (e.g., right edge)
 
-    [Header("Pool Reference")]
-    public EnemyPool enemyPool; // assign in inspector
+    //[Header("Pool Reference")]
+    //public EnemyPool enemyPool; // assign in inspector
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
@@ -52,12 +52,14 @@ public class WaveManager : MonoBehaviour
 
     private void SpawnEnemy(SpawnEvent spawn)
     {
-        if (spawn.enemyPrefab == null || enemyPool == null) return;
+        if (spawn.enemyPrefab == null) return;
 
-        // Get enemy from pool
-        EnemyController enemy = enemyPool.GetEnemy();
-        // Set the owner pool so it knows where to return
-        enemy.SetOwnerPool(enemyPool);
+        //EnemyController enemy = enemyPool.GetEnemy();
+        //enemy.SetOwnerPool(enemyPool);
+        // Get enemy from the pool manager
+        EnemyController enemy = EnemyPoolManager.Instance.GetEnemy(spawn.enemyPrefab.GetComponent<EnemyController>());
+        if (enemy == null) return;
+
 
         // Reset internal state
         enemy.ResetState();
@@ -66,7 +68,7 @@ public class WaveManager : MonoBehaviour
         Vector3 spawnPos = spawnPoint.position + (Vector3)spawn.spawnPosition;
         enemy.transform.position = spawnPos;
 
-        // Set movement pattern based on spawn event
+        // Set movement pattern
         IMovementPattern pattern = CreatePattern(spawn);
         enemy.SetMovementPattern(pattern);
     }
@@ -79,6 +81,8 @@ public class WaveManager : MonoBehaviour
                 return new StraightPattern(spawn.speed);
             case MovementPatternType.Sine:
                 return new SinePattern(spawn.speed, spawn.amplitude, spawn.frequency);
+            case MovementPatternType.EaseInVertical:
+                return new EaseInVerticalPattern(spawn.speed, spawn.verticalSpeed, spawn.transitionDuration);
             default:
                 return new StraightPattern(spawn.speed);
         }

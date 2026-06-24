@@ -11,6 +11,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 1.5f;
 
+    [Header("Sprite")]
+    [SerializeField] private SpriteDirectionComponent spriteHandler;
+
     // Composed objects
     private IMovementPattern _movementPattern;
     private HealthComponent _health;
@@ -18,6 +21,10 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     // Reference to the pool that owns this instance
     private EnemyPool _ownerPool;
+
+    public EnemyController OriginalPrefab { get; set; } // set by pool manager
+
+    private Vector3 _previousPosition;
 
     // Setter for pool owner (called by pool when getting)
     public void SetOwnerPool(EnemyPool pool)
@@ -43,6 +50,12 @@ public class EnemyController : MonoBehaviour, IDamageable
         }
     }
 
+    private void OnEnable()
+    {
+        // Reset previous position when reused from pool
+        _previousPosition = transform.position;
+    }
+
     // Call this before reusing the enemy
     public void ResetState()
     {
@@ -63,12 +76,27 @@ public class EnemyController : MonoBehaviour, IDamageable
         {
             _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
         }
+
+        _previousPosition = transform.position;
     }
 
     private void Update()
     {
+        // Store previous position before movement
+        _previousPosition = transform.position;
+
         // Update movement if pattern exists
         _movementPattern?.UpdateMovement(transform, Time.deltaTime);
+
+        // Compute movement direction from actual position delta
+        Vector3 delta = transform.position - _previousPosition;
+        if (spriteHandler != null)
+        {
+            if (delta.magnitude > 0.001f)
+                spriteHandler.SetDirection(delta.normalized);
+            else
+                spriteHandler.SetDirection(Vector2.zero); // fallback to straight
+        }
 
         // Update invincibility
         _health.UpdateInvincibility(Time.deltaTime);
@@ -89,10 +117,12 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void ReturnToPool()
     {
-        if (_ownerPool != null)
-        {
-            _ownerPool.ReturnEnemy(this);
-        }
+        //if (_ownerPool != null)
+        //{
+        //    _ownerPool.ReturnEnemy(this);
+        //}
+        if (EnemyPoolManager.Instance != null)
+            EnemyPoolManager.Instance.ReturnEnemy(this);
         else
         {
             Destroy(gameObject);
