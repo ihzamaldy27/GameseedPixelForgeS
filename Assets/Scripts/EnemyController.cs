@@ -87,18 +87,21 @@ public class EnemyController : MonoBehaviour, IDamageable
         _health.TakeDamage(damage);
     }
 
-    private void HandleDeath()
+    public void ReturnToPool()
     {
-        // Return to pool instead of destroying
         if (_ownerPool != null)
         {
             _ownerPool.ReturnEnemy(this);
         }
         else
         {
-            // Fallback: destroy if no pool
             Destroy(gameObject);
         }
+    }
+
+    private void HandleDeath()
+    {
+        ReturnToPool();
     }
 
     private void OnDestroy()

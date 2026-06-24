@@ -15,6 +15,9 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [SerializeField] private int maxHP = 5;
     [SerializeField] private float invincibilityDuration = 0.5f;
 
+    [Header("Sprite")]
+    [SerializeField] private SpriteDirectionComponent spriteHandler;
+
     // Composition: the player owns separate handlers for movement and shooting
     private PlaneControlComponent _movement;
     private ShootingComponent _shooting;
@@ -50,6 +53,10 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
 
         // Update invincibility frames
         _health.UpdateInvincibility(Time.deltaTime);
+
+        // Update sprite based on movement direction
+        if (spriteHandler != null)
+            spriteHandler.SetDirection(_direction);
     }
 
     public void OnMove(InputAction.CallbackContext context)

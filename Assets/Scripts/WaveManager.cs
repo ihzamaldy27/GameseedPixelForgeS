@@ -59,12 +59,12 @@ public class WaveManager : MonoBehaviour
         // Set the owner pool so it knows where to return
         enemy.SetOwnerPool(enemyPool);
 
+        // Reset internal state
+        enemy.ResetState();
+
         // Position it
         Vector3 spawnPos = spawnPoint.position + (Vector3)spawn.spawnPosition;
         enemy.transform.position = spawnPos;
-
-        // Reset internal state
-        enemy.ResetState();
 
         // Set movement pattern based on spawn event
         IMovementPattern pattern = CreatePattern(spawn);
