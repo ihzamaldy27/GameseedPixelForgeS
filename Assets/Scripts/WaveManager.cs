@@ -10,8 +10,7 @@ public class WaveManager : MonoBehaviour
     [Header("Spawner Settings")]
     public Transform spawnPoint; // spawn position reference (e.g., right edge)
 
-    //[Header("Pool Reference")]
-    //public EnemyPool enemyPool; // assign in inspector
+    public event System.Action<int> OnWaveComplete; // passes index of completed wave
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
@@ -43,6 +42,7 @@ public class WaveManager : MonoBehaviour
 
             // Wait a bit before next wave (optional)
             yield return new WaitForSeconds(2f);
+            OnWaveComplete?.Invoke(_currentWaveIndex);
             _currentWaveIndex++;
         }
 
@@ -54,9 +54,6 @@ public class WaveManager : MonoBehaviour
     {
         if (spawn.enemyPrefab == null) return;
 
-        //EnemyController enemy = enemyPool.GetEnemy();
-        //enemy.SetOwnerPool(enemyPool);
-        // Get enemy from the pool manager
         EnemyController enemy = EnemyPoolManager.Instance.GetEnemy(spawn.enemyPrefab.GetComponent<EnemyController>());
         if (enemy == null) return;
 
@@ -71,6 +68,17 @@ public class WaveManager : MonoBehaviour
         // Set movement pattern
         IMovementPattern pattern = CreatePattern(spawn);
         enemy.SetMovementPattern(pattern);
+    }
+
+    public void RestartFromWave(int waveIndex)
+    {
+        if (_isSpawning)
+        {
+            StopAllCoroutines();
+            _isSpawning = false;
+        }
+        _currentWaveIndex = waveIndex;
+        StartCoroutine(StartNextWave());
     }
 
     private IMovementPattern CreatePattern(SpawnEvent spawn)

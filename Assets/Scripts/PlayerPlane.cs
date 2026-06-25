@@ -18,6 +18,8 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [Header("Sprite")]
     [SerializeField] private SpriteDirectionComponent spriteHandler;
 
+    public event System.Action OnPlayerDied;
+
     // Composition: the player owns separate handlers for movement and shooting
     private PlaneControlComponent _movement;
     private ShootingComponent _shooting;
@@ -87,12 +89,30 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     private void HandleDeath()
     {
         Debug.Log("Player has died!");
-        // Disable the GameObject or show Game Over screen.
-        // For now, we just disable this script to freeze the player.
         enabled = false;
+        OnPlayerDied?.Invoke();
 
         // Optional: Destroy the player after a delay
         // Destroy(gameObject, 1f);
+    }
+
+    public void Respawn(Vector3 spawnPosition)
+    {
+        transform.position = spawnPosition;
+
+        // Recreate health component to reset HP and invincibility
+        _health = new HealthComponent(maxHP, invincibilityDuration);
+        _health.OnDamaged += HandleDamaged;
+        _health.OnDeath += HandleDeath;
+
+        // Reset other state (e.g., shooting cooldown, if needed)
+        // For simplicity, we recreate shooting component as well
+        if (bulletPrefab != null && firePoint != null)
+        {
+            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+        }
+
+        enabled = true; // re-enable controls
     }
 
     // Optional: Unsubscribe from events when destroyed to avoid memory leaks
