@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f07be0ad30e0c34fa32ccd32d209b72
+guid: 4a6c2545515a33a45b12819fd3cec664
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8081148807022592278
-    second: Aircraft_4_Idle_0
+      213: -3957430943597273650
+    second: Elite_Spaceship_50_Animation_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aircraft_4_Idle_0
+      name: Elite_Spaceship_50_Animation_3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 9
         y: 0
-        width: 630
-        height: 340
+        width: 751
+        height: 760
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61147a33602062070800000000000000
-      internalID: 8081148807022592278
+      spriteID: ecddebf26816419c0800000000000000
+      internalID: -3957430943597273650
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aircraft_4_Idle_0: 8081148807022592278
+      Elite_Spaceship_50_Animation_3_0: -3957430943597273650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

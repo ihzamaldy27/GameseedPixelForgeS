@@ -24,7 +24,13 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public EnemyController OriginalPrefab { get; set; } // set by pool manager
 
+    public event System.Action<int, int> OnHealthChanged; // currentHP, maxHP
+
     private Vector3 _previousPosition;
+
+    public int CurrentHP => _health.CurrentHP;
+
+    public int MaxHP => _health.MaxHP;
 
     // Setter for pool owner (called by pool when getting)
     public void SetOwnerPool(EnemyPool pool)
@@ -41,6 +47,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     private void Awake()
     {
         _health = new HealthComponent(maxHP, invincibilityDuration);
+        _health.OnDamaged += (currentHP) => OnHealthChanged?.Invoke(currentHP, maxHP);
         _health.OnDeath += HandleDeath;
 
         // If bulletPrefab is assigned, enable shooting
@@ -61,6 +68,7 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         // Reset health (create new HealthComponent or reset internally)
         _health = new HealthComponent(maxHP, invincibilityDuration);
+        _health.OnDamaged += (currentHP) => OnHealthChanged?.Invoke(currentHP, maxHP);
         _health.OnDeath += HandleDeath;
 
         // Reset any other state (e.g., position, rotation)
