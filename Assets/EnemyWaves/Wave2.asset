@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave2
   m_EditorClassIdentifier: Assembly-CSharp::WaveDefinition
   spawnEvents:
-  - time: 0
+  - time: 0.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: 1}
     patternType: 1
@@ -22,7 +22,16 @@ MonoBehaviour:
     frequency: 2
     verticalSpeed: 0
     transitionDuration: 0
-  - time: 1
+  - time: 1.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: -2}
+    patternType: 2
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: 3
+    transitionDuration: 3
+  - time: 2.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: -1}
     patternType: 1
@@ -31,21 +40,48 @@ MonoBehaviour:
     frequency: 2
     verticalSpeed: 0
     transitionDuration: 0
-  - time: 2
+  - time: 3.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: 0.5}
+    spawnPosition: {x: 0, y: 2}
+    patternType: 2
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: -3
+    transitionDuration: 3
+  - time: 4.1
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: -2}
+    patternType: 1
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+  - time: 5.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: 1}
+    patternType: 2
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: -3
+    transitionDuration: 3
+  - time: 6.1
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: 2}
+    patternType: 1
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+  - time: 7.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: -1}
     patternType: 2
     speed: 3
     amplitude: 0
     frequency: 0
     verticalSpeed: 3
-    transitionDuration: 2
-  - time: 3
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: -0.5}
-    patternType: 2
-    speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: 3
-    transitionDuration: 2
+    transitionDuration: 3

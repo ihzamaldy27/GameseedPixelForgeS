@@ -20,6 +20,8 @@ MonoBehaviour:
     speed: 3
     amplitude: 0
     frequency: 0
+    verticalSpeed: 1
+    transitionDuration: 3
   - time: 0.75
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 1, y: -2}
@@ -27,6 +29,8 @@ MonoBehaviour:
     speed: 3
     amplitude: 0
     frequency: 0
+    verticalSpeed: 1
+    transitionDuration: 3
   - time: 0.75
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 1, y: 2}
@@ -34,6 +38,8 @@ MonoBehaviour:
     speed: 3
     amplitude: 0
     frequency: 0
+    verticalSpeed: 1
+    transitionDuration: 3
   - time: 1.5
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 2, y: -4}
@@ -41,6 +47,8 @@ MonoBehaviour:
     speed: 3
     amplitude: 0
     frequency: 0
+    verticalSpeed: 1
+    transitionDuration: 3
   - time: 0
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 2, y: 4}
@@ -48,3 +56,5 @@ MonoBehaviour:
     speed: 3
     amplitude: 0
     frequency: 0
+    verticalSpeed: 1
+    transitionDuration: 3

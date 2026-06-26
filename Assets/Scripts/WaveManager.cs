@@ -51,7 +51,7 @@ public class WaveManager : MonoBehaviour
             }
 
             // Wait a bit before next wave (optional)
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
             OnWaveComplete?.Invoke(_currentWaveIndex);
             _currentWaveIndex++;
         }
