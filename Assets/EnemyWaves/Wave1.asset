@@ -15,7 +15,7 @@ MonoBehaviour:
   spawnEvents:
   - time: 0
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: 1}
+    spawnPosition: {x: 0, y: 1.5}
     patternType: 1
     speed: 3
     amplitude: 0.5
@@ -24,7 +24,7 @@ MonoBehaviour:
     transitionDuration: 0
   - time: 1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: -1}
+    spawnPosition: {x: 0, y: -1.5}
     patternType: 1
     speed: 3
     amplitude: 0.5
@@ -32,20 +32,38 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
   - time: 2
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: 0.5}
-    patternType: 2
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: 1}
+    patternType: 1
     speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: 3
-    transitionDuration: 2
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
   - time: 3
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: -0.5}
-    patternType: 2
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: -1}
+    patternType: 1
     speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: 3
-    transitionDuration: 2
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+  - time: 5
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: -0.5}
+    patternType: 1
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+  - time: 4
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: 0.5}
+    patternType: 1
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
