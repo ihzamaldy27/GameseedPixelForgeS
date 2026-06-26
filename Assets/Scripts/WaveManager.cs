@@ -14,6 +14,7 @@ public class WaveManager : MonoBehaviour
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
+    private List<EnemyController> _activeEnemies = new List<EnemyController>();
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class WaveManager : MonoBehaviour
         while (_currentWaveIndex < waves.Count)
         {
             _isSpawning = true;
+            _activeEnemies.Clear(); // clear list for new wave
             WaveDefinition wave = waves[_currentWaveIndex];
             Debug.Log($"Starting Wave {_currentWaveIndex + 1}");
 
@@ -40,8 +42,16 @@ public class WaveManager : MonoBehaviour
                 SpawnEnemy(spawn);
             }
 
+            // Wait until all enemies are cleared (destroyed or returned to pool)
+            while (_activeEnemies.Count > 0)
+            {
+                // Remove any enemies that are no longer active (pool deactivates them)
+                _activeEnemies.RemoveAll(e => e == null || !e.gameObject.activeInHierarchy);
+                yield return null; // wait one frame
+            }
+
             // Wait a bit before next wave (optional)
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
             OnWaveComplete?.Invoke(_currentWaveIndex);
             _currentWaveIndex++;
         }
@@ -68,6 +78,9 @@ public class WaveManager : MonoBehaviour
         // Set movement pattern
         IMovementPattern pattern = CreatePattern(spawn);
         enemy.SetMovementPattern(pattern);
+
+        // Add to active list so we can track when it's cleared
+        _activeEnemies.Add(enemy);
     }
 
     public void RestartFromWave(int waveIndex)
@@ -77,6 +90,7 @@ public class WaveManager : MonoBehaviour
             StopAllCoroutines();
             _isSpawning = false;
         }
+         _activeEnemies.Clear(); // clear any remaining references
         _currentWaveIndex = waveIndex;
         StartCoroutine(StartNextWave());
     }
