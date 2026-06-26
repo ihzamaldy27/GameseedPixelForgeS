@@ -11,6 +11,9 @@ public class EnemyController : MonoBehaviour, IDamageable
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 1.5f;
 
+    [Header("Explosion")]
+    [SerializeField] private float explosionScale = 1f; // set 2 for elite
+
     [Header("Sprite")]
     [SerializeField] private SpriteDirectionComponent spriteHandler;
 
@@ -139,6 +142,10 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     private void HandleDeath()
     {
+        // Spawn explosion at current position with the specified scale
+        if (ExplosionPoolManager.Instance != null)
+            ExplosionPoolManager.Instance.SpawnExplosion(transform.position, explosionScale);
+
         ReturnToPool();
     }
 

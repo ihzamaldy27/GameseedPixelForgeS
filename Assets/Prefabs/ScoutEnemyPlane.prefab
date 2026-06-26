@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86cb404654aeccf478312325e44d9b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  maxHP: 3
+  maxHP: 2
   invincibilityDuration: 0.1
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}

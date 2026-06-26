@@ -126,6 +126,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 0}
   fireRate: 1.5
+  explosionScale: 2
   spriteHandler: {fileID: 0}
 --- !u!114 &1685319352308376291
 MonoBehaviour:
