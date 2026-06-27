@@ -105,6 +105,8 @@ public class WaveManager : MonoBehaviour
                 return new SinePattern(spawn.speed, spawn.amplitude, spawn.frequency);
             case MovementPatternType.EaseInVertical:
                 return new EaseInVerticalPattern(spawn.speed, spawn.verticalSpeed, spawn.transitionDuration);
+            case MovementPatternType.EaseOutVertical:
+                return new EaseOutVerticalPattern(spawn.speed, spawn.initialVerticalSpeed, spawn.transitionDuration);
             default:
                 return new StraightPattern(spawn.speed);
         }

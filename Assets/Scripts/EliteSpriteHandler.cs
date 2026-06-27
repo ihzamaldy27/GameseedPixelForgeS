@@ -58,6 +58,7 @@ public class EliteSpriteHandler : MonoBehaviour
             UpdateStateIndex();
             SetSpriteForState();
         }
+        _currentStateIndex = 0;
     }
 
     private void OnDestroy()

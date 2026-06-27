@@ -426,6 +426,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 09f25a7050937ec47ace8b9e7ef25da6, type: 2}
   - {fileID: 11400000, guid: f12fc5fdbd560654cbd640af76feead6, type: 2}
   - {fileID: 11400000, guid: 5aa0420baf3f37947afcb10f596561f9, type: 2}
+  - {fileID: 11400000, guid: 3575663938b973f4b9b02b5a2daf7e77, type: 2}
   spawnPoint: {fileID: 740586300}
 --- !u!4 &816289215
 Transform:
@@ -1433,7 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a42b6646ddbce14b904dcaade1302be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CheckpointManager
-  checkpointWaves: 0200000003000000
+  checkpointWaves: 020000000400000005000000
   playerSpawnPoint: {fileID: 198671708}
 --- !u!1 &1838530419
 GameObject:

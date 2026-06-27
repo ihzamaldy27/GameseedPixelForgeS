@@ -128,10 +128,6 @@ public class EnemyController : MonoBehaviour, IDamageable
 
     public void ReturnToPool()
     {
-        //if (_ownerPool != null)
-        //{
-        //    _ownerPool.ReturnEnemy(this);
-        //}
         if (EnemyPoolManager.Instance != null)
             EnemyPoolManager.Instance.ReturnEnemy(this);
         else

@@ -25,11 +25,16 @@ public class SpawnEvent
     // Parameters for EaseInVertical pattern
     public float verticalSpeed = 1f;
     public float transitionDuration = 3f;
+
+    // For EaseOutVertical
+    public float initialVerticalSpeed = 1f;   // starting vertical speed for ease‑out
+    // transitionDuration is reused
 }
 
 public enum MovementPatternType
 {
     Straight,
     Sine,
-    EaseInVertical
+    EaseInVertical,
+    EaseOutVertical
 }
