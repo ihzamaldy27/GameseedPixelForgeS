@@ -140,6 +140,9 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
             return;
         }
 
+        bool isGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
+        bool isWallAhead = Physics2D.Raycast(wallCheck.position, isFacingRight ? Vector2.right : Vector2.left, 0.5f, groundLayer);
+
         float distanceToPlayer = Vector2.Distance(transform.position, targetPlayer.position);
         int chaseDir = targetPlayer.position.x > transform.position.x ? 1 : -1;
 
@@ -159,6 +162,13 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
         {
             targetPlayer = null;
             SwitchState(EnemyState.Patrol);
+        } else if (!isGroundAhead || isWallAhead) 
+        {
+            // Jika ada jurang atau tembok menghalangi, berhentilah mengejar!
+            targetPlayer = null; // Lupakan player
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Rem mendadak
+            SwitchState(EnemyState.Idle); // Diam sejenak sebelum berbalik arah
+            stateTimer = patrolWaitTime; 
         }
         else
         {
