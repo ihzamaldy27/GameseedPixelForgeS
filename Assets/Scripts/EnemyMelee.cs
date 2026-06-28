@@ -72,6 +72,13 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
 
         if (stateTimer > 0) stateTimer -= Time.deltaTime;
 
+        if (vfxAnim != null)
+        {
+            // Jika kecepatan X (kiri/kanan) lebih dari 0.1, berarti dia sedang bergerak!
+            bool isMoving = Mathf.Abs(rb.linearVelocity.x) > 0.1f;
+            vfxAnim.SetBool("isWalking", isMoving);
+        }
+
         switch (currentState)
         {
             case EnemyState.Patrol:
@@ -84,7 +91,7 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
                     Flip(); 
                     SwitchState(EnemyState.Patrol);
                 }
-                
+
                 DetectPlayer();
                 break;
             case EnemyState.Chase:
