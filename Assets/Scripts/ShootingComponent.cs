@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShootingComponent : MonoBehaviour
+public class ShootingComponent
 {
     private readonly Transform _firePoint;
     private readonly GameObject _bulletPrefab;
@@ -26,10 +26,17 @@ public class ShootingComponent : MonoBehaviour
 
     private void Shoot()
     {
-        if (_bulletPrefab != null && _firePoint != null)
+        BulletController bullet = BulletPoolManager.Instance.GetBullet(_bulletPrefab.GetComponent<BulletController>());
+        if (bullet != null)
         {
-            GameObject bullet = Object.Instantiate(_bulletPrefab, _firePoint.position, _firePoint.rotation);
-            // Optionally set bullet velocity or direction via a Bullet component
+            //GameObject bullet = Object.Instantiate(_bulletPrefab, _firePoint.position, _firePoint.rotation);
+            bullet.transform.position = _firePoint.position;
+            bullet.transform.rotation = _firePoint.rotation;
+            bullet.gameObject.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Bullet is empty");
         }
     }
 }
