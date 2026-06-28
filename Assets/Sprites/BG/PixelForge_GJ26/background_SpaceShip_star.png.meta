@@ -1,0 +1,7514 @@
+fileFormatVersion: 2
+guid: 390f4e8e52ac2e04d9801741977751df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1569980351371048666
+    second: background_SpaceShip_star_0
+  - first:
+      213: -6911819815224531372
+    second: background_SpaceShip_star_1
+  - first:
+      213: -2423247364059941689
+    second: background_SpaceShip_star_2
+  - first:
+      213: -44302722015210461
+    second: background_SpaceShip_star_3
+  - first:
+      213: -3440533556989949078
+    second: background_SpaceShip_star_4
+  - first:
+      213: 884266509459614623
+    second: background_SpaceShip_star_5
+  - first:
+      213: -4318759029913537262
+    second: background_SpaceShip_star_6
+  - first:
+      213: 6427749256350863595
+    second: background_SpaceShip_star_7
+  - first:
+      213: 1155102446560169037
+    second: background_SpaceShip_star_8
+  - first:
+      213: -6261107593699476454
+    second: background_SpaceShip_star_9
+  - first:
+      213: -6349985581834349865
+    second: background_SpaceShip_star_10
+  - first:
+      213: -6292757659851545213
+    second: background_SpaceShip_star_11
+  - first:
+      213: 3281484020304489172
+    second: background_SpaceShip_star_12
+  - first:
+      213: -7352856438921104955
+    second: background_SpaceShip_star_13
+  - first:
+      213: -4475464157187476090
+    second: background_SpaceShip_star_14
+  - first:
+      213: 4996789040674911921
+    second: background_SpaceShip_star_15
+  - first:
+      213: 4536308687624142628
+    second: background_SpaceShip_star_16
+  - first:
+      213: -2957644494332532654
+    second: background_SpaceShip_star_17
+  - first:
+      213: -8623012270014844775
+    second: background_SpaceShip_star_18
+  - first:
+      213: -4424047022951154992
+    second: background_SpaceShip_star_19
+  - first:
+      213: 3123673672541639840
+    second: background_SpaceShip_star_20
+  - first:
+      213: 520818108798410702
+    second: background_SpaceShip_star_21
+  - first:
+      213: 6639973629433777262
+    second: background_SpaceShip_star_22
+  - first:
+      213: 1515802116458606804
+    second: background_SpaceShip_star_23
+  - first:
+      213: 6734854454489364153
+    second: background_SpaceShip_star_24
+  - first:
+      213: 3251877694202040531
+    second: background_SpaceShip_star_25
+  - first:
+      213: 8745708043796470857
+    second: background_SpaceShip_star_26
+  - first:
+      213: 3813170024322487044
+    second: background_SpaceShip_star_27
+  - first:
+      213: -9161906647278896947
+    second: background_SpaceShip_star_28
+  - first:
+      213: -5480560576891962915
+    second: background_SpaceShip_star_29
+  - first:
+      213: -7296812925497849425
+    second: background_SpaceShip_star_30
+  - first:
+      213: -5470948142822770968
+    second: background_SpaceShip_star_31
+  - first:
+      213: 4245416698081552674
+    second: background_SpaceShip_star_32
+  - first:
+      213: 6973147302566121812
+    second: background_SpaceShip_star_33
+  - first:
+      213: -5966491465224306386
+    second: background_SpaceShip_star_34
+  - first:
+      213: 2186326612845876792
+    second: background_SpaceShip_star_35
+  - first:
+      213: 1676134092354211242
+    second: background_SpaceShip_star_36
+  - first:
+      213: 1752383828968732473
+    second: background_SpaceShip_star_37
+  - first:
+      213: 7577920863028042126
+    second: background_SpaceShip_star_38
+  - first:
+      213: 6123694160584951453
+    second: background_SpaceShip_star_39
+  - first:
+      213: 3695435609547906556
+    second: background_SpaceShip_star_40
+  - first:
+      213: 6206180628121305528
+    second: background_SpaceShip_star_41
+  - first:
+      213: 6817943572250357801
+    second: background_SpaceShip_star_42
+  - first:
+      213: 7416933832773090922
+    second: background_SpaceShip_star_43
+  - first:
+      213: -2634749403078637560
+    second: background_SpaceShip_star_44
+  - first:
+      213: 4126023377779085791
+    second: background_SpaceShip_star_45
+  - first:
+      213: -228760396972557563
+    second: background_SpaceShip_star_46
+  - first:
+      213: -3378273595822188108
+    second: background_SpaceShip_star_47
+  - first:
+      213: -9172731083564027940
+    second: background_SpaceShip_star_48
+  - first:
+      213: 8290773865466567260
+    second: background_SpaceShip_star_49
+  - first:
+      213: 6330441116632188152
+    second: background_SpaceShip_star_50
+  - first:
+      213: 146124370095334524
+    second: background_SpaceShip_star_51
+  - first:
+      213: 1046418863546830047
+    second: background_SpaceShip_star_52
+  - first:
+      213: -6813683590770539889
+    second: background_SpaceShip_star_53
+  - first:
+      213: -5849828077228457656
+    second: background_SpaceShip_star_54
+  - first:
+      213: 7179832697973662301
+    second: background_SpaceShip_star_55
+  - first:
+      213: 309849755433042840
+    second: background_SpaceShip_star_56
+  - first:
+      213: 9068566859780749807
+    second: background_SpaceShip_star_57
+  - first:
+      213: -2960589557066709632
+    second: background_SpaceShip_star_58
+  - first:
+      213: 1526304414683706094
+    second: background_SpaceShip_star_59
+  - first:
+      213: -4436561929465609941
+    second: background_SpaceShip_star_60
+  - first:
+      213: -7995722721793067843
+    second: background_SpaceShip_star_61
+  - first:
+      213: 3663599118000400072
+    second: background_SpaceShip_star_62
+  - first:
+      213: 3748682679773250276
+    second: background_SpaceShip_star_63
+  - first:
+      213: 8344609212527790024
+    second: background_SpaceShip_star_64
+  - first:
+      213: -320689351775612895
+    second: background_SpaceShip_star_65
+  - first:
+      213: -1702383613188992773
+    second: background_SpaceShip_star_66
+  - first:
+      213: -6859233329247320875
+    second: background_SpaceShip_star_67
+  - first:
+      213: -7518569856472749265
+    second: background_SpaceShip_star_68
+  - first:
+      213: 6655573769477324704
+    second: background_SpaceShip_star_69
+  - first:
+      213: 128615101035688975
+    second: background_SpaceShip_star_70
+  - first:
+      213: -9040734561527748478
+    second: background_SpaceShip_star_71
+  - first:
+      213: 2412806248678572139
+    second: background_SpaceShip_star_72
+  - first:
+      213: -6367763781219572223
+    second: background_SpaceShip_star_73
+  - first:
+      213: -8275011885681868494
+    second: background_SpaceShip_star_74
+  - first:
+      213: 2246672524436413162
+    second: background_SpaceShip_star_75
+  - first:
+      213: 4207706427940854080
+    second: background_SpaceShip_star_76
+  - first:
+      213: 7336348409852930193
+    second: background_SpaceShip_star_77
+  - first:
+      213: 3457344888668155368
+    second: background_SpaceShip_star_78
+  - first:
+      213: 3131701821812522827
+    second: background_SpaceShip_star_79
+  - first:
+      213: 3369933405372991968
+    second: background_SpaceShip_star_80
+  - first:
+      213: -2818470116644815204
+    second: background_SpaceShip_star_81
+  - first:
+      213: -1090370091653541855
+    second: background_SpaceShip_star_82
+  - first:
+      213: -6774976608045365939
+    second: background_SpaceShip_star_83
+  - first:
+      213: -4450096944349576106
+    second: background_SpaceShip_star_84
+  - first:
+      213: -2240202547411640936
+    second: background_SpaceShip_star_85
+  - first:
+      213: -3208489279457183793
+    second: background_SpaceShip_star_86
+  - first:
+      213: 759077672456307811
+    second: background_SpaceShip_star_87
+  - first:
+      213: -4324439051519275630
+    second: background_SpaceShip_star_88
+  - first:
+      213: 2243899723338504249
+    second: background_SpaceShip_star_89
+  - first:
+      213: -3590713371459000710
+    second: background_SpaceShip_star_90
+  - first:
+      213: -2757510373575757950
+    second: background_SpaceShip_star_91
+  - first:
+      213: 6927785017234068329
+    second: background_SpaceShip_star_92
+  - first:
+      213: -4743787468104216529
+    second: background_SpaceShip_star_93
+  - first:
+      213: 6489124812750317096
+    second: background_SpaceShip_star_94
+  - first:
+      213: 5552976336768872035
+    second: background_SpaceShip_star_95
+  - first:
+      213: -1439329942009904839
+    second: background_SpaceShip_star_96
+  - first:
+      213: -3837886136096026940
+    second: background_SpaceShip_star_97
+  - first:
+      213: -7645454487238329472
+    second: background_SpaceShip_star_98
+  - first:
+      213: -8123078416758769520
+    second: background_SpaceShip_star_99
+  - first:
+      213: 8558558065318563924
+    second: background_SpaceShip_star_100
+  - first:
+      213: 2325254561729505887
+    second: background_SpaceShip_star_101
+  - first:
+      213: 5909014618593922442
+    second: background_SpaceShip_star_102
+  - first:
+      213: -4981167023997114423
+    second: background_SpaceShip_star_103
+  - first:
+      213: -6153703924800798793
+    second: background_SpaceShip_star_104
+  - first:
+      213: -258152849744258203
+    second: background_SpaceShip_star_105
+  - first:
+      213: 2626805207107625792
+    second: background_SpaceShip_star_106
+  - first:
+      213: 2943909693167235629
+    second: background_SpaceShip_star_107
+  - first:
+      213: 6968249462569305910
+    second: background_SpaceShip_star_108
+  - first:
+      213: 53916659534541095
+    second: background_SpaceShip_star_109
+  - first:
+      213: -607919406983816606
+    second: background_SpaceShip_star_110
+  - first:
+      213: -5826298372717489228
+    second: background_SpaceShip_star_111
+  - first:
+      213: -6079392194491956324
+    second: background_SpaceShip_star_112
+  - first:
+      213: -7717056878308708960
+    second: background_SpaceShip_star_113
+  - first:
+      213: 5720727013760688985
+    second: background_SpaceShip_star_114
+  - first:
+      213: 4172073306591136267
+    second: background_SpaceShip_star_115
+  - first:
+      213: 3550826927589161227
+    second: background_SpaceShip_star_116
+  - first:
+      213: -3943479885840599478
+    second: background_SpaceShip_star_117
+  - first:
+      213: -1643580483712835141
+    second: background_SpaceShip_star_118
+  - first:
+      213: -495641761707668140
+    second: background_SpaceShip_star_119
+  - first:
+      213: 323708447741235931
+    second: background_SpaceShip_star_120
+  - first:
+      213: 558981507910458600
+    second: background_SpaceShip_star_121
+  - first:
+      213: 9003483647997627254
+    second: background_SpaceShip_star_122
+  - first:
+      213: 6956971152586004251
+    second: background_SpaceShip_star_123
+  - first:
+      213: -2856994349582911477
+    second: background_SpaceShip_star_124
+  - first:
+      213: 7356268696218586615
+    second: background_SpaceShip_star_125
+  - first:
+      213: 760107765714332434
+    second: background_SpaceShip_star_126
+  - first:
+      213: -4507755985114795770
+    second: background_SpaceShip_star_127
+  - first:
+      213: 8724467809487006204
+    second: background_SpaceShip_star_128
+  - first:
+      213: 8948193784062569319
+    second: background_SpaceShip_star_129
+  - first:
+      213: -2410912416877698019
+    second: background_SpaceShip_star_130
+  - first:
+      213: 6782125947965170024
+    second: background_SpaceShip_star_131
+  - first:
+      213: -6120774807751416706
+    second: background_SpaceShip_star_132
+  - first:
+      213: 8036067972408409461
+    second: background_SpaceShip_star_133
+  - first:
+      213: -3628320750112766078
+    second: background_SpaceShip_star_134
+  - first:
+      213: -933224298946413699
+    second: background_SpaceShip_star_135
+  - first:
+      213: 3768582302430003363
+    second: background_SpaceShip_star_136
+  - first:
+      213: 3045695651958455546
+    second: background_SpaceShip_star_137
+  - first:
+      213: -5192442836870746974
+    second: background_SpaceShip_star_138
+  - first:
+      213: 2420561744826427019
+    second: background_SpaceShip_star_139
+  - first:
+      213: 8325333347830332394
+    second: background_SpaceShip_star_140
+  - first:
+      213: -1835814578084348627
+    second: background_SpaceShip_star_141
+  - first:
+      213: 1665808197378887380
+    second: background_SpaceShip_star_142
+  - first:
+      213: -1897693873987976181
+    second: background_SpaceShip_star_143
+  - first:
+      213: 2961714924732519952
+    second: background_SpaceShip_star_144
+  - first:
+      213: -5651847751524402338
+    second: background_SpaceShip_star_145
+  - first:
+      213: 9072945874503379982
+    second: background_SpaceShip_star_146
+  - first:
+      213: 6893866279991506427
+    second: background_SpaceShip_star_147
+  - first:
+      213: 2903632171777172957
+    second: background_SpaceShip_star_148
+  - first:
+      213: 8915707832883581176
+    second: background_SpaceShip_star_149
+  - first:
+      213: -3973680107597751143
+    second: background_SpaceShip_star_150
+  - first:
+      213: -5252116116376306745
+    second: background_SpaceShip_star_151
+  - first:
+      213: 8423293988145574562
+    second: background_SpaceShip_star_152
+  - first:
+      213: -969444832524170388
+    second: background_SpaceShip_star_153
+  - first:
+      213: 273454333008539863
+    second: background_SpaceShip_star_154
+  - first:
+      213: -3148160014280845942
+    second: background_SpaceShip_star_155
+  - first:
+      213: 8536227634138604336
+    second: background_SpaceShip_star_156
+  - first:
+      213: 660669177611887231
+    second: background_SpaceShip_star_157
+  - first:
+      213: -8899866500121526191
+    second: background_SpaceShip_star_158
+  - first:
+      213: -3668054394213665299
+    second: background_SpaceShip_star_159
+  - first:
+      213: -745592730176338436
+    second: background_SpaceShip_star_160
+  - first:
+      213: -6717686874582365291
+    second: background_SpaceShip_star_161
+  - first:
+      213: -7267691819449273188
+    second: background_SpaceShip_star_162
+  - first:
+      213: 5524593695168468490
+    second: background_SpaceShip_star_163
+  - first:
+      213: -2509060589013057193
+    second: background_SpaceShip_star_164
+  - first:
+      213: 9197843332902001126
+    second: background_SpaceShip_star_165
+  - first:
+      213: 8838619054531211229
+    second: background_SpaceShip_star_166
+  - first:
+      213: 4849439697860630960
+    second: background_SpaceShip_star_167
+  - first:
+      213: -946451804676420587
+    second: background_SpaceShip_star_168
+  - first:
+      213: -404096618543767736
+    second: background_SpaceShip_star_169
+  - first:
+      213: 4156555746409177390
+    second: background_SpaceShip_star_170
+  - first:
+      213: 5298253753833874683
+    second: background_SpaceShip_star_171
+  - first:
+      213: 2295339524086098678
+    second: background_SpaceShip_star_172
+  - first:
+      213: 8458701167489718145
+    second: background_SpaceShip_star_173
+  - first:
+      213: -4692516603317596594
+    second: background_SpaceShip_star_174
+  - first:
+      213: 4053895172167642951
+    second: background_SpaceShip_star_175
+  - first:
+      213: -810111824279236568
+    second: background_SpaceShip_star_176
+  - first:
+      213: 827861438436177253
+    second: background_SpaceShip_star_177
+  - first:
+      213: -5859069574397156074
+    second: background_SpaceShip_star_178
+  - first:
+      213: -7184589552956587956
+    second: background_SpaceShip_star_179
+  - first:
+      213: 7397775728221290834
+    second: background_SpaceShip_star_180
+  - first:
+      213: 4941321991823346657
+    second: background_SpaceShip_star_181
+  - first:
+      213: 3795007960407846515
+    second: background_SpaceShip_star_182
+  - first:
+      213: 8506160963130313933
+    second: background_SpaceShip_star_183
+  - first:
+      213: -861183438563957080
+    second: background_SpaceShip_star_184
+  - first:
+      213: 6961644347723008489
+    second: background_SpaceShip_star_185
+  - first:
+      213: 7634428741732896156
+    second: background_SpaceShip_star_186
+  - first:
+      213: -6578241312663609987
+    second: background_SpaceShip_star_187
+  - first:
+      213: -5534494292285633843
+    second: background_SpaceShip_star_188
+  - first:
+      213: 5006434154124343057
+    second: background_SpaceShip_star_189
+  - first:
+      213: 5123422479583996044
+    second: background_SpaceShip_star_190
+  - first:
+      213: 5284873666130438021
+    second: background_SpaceShip_star_191
+  - first:
+      213: 2349042521325769772
+    second: background_SpaceShip_star_192
+  - first:
+      213: -7592640655020140448
+    second: background_SpaceShip_star_193
+  - first:
+      213: 5264858373944116488
+    second: background_SpaceShip_star_194
+  - first:
+      213: -5912060368035019492
+    second: background_SpaceShip_star_195
+  - first:
+      213: 2640884349200827213
+    second: background_SpaceShip_star_196
+  - first:
+      213: 8692691114738121597
+    second: background_SpaceShip_star_197
+  - first:
+      213: -820822781911723419
+    second: background_SpaceShip_star_198
+  - first:
+      213: -8379658433684714336
+    second: background_SpaceShip_star_199
+  - first:
+      213: -9185838888719783513
+    second: background_SpaceShip_star_200
+  - first:
+      213: 4613886317219342793
+    second: background_SpaceShip_star_201
+  - first:
+      213: 6796539074603170220
+    second: background_SpaceShip_star_202
+  - first:
+      213: 1269257224454995143
+    second: background_SpaceShip_star_203
+  - first:
+      213: 8924946251018216457
+    second: background_SpaceShip_star_204
+  - first:
+      213: -9577773564124968
+    second: background_SpaceShip_star_205
+  - first:
+      213: 5995903983145386392
+    second: background_SpaceShip_star_206
+  - first:
+      213: -7862018917834675531
+    second: background_SpaceShip_star_207
+  - first:
+      213: 4540822388091176090
+    second: background_SpaceShip_star_208
+  - first:
+      213: 1265921276389438255
+    second: background_SpaceShip_star_209
+  - first:
+      213: -8065073383506172054
+    second: background_SpaceShip_star_210
+  - first:
+      213: -5122739778293415620
+    second: background_SpaceShip_star_211
+  - first:
+      213: -7036306645581875243
+    second: background_SpaceShip_star_212
+  - first:
+      213: 5037860403065530167
+    second: background_SpaceShip_star_213
+  - first:
+      213: 3453091771569813267
+    second: background_SpaceShip_star_214
+  - first:
+      213: 8286656130187094809
+    second: background_SpaceShip_star_215
+  - first:
+      213: -4655156936414129112
+    second: background_SpaceShip_star_216
+  - first:
+      213: -8115782839221764877
+    second: background_SpaceShip_star_217
+  - first:
+      213: 4972624229893842336
+    second: background_SpaceShip_star_218
+  - first:
+      213: 3043012980464212979
+    second: background_SpaceShip_star_219
+  - first:
+      213: -971904244540271874
+    second: background_SpaceShip_star_220
+  - first:
+      213: -2525439507256262788
+    second: background_SpaceShip_star_221
+  - first:
+      213: 6318923536535257359
+    second: background_SpaceShip_star_222
+  - first:
+      213: 8084372318860588119
+    second: background_SpaceShip_star_223
+  - first:
+      213: 2222956007984161129
+    second: background_SpaceShip_star_224
+  - first:
+      213: -2474251099851402968
+    second: background_SpaceShip_star_225
+  - first:
+      213: -5467342108573345009
+    second: background_SpaceShip_star_226
+  - first:
+      213: 5636375524063162440
+    second: background_SpaceShip_star_227
+  - first:
+      213: 5971199793753191857
+    second: background_SpaceShip_star_228
+  - first:
+      213: 2172611628499513585
+    second: background_SpaceShip_star_229
+  - first:
+      213: -4128541131559905425
+    second: background_SpaceShip_star_230
+  - first:
+      213: -5210853128199450473
+    second: background_SpaceShip_star_231
+  - first:
+      213: -7275660882474488043
+    second: background_SpaceShip_star_232
+  - first:
+      213: -292125083087288118
+    second: background_SpaceShip_star_233
+  - first:
+      213: -1795835507825059999
+    second: background_SpaceShip_star_234
+  - first:
+      213: 8863463779235345273
+    second: background_SpaceShip_star_235
+  - first:
+      213: 8700253409676284554
+    second: background_SpaceShip_star_236
+  - first:
+      213: 2819569953181930506
+    second: background_SpaceShip_star_237
+  - first:
+      213: 4844272672586372106
+    second: background_SpaceShip_star_238
+  - first:
+      213: -1020769132791423484
+    second: background_SpaceShip_star_239
+  - first:
+      213: -3514662578463846902
+    second: background_SpaceShip_star_240
+  - first:
+      213: 5812169593691109001
+    second: background_SpaceShip_star_241
+  - first:
+      213: -6863554934904135142
+    second: background_SpaceShip_star_242
+  - first:
+      213: -1189066450225798053
+    second: background_SpaceShip_star_243
+  - first:
+      213: -3815158717659415151
+    second: background_SpaceShip_star_244
+  - first:
+      213: 6650052017398174136
+    second: background_SpaceShip_star_245
+  - first:
+      213: -7678065527551165807
+    second: background_SpaceShip_star_246
+  - first:
+      213: -8029747211761736452
+    second: background_SpaceShip_star_247
+  - first:
+      213: -7223798040946819851
+    second: background_SpaceShip_star_248
+  - first:
+      213: -4408877690318249946
+    second: background_SpaceShip_star_249
+  - first:
+      213: 3951892626188099916
+    second: background_SpaceShip_star_250
+  - first:
+      213: 3116819372344846101
+    second: background_SpaceShip_star_251
+  - first:
+      213: -1683359770635160796
+    second: background_SpaceShip_star_252
+  - first:
+      213: 8989866983846199384
+    second: background_SpaceShip_star_253
+  - first:
+      213: -6745585265704581735
+    second: background_SpaceShip_star_254
+  - first:
+      213: -5113877682296561787
+    second: background_SpaceShip_star_255
+  - first:
+      213: 4430614518836287810
+    second: background_SpaceShip_star_256
+  - first:
+      213: 637320595240259134
+    second: background_SpaceShip_star_257
+  - first:
+      213: 4844192458688062461
+    second: background_SpaceShip_star_258
+  - first:
+      213: 5325017313253552721
+    second: background_SpaceShip_star_259
+  - first:
+      213: -7235069013530998309
+    second: background_SpaceShip_star_260
+  - first:
+      213: 6278055267002888780
+    second: background_SpaceShip_star_261
+  - first:
+      213: -5120243478648171935
+    second: background_SpaceShip_star_262
+  - first:
+      213: 6322108170110947309
+    second: background_SpaceShip_star_263
+  - first:
+      213: -8660563307121079786
+    second: background_SpaceShip_star_264
+  - first:
+      213: 1699609485919267926
+    second: background_SpaceShip_star_265
+  - first:
+      213: 166585482676207710
+    second: background_SpaceShip_star_266
+  - first:
+      213: 3616710600813811659
+    second: background_SpaceShip_star_267
+  - first:
+      213: 8429021721363477517
+    second: background_SpaceShip_star_268
+  - first:
+      213: -352439006067996727
+    second: background_SpaceShip_star_269
+  - first:
+      213: 5291218095199352657
+    second: background_SpaceShip_star_270
+  - first:
+      213: -5030509842995177085
+    second: background_SpaceShip_star_271
+  - first:
+      213: -558290635860004229
+    second: background_SpaceShip_star_272
+  - first:
+      213: -2981083720686699869
+    second: background_SpaceShip_star_273
+  - first:
+      213: 508085787767483013
+    second: background_SpaceShip_star_274
+  - first:
+      213: 8650626081509933994
+    second: background_SpaceShip_star_275
+  - first:
+      213: -522893445724146089
+    second: background_SpaceShip_star_276
+  - first:
+      213: -8998375140008489205
+    second: background_SpaceShip_star_277
+  - first:
+      213: 1898758068481513435
+    second: background_SpaceShip_star_278
+  - first:
+      213: -3705648929368950355
+    second: background_SpaceShip_star_279
+  - first:
+      213: -4186060850472650554
+    second: background_SpaceShip_star_280
+  - first:
+      213: -2940814682192707657
+    second: background_SpaceShip_star_281
+  - first:
+      213: 8271294029938110455
+    second: background_SpaceShip_star_282
+  - first:
+      213: 3181965250167855168
+    second: background_SpaceShip_star_283
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: background_SpaceShip_star_0
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1734
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6298f24403f463ae0800000000000000
+      internalID: -1569980351371048666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1788
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456290a9f784410a0800000000000000
+      internalID: -6911819815224531372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_2
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 0
+        width: 878
+        height: 1859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c43e4e7c55ee5ed0800000000000000
+      internalID: -2423247364059941689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_3
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 4
+        width: 546
+        height: 1861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32453b7b8ea926ff0800000000000000
+      internalID: -44302722015210461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1242
+        width: 205
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b8dc965f4c040d0800000000000000
+      internalID: -3440533556989949078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_5
+      rect:
+        serializedVersion: 2
+        x: 2627
+        y: 57
+        width: 341
+        height: 1757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b6d1f84bb854c00800000000000000
+      internalID: 884266509459614623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_6
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1668
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2153e774b8fa014c0800000000000000
+      internalID: -4318759029913537262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_7
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1765
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0131a94e3f33950800000000000000
+      internalID: 6427749256350863595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_8
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 1667
+        width: 104
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c476e1e8fb70010800000000000000
+      internalID: 1155102446560169037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_9
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 1760
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cba09f0d31c19a0800000000000000
+      internalID: -6261107593699476454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_10
+      rect:
+        serializedVersion: 2
+        x: 3788
+        y: 1705
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d259e9c1c150e7a0800000000000000
+      internalID: -6349985581834349865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_11
+      rect:
+        serializedVersion: 2
+        x: 3816
+        y: 1749
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3852ee2bf32aba8a0800000000000000
+      internalID: -6292757659851545213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1670
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4daae56945c2a8d20800000000000000
+      internalID: 3281484020304489172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1724
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1f9a1a60865f990800000000000000
+      internalID: -7352856438921104955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1724
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685f8d1af05f3e1c0800000000000000
+      internalID: -4475464157187476090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_15
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 1643
+        width: 82
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b63efa8829285540800000000000000
+      internalID: 4996789040674911921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_16
+      rect:
+        serializedVersion: 2
+        x: 3324
+        y: 1721
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ffa5d87b434fe30800000000000000
+      internalID: 4536308687624142628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_17
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 1695
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2586b6fa00654f6d0800000000000000
+      internalID: -2957644494332532654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_18
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 1686
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9903eefe608e45880800000000000000
+      internalID: -8623012270014844775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_19
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 1660
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da3f571ca0aa92c0800000000000000
+      internalID: -4424047022951154992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_20
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 1659
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4951eb7a4895b20800000000000000
+      internalID: 3123673672541639840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_21
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1613
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf158f7f415a3700800000000000000
+      internalID: 520818108798410702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_22
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 1531
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c8c5cf5dce52c50800000000000000
+      internalID: 6639973629433777262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_23
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 1587
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0fc4d6ef5390510800000000000000
+      internalID: 1515802116458606804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_24
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1559
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6bbcd8172077d50800000000000000
+      internalID: 6734854454489364153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_25
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 1481
+        width: 88
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0ddef988df02d20800000000000000
+      internalID: 3251877694202040531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_26
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1557
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cd3cb012ffe5970800000000000000
+      internalID: 8745708043796470857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_27
+      rect:
+        serializedVersion: 2
+        x: 3849
+        y: 1470
+        width: 81
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403d8ef1fe91be430800000000000000
+      internalID: 3813170024322487044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_28
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 1536
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8b6a7327e5ad080800000000000000
+      internalID: -9161906647278896947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_29
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1526
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9385c413321f3b0800000000000000
+      internalID: -5480560576891962915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_30
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 1513
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9c83fed438cba90800000000000000
+      internalID: -7296812925497849425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_31
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1494
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6377286a94314b0800000000000000
+      internalID: -5470948142822770968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_32
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 1426
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229a9a46effbaea30800000000000000
+      internalID: 4245416698081552674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_33
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 915
+        width: 354
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4515defb68895c060800000000000000
+      internalID: 6973147302566121812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_34
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 1501
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21c7ebcf93c23da0800000000000000
+      internalID: -5966491465224306386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_35
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1426
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83659a18874675e10800000000000000
+      internalID: 2186326612845876792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_36
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1409
+        width: 77
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadc1b29313d24710800000000000000
+      internalID: 1676134092354211242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_37
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1471
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937f1d3dec7b15810800000000000000
+      internalID: 1752383828968732473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_38
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 1476
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89dec810ee2a2960800000000000000
+      internalID: 7577920863028042126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_39
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 1465
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96ccc2f46bbbf450800000000000000
+      internalID: 6123694160584951453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_40
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1366
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd9e6d8b13d84330800000000000000
+      internalID: 3695435609547906556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_41
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1452
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1c4174668c02650800000000000000
+      internalID: 6206180628121305528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_42
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 1380
+        width: 102
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920f3a25e833e9e50800000000000000
+      internalID: 6817943572250357801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_43
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1415
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e3409360e3ee660800000000000000
+      internalID: 7416933832773090922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_44
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1347
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808435d906d7f6bd0800000000000000
+      internalID: -2634749403078637560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_45
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1428
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd1da77c664924930800000000000000
+      internalID: 4126023377779085791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_46
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1393
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bf5c781a743dcf0800000000000000
+      internalID: -228760396972557563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_47
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 1302
+        width: 100
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9dfee3016fd11d0800000000000000
+      internalID: -3378273595822188108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_48
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1379
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf6bffbda9e3b080800000000000000
+      internalID: -9172731083564027940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_49
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 1401
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a1a3c77eebe0370800000000000000
+      internalID: 8290773865466567260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_50
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 1364
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4836cc7ae3ad750800000000000000
+      internalID: 6330441116632188152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_51
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 1346
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c746f842753270200800000000000000
+      internalID: 146124370095334524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_52
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1214
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc0af78960a58e00800000000000000
+      internalID: 1046418863546830047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_53
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 66
+        width: 360
+        height: 1220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82c638efdee071a0800000000000000
+      internalID: -6813683590770539889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_54
+      rect:
+        serializedVersion: 2
+        x: 3406
+        y: 1278
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84101b38b5c31dea0800000000000000
+      internalID: -5849828077228457656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_55
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 1245
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5264756cc3e3a360800000000000000
+      internalID: 7179832697973662301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_56
+      rect:
+        serializedVersion: 2
+        x: 3724
+        y: 1111
+        width: 103
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893045ef5becc4400800000000000000
+      internalID: 309849755433042840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_57
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 1252
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe97c1bf2850add70800000000000000
+      internalID: 9068566859780749807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_58
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1232
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085ce45db7fd9e6d0800000000000000
+      internalID: -2960589557066709632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_59
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 1040
+        width: 151
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2355847c58e2510800000000000000
+      internalID: 1526304414683706094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_60
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1243
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b214e2a5e6a2e62c0800000000000000
+      internalID: -4436561929465609941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_61
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1136
+        width: 86
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db431053c8c790190800000000000000
+      internalID: -7995722721793067843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_62
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1149
+        width: 85
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c629dbbcf7b7d230800000000000000
+      internalID: 3663599118000400072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_63
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 1217
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e24b8f290ff50430800000000000000
+      internalID: 3748682679773250276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_64
+      rect:
+        serializedVersion: 2
+        x: 3830
+        y: 1221
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7cb2efdd10ec370800000000000000
+      internalID: 8344609212527790024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_65
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1192
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1201a20dbbeac8bf0800000000000000
+      internalID: -320689351775612895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_66
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf09c689f1bef58e0800000000000000
+      internalID: -1702383613188992773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_67
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1136
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d481baf0ab1fc0a0800000000000000
+      internalID: -6859233329247320875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_68
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1113
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b6bf5fc8ca8a790800000000000000
+      internalID: -7518569856472749265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_69
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1184
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af7a12a4195d5c50800000000000000
+      internalID: 6655573769477324704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_70
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 1181
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04bbf1c0cee8c100800000000000000
+      internalID: 128615101035688975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_71
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1154
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 288aa8fe0dbd88280800000000000000
+      internalID: -9040734561527748478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_72
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1144
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b604454ef720c7120800000000000000
+      internalID: 2412806248678572139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_73
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 1151
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1062fce249821a7a0800000000000000
+      internalID: -6367763781219572223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_74
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 1032
+        width: 89
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2310cc96880492d80800000000000000
+      internalID: -8275011885681868494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_75
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 1109
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea99a1f1c8cd2f10800000000000000
+      internalID: 2246672524436413162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_76
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 1109
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049da8ce3b6c46a30800000000000000
+      internalID: 4207706427940854080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_77
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 1078
+        width: 87
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19829c55202ffc560800000000000000
+      internalID: 7336348409852930193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_78
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 1117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ede313cbd4faff20800000000000000
+      internalID: 3457344888668155368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_79
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 835
+        width: 220
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f3497e63a067b20800000000000000
+      internalID: 3131701821812522827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_80
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1057
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9caf7d39864ce20800000000000000
+      internalID: 3369933405372991968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_81
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1103
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ef45f9c58c2e8d0800000000000000
+      internalID: -2818470116644815204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_82
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1043
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120d74dbd2a3ed0f0800000000000000
+      internalID: -1090370091653541855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_83
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1006
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4500eb9ba27af1a0800000000000000
+      internalID: -6774976608045365939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_84
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1083
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6540eff18641e32c0800000000000000
+      internalID: -4450096944349576106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_85
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1077
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d9a98f6a339e0e0800000000000000
+      internalID: -2240202547411640936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_86
+      rect:
+        serializedVersion: 2
+        x: 3443
+        y: 1077
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc73e48eff72973d0800000000000000
+      internalID: -3208489279457183793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_87
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1051
+        width: 116
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36440bf0f19c88a00800000000000000
+      internalID: 759077672456307811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_88
+      rect:
+        serializedVersion: 2
+        x: 3505
+        y: 1044
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dcd5138918cf3c0800000000000000
+      internalID: -4324439051519275630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_89
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 951
+        width: 164
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9385031e8eee32f10800000000000000
+      internalID: 2243899723338504249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_90
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1002
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76e0fb86393b2ec0800000000000000
+      internalID: -3590713371459000710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_91
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 776
+        width: 151
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fef86dcea5bb9d0800000000000000
+      internalID: -2757510373575757950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_92
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 886
+        width: 120
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9639288a4cf642060800000000000000
+      internalID: 6927785017234068329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_93
+      rect:
+        serializedVersion: 2
+        x: 3658
+        y: 1013
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20d2b17e6eaa2eb0800000000000000
+      internalID: -4743787468104216529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_94
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 927
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826e727e2a00e0a50800000000000000
+      internalID: 6489124812750317096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_95
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 998
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e224fae82201d40800000000000000
+      internalID: 5552976336768872035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_96
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 1001
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9318aeb2b09760ce0800000000000000
+      internalID: -1439329942009904839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_97
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 867
+        width: 123
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ce8999a4e61dbac0800000000000000
+      internalID: -3837886136096026940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_98
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 904
+        width: 85
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b3eb5b6a3e5e590800000000000000
+      internalID: -7645454487238329472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_99
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 980
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0987376c737054f80800000000000000
+      internalID: -8123078416758769520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_100
+      rect:
+        serializedVersion: 2
+        x: 3722
+        y: 979
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4501ed8173b16c670800000000000000
+      internalID: 8558558065318563924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_101
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 971
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a6e3444b6f44020800000000000000
+      internalID: 2325254561729505887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_102
+      rect:
+        serializedVersion: 2
+        x: 3894
+        y: 959
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d81e10d79010250800000000000000
+      internalID: 5909014618593922442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_103
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 650
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c723c7abf65fdab0800000000000000
+      internalID: -4981167023997114423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_104
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 948
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf325552e6a99aa0800000000000000
+      internalID: -6153703924800798793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_105
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 0
+        width: 269
+        height: 953
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b1d35d95bda6cf0800000000000000
+      internalID: -258152849744258203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_106
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 946
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043ebcf1b69447420800000000000000
+      internalID: 2626805207107625792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_107
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 543
+        width: 171
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22ff08b44edad820800000000000000
+      internalID: 2943909693167235629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_108
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 949
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63700c287f134b060800000000000000
+      internalID: 6968249462569305910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_109
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 928
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721380b8aec8fb000800000000000000
+      internalID: 53916659534541095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_110
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 940
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ad9ae258c3097f0800000000000000
+      internalID: -607919406983816606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_111
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 851
+        width: 79
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3dcb2cf74d42fa0800000000000000
+      internalID: -5826298372717489228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_112
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 922
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9346055209a1aba0800000000000000
+      internalID: -6079392194491956324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_113
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 862
+        width: 82
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0adace8e7a187e490800000000000000
+      internalID: -7717056878308708960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_114
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 925
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953ef28c8ea146f40800000000000000
+      internalID: 5720727013760688985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_115
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 920
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a0148519e26e930800000000000000
+      internalID: 4172073306591136267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_116
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 822
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09f7dd0742174130800000000000000
+      internalID: 3550826927589161227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_117
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 910
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a46b291ffe1f549c0800000000000000
+      internalID: -3943479885840599478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_118
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 901
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb128841244d039e0800000000000000
+      internalID: -1643580483712835141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_119
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 892
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45dc09991702f19f0800000000000000
+      internalID: -495641761707668140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_120
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 780
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2d86e3e1b0e7400800000000000000
+      internalID: 323708447741235931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_121
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 837
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecd30748b6e1c700800000000000000
+      internalID: 558981507910458600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_122
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 698
+        width: 101
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67bcfe3ecacc2fc70800000000000000
+      internalID: 9003483647997627254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_123
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 789
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17578657602c8060800000000000000
+      internalID: 6956971152586004251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_124
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 6
+        width: 344
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08ffcba6cae958d0800000000000000
+      internalID: -2856994349582911477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_125
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 666
+        width: 109
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd4f6e6767b61660800000000000000
+      internalID: 7356268696218586615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_126
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 762
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b2b665cf17c8a00800000000000000
+      internalID: 760107765714332434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_127
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 686
+        width: 89
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601771d80db3171c0800000000000000
+      internalID: -4507755985114795770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_128
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 756
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9adce9f39831970800000000000000
+      internalID: 8724467809487006204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_129
+      rect:
+        serializedVersion: 2
+        x: 3622
+        y: 759
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b686846de5e2c70800000000000000
+      internalID: 8948193784062569319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_130
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 750
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d142d6f2ee7ba8ed0800000000000000
+      internalID: -2410912416877698019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_131
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 626
+        width: 111
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8616c6ecd93fe1e50800000000000000
+      internalID: 6782125947965170024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_132
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 726
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7421d9ddb3ae0ba0800000000000000
+      internalID: -6120774807751416706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_133
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 647
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57dfb467e39d58f60800000000000000
+      internalID: 8036067972408409461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_134
+      rect:
+        serializedVersion: 2
+        x: 2920
+        y: 731
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287895e508d95adc0800000000000000
+      internalID: -3628320750112766078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_135
+      rect:
+        serializedVersion: 2
+        x: 3687
+        y: 724
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b398dc1758c03f0800000000000000
+      internalID: -933224298946413699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_136
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 721
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a00a2323a1bc4430800000000000000
+      internalID: 3768582302430003363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_137
+      rect:
+        serializedVersion: 2
+        x: 3225
+        y: 721
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc7fe40f0c744a20800000000000000
+      internalID: 3045695651958455546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_138
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 721
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac2cc720ccb0f7b0800000000000000
+      internalID: -5192442836870746974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_139
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 713
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86674d0510979120800000000000000
+      internalID: 2420561744826427019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_140
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 420
+        width: 133
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebf3220296898370800000000000000
+      internalID: 8325333347830332394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_141
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 692
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d7cc72e50e586e0800000000000000
+      internalID: -1835814578084348627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_142
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 688
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dec3bccab32e1710800000000000000
+      internalID: 1665808197378887380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_143
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 691
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b04038cd9790aa5e0800000000000000
+      internalID: -1897693873987976181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_144
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 696
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01697ae38002a1920800000000000000
+      internalID: 2961714924732519952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_145
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 601
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b3ccd2a6a9091b0800000000000000
+      internalID: -5651847751524402338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_146
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 678
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cae1cc33499ed70800000000000000
+      internalID: 9072945874503379982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_147
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 685
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5ffeb3bdeebaf50800000000000000
+      internalID: 6893866279991506427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_148
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 624
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5ac2d7316cb4820800000000000000
+      internalID: 2903632171777172957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_149
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 675
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0913c5905fabb70800000000000000
+      internalID: 8915707832883581176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_150
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 665
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c999fdef6aad8c0800000000000000
+      internalID: -3973680107597751143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_151
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 656
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb3944183cbc17b0800000000000000
+      internalID: -5252116116376306745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_152
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 664
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2b912f04d85e470800000000000000
+      internalID: 8423293988145574562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_153
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 648
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b0f08af07db82f0800000000000000
+      internalID: -969444832524170388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_154
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 587
+        width: 87
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0f34d54418bc300800000000000000
+      internalID: 273454333008539863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_155
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 660
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8593bc852d7f44d0800000000000000
+      internalID: -3148160014280845942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_156
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 647
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03364be6ec5c67670800000000000000
+      internalID: 8536227634138604336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_157
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 650
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f722b9ddd1b2b2900800000000000000
+      internalID: 660669177611887231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_158
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 650
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1508bd752925d7480800000000000000
+      internalID: -8899866500121526191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_159
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 632
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de5751076f3781dc0800000000000000
+      internalID: -3668054394213665299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_160
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 560
+        width: 63
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5c9babc5f17a5f0800000000000000
+      internalID: -745592730176338436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_161
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 612
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bc630216bf5c2a0800000000000000
+      internalID: -6717686874582365291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_162
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 583
+        width: 49
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94b6bccbc8f32b90800000000000000
+      internalID: -7267691819449273188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_163
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 611
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0611e8f1bc4bac40800000000000000
+      internalID: 5524593695168468490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_164
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 607
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751c1f710b60e2dd0800000000000000
+      internalID: -2509060589013057193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_165
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 617
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9915d67cd45af70800000000000000
+      internalID: 9197843332902001126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_166
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 593
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddfe45a733519aa70800000000000000
+      internalID: 8838619054531211229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_167
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 586
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b919a636bbac4340800000000000000
+      internalID: 4849439697860630960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_168
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 597
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c0c3129178dd2f0800000000000000
+      internalID: -946451804676420587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_169
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 597
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f13c4344c546af0800000000000000
+      internalID: -404096618543767736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_170
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 579
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21e3d1dd6d0fa930800000000000000
+      internalID: 4156555746409177390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_171
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 601
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4e52fb7bd278940800000000000000
+      internalID: 5298253753833874683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_172
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 513
+        width: 104
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fae01cc22faadf10800000000000000
+      internalID: 2295339524086098678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_173
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 545
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187186d45e7536570800000000000000
+      internalID: 8458701167489718145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_174
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 590
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ec1a4e205d0eeb0800000000000000
+      internalID: -4692516603317596594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_175
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 569
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f29bd3e24524830800000000000000
+      internalID: 4053895172167642951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_176
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 560
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8201e758697e1c4f0800000000000000
+      internalID: -810111824279236568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_177
+      rect:
+        serializedVersion: 2
+        x: 2938
+        y: 590
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5657b3197972d7b00800000000000000
+      internalID: 827861438436177253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_178
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 583
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61522c7c34760bea0800000000000000
+      internalID: -5859069574397156074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_179
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 545
+        width: 17
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c404a0ffdd53b4c90800000000000000
+      internalID: -7184589552956587956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_180
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 555
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25103a864dd2aa660800000000000000
+      internalID: 7397775728221290834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_181
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 564
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ebc47bdb2a139440800000000000000
+      internalID: 4941321991823346657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_182
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 571
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ea3e712a39aa430800000000000000
+      internalID: 3795007960407846515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_183
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 583
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc4da11454fb0670800000000000000
+      internalID: 8506160963130313933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_184
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 554
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a622f1b9367c04f0800000000000000
+      internalID: -861183438563957080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_185
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 550
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9c2ae56aabc9060800000000000000
+      internalID: 6961644347723008489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_186
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 470
+        width: 129
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d850edd70f2f960800000000000000
+      internalID: 7634428741732896156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_187
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 563
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7dd2ef016465b4a0800000000000000
+      internalID: -6578241312663609987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_188
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 573
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca43e0a3c68133b0800000000000000
+      internalID: -5534494292285633843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_189
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 431
+        width: 100
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117f6f3865d6a7540800000000000000
+      internalID: 5006434154124343057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_190
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 543
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88ead1a99d0a1740800000000000000
+      internalID: 5123422479583996044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_191
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 513
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58765805994a75940800000000000000
+      internalID: 5284873666130438021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_192
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 547
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2419e53ab9799020800000000000000
+      internalID: 2349042521325769772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_193
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 555
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068d5524d8581a690800000000000000
+      internalID: -7592640655020140448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_194
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 547
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8050ea3fbc8801940800000000000000
+      internalID: 5264858373944116488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_195
+      rect:
+        serializedVersion: 2
+        x: 3601
+        y: 555
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c158b903b6424fda0800000000000000
+      internalID: -5912060368035019492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_196
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 488
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d430107d25e46a420800000000000000
+      internalID: 2640884349200827213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_197
+      rect:
+        serializedVersion: 2
+        x: 3794
+        y: 556
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bf8245384a2a870800000000000000
+      internalID: 8692691114738121597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_198
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 513
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5629a9c570adb94f0800000000000000
+      internalID: -820822781911723419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_199
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 508
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0accd194d0975bb80800000000000000
+      internalID: -8379658433684714336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_200
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 521
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a963e90338558080800000000000000
+      internalID: -9185838888719783513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_201
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 455
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9e4ebf821d70040800000000000000
+      internalID: 4613886317219342793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_202
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 535
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9b8cb5748225e50800000000000000
+      internalID: 6796539074603170220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_203
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 526
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccfc3888be4d9110800000000000000
+      internalID: 1269257224454995143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_204
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 534
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90425633457cbdb70800000000000000
+      internalID: 8924946251018216457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_205
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 531
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0a8f0d019fddff0800000000000000
+      internalID: -9577773564124968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_206
+      rect:
+        serializedVersion: 2
+        x: 3177
+        y: 385
+        width: 88
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8910bbea7eab53350800000000000000
+      internalID: 5995903983145386392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_207
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 484
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba2011f27f74e290800000000000000
+      internalID: -7862018917834675531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_208
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 524
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94c05657ed340f30800000000000000
+      internalID: 4540822388091176090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_209
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 456
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f233dc891b4719110800000000000000
+      internalID: 1265921276389438255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_210
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 457
+        width: 62
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6728a00d7a131090800000000000000
+      internalID: -8065073383506172054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_211
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 507
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31ce06205f58e8b0800000000000000
+      internalID: -5122739778293415620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_212
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 504
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d73f53c2640a5e90800000000000000
+      internalID: -7036306645581875243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_213
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 501
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7372ab848531ae540800000000000000
+      internalID: 5037860403065530167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_214
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 501
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3173e35cba8dbef20800000000000000
+      internalID: 3453091771569813267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_215
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 475
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b6d9788dd100370800000000000000
+      internalID: 8286656130187094809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_216
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 481
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824175f2e6f856fb0800000000000000
+      internalID: -4655156936414129112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_217
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 484
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcb9f9c182fe5f80800000000000000
+      internalID: -8115782839221764877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_218
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 449
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5a258146f420540800000000000000
+      internalID: 4972624229893842336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_219
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 448
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbd873ee24fa3a20800000000000000
+      internalID: 3043012980464212979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_220
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 439
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef29b7c2d3a1382f0800000000000000
+      internalID: -971904244540271874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_221
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 365
+        width: 109
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fb0440626d3fcd0800000000000000
+      internalID: -2525439507256262788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_222
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 455
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f010a063a7351b750800000000000000
+      internalID: 6318923536535257359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_223
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 349
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754bfa98ac5713070800000000000000
+      internalID: 8084372318860588119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_224
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 437
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961673726b689de10800000000000000
+      internalID: 2222956007984161129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_225
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 398
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821dc3cdbb1b9add0800000000000000
+      internalID: -2474251099851402968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_226
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 405
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b53f8c1591024b0800000000000000
+      internalID: -5467342108573345009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_227
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 396
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840bd742dad683e40800000000000000
+      internalID: 5636375524063162440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_228
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 411
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b57b8d5396fdd250800000000000000
+      internalID: 5971199793753191857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_229
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 340
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0b89fd3caa62e10800000000000000
+      internalID: 2172611628499513585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_230
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 420
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6758ccf6b974b6c0800000000000000
+      internalID: -4128541131559905425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_231
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 417
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79050fc20b45fa7b0800000000000000
+      internalID: -5210853128199450473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_232
+      rect:
+        serializedVersion: 2
+        x: 3505
+        y: 316
+        width: 103
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f27e9b9f8a70b90800000000000000
+      internalID: -7275660882474488043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_233
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 406
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8c990e8c922fbf0800000000000000
+      internalID: -292125083087288118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_234
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 400
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167dd01de19e317e0800000000000000
+      internalID: -1795835507825059999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_235
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 391
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9733dd8b859510b70800000000000000
+      internalID: 8863463779235345273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_236
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 361
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82d2a351628db870800000000000000
+      internalID: 8700253409676284554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_237
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 326
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0416c60fef112720800000000000000
+      internalID: 2819569953181930506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_238
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 384
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0494a464505a3340800000000000000
+      internalID: 4844272672586372106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_239
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 388
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e984ac1ef75d1f0800000000000000
+      internalID: -1020769132791423484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_240
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 349
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ecd41a109693fc0800000000000000
+      internalID: -3514662578463846902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_241
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 159
+        width: 173
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986f8468379f8a050800000000000000
+      internalID: 5812169593691109001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_242
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 361
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12e8a0c621cfb0a0800000000000000
+      internalID: -6863554934904135142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_243
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 368
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b54e4fb0d569f7fe0800000000000000
+      internalID: -1189066450225798053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_244
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 355
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dfc202c55dd0bc0800000000000000
+      internalID: -3815158717659415151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_245
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 328
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b153ea831bb94c50800000000000000
+      internalID: 6650052017398174136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_246
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 307
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19af3243518027590800000000000000
+      internalID: -7678065527551165807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_247
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 178
+        width: 115
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf422ce447b909090800000000000000
+      internalID: -8029747211761736452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_248
+      rect:
+        serializedVersion: 2
+        x: 2621
+        y: 330
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcb33084f9efbb90800000000000000
+      internalID: -7223798040946819851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_249
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 289
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620af62991580d2c0800000000000000
+      internalID: -4408877690318249946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_250
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 286
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c416d6ec761f7d630800000000000000
+      internalID: 3951892626188099916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_251
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 200
+        width: 89
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517abad94ba214b20800000000000000
+      internalID: 3116819372344846101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_252
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 273
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423bb1a153183a8e0800000000000000
+      internalID: -1683359770635160796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_253
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 262
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8504a26346c62cc70800000000000000
+      internalID: 8989866983846199384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_254
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 265
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995c193c0fdd262a0800000000000000
+      internalID: -6745585265704581735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_255
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 242
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f5ae9a75bd709b0800000000000000
+      internalID: -5113877682296561787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_256
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 237
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249dce33e64bc7d30800000000000000
+      internalID: 4430614518836287810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_257
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 199
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e065764b738d800800000000000000
+      internalID: 637320595240259134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_258
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 230
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df36ab320670a3340800000000000000
+      internalID: 4844192458688062461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_259
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 122
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1527843880346e940800000000000000
+      internalID: 5325017313253552721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_260
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 210
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd98c03b01fd79b90800000000000000
+      internalID: -7235069013530998309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_261
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 143
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c423af5b002202750800000000000000
+      internalID: 6278055267002888780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_262
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 135
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1625aa33fad31f8b0800000000000000
+      internalID: -5120243478648171935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_263
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 196
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defce0f72e3acb750800000000000000
+      internalID: 6322108170110947309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_264
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 195
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a044cce8f7fc780800000000000000
+      internalID: -8660563307121079786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_265
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 193
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c2a1192d9369710800000000000000
+      internalID: 1699609485919267926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_266
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 173
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5007a72d94df4200800000000000000
+      internalID: 166585482676207710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_267
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 93
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc795e81123213230800000000000000
+      internalID: 3616710600813811659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_268
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 153
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04fbe1c896e9f470800000000000000
+      internalID: 8429021721363477517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_269
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 59
+        width: 75
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7435e5792eb1bf0800000000000000
+      internalID: -352439006067996727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_270
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 127
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157f971d2de2e6940800000000000000
+      internalID: 5291218095199352657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_271
+      rect:
+        serializedVersion: 2
+        x: 3340
+        y: 67
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3899a2953f9003ab0800000000000000
+      internalID: -5030509842995177085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_272
+      rect:
+        serializedVersion: 2
+        x: 3371
+        y: 125
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b723328ef9d8048f0800000000000000
+      internalID: -558290635860004229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_273
+      rect:
+        serializedVersion: 2
+        x: 3841
+        y: 73
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaf4c6862011a6d0800000000000000
+      internalID: -2981083720686699869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_274
+      rect:
+        serializedVersion: 2
+        x: 3871
+        y: 130
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a2e4ff4551d0700800000000000000
+      internalID: 508085787767483013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_275
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 37
+        width: 82
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3012196923d0870800000000000000
+      internalID: 8650626081509933994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_276
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 110
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7567b387e2f4eb8f0800000000000000
+      internalID: -522893445724146089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_277
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 98
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f86105c795f1380800000000000000
+      internalID: -8998375140008489205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_278
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 79
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd75f3a376eb95a10800000000000000
+      internalID: 1898758068481513435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_279
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 69
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da938ae9ee3e29cc0800000000000000
+      internalID: -3705648929368950355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_280
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 50
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8786fc5df18e5c0800000000000000
+      internalID: -4186060850472650554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_281
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 0
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf76ada0a02037d0800000000000000
+      internalID: -2940814682192707657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_282
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 36
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff2547d81a89c270800000000000000
+      internalID: 8271294029938110455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_SpaceShip_star_283
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 10
+        width: 35
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04854e7498c982c20800000000000000
+      internalID: 3181965250167855168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      background_SpaceShip_star_0: -1569980351371048666
+      background_SpaceShip_star_1: -6911819815224531372
+      background_SpaceShip_star_10: -6349985581834349865
+      background_SpaceShip_star_100: 8558558065318563924
+      background_SpaceShip_star_101: 2325254561729505887
+      background_SpaceShip_star_102: 5909014618593922442
+      background_SpaceShip_star_103: -4981167023997114423
+      background_SpaceShip_star_104: -6153703924800798793
+      background_SpaceShip_star_105: -258152849744258203
+      background_SpaceShip_star_106: 2626805207107625792
+      background_SpaceShip_star_107: 2943909693167235629
+      background_SpaceShip_star_108: 6968249462569305910
+      background_SpaceShip_star_109: 53916659534541095
+      background_SpaceShip_star_11: -6292757659851545213
+      background_SpaceShip_star_110: -607919406983816606
+      background_SpaceShip_star_111: -5826298372717489228
+      background_SpaceShip_star_112: -6079392194491956324
+      background_SpaceShip_star_113: -7717056878308708960
+      background_SpaceShip_star_114: 5720727013760688985
+      background_SpaceShip_star_115: 4172073306591136267
+      background_SpaceShip_star_116: 3550826927589161227
+      background_SpaceShip_star_117: -3943479885840599478
+      background_SpaceShip_star_118: -1643580483712835141
+      background_SpaceShip_star_119: -495641761707668140
+      background_SpaceShip_star_12: 3281484020304489172
+      background_SpaceShip_star_120: 323708447741235931
+      background_SpaceShip_star_121: 558981507910458600
+      background_SpaceShip_star_122: 9003483647997627254
+      background_SpaceShip_star_123: 6956971152586004251
+      background_SpaceShip_star_124: -2856994349582911477
+      background_SpaceShip_star_125: 7356268696218586615
+      background_SpaceShip_star_126: 760107765714332434
+      background_SpaceShip_star_127: -4507755985114795770
+      background_SpaceShip_star_128: 8724467809487006204
+      background_SpaceShip_star_129: 8948193784062569319
+      background_SpaceShip_star_13: -7352856438921104955
+      background_SpaceShip_star_130: -2410912416877698019
+      background_SpaceShip_star_131: 6782125947965170024
+      background_SpaceShip_star_132: -6120774807751416706
+      background_SpaceShip_star_133: 8036067972408409461
+      background_SpaceShip_star_134: -3628320750112766078
+      background_SpaceShip_star_135: -933224298946413699
+      background_SpaceShip_star_136: 3768582302430003363
+      background_SpaceShip_star_137: 3045695651958455546
+      background_SpaceShip_star_138: -5192442836870746974
+      background_SpaceShip_star_139: 2420561744826427019
+      background_SpaceShip_star_14: -4475464157187476090
+      background_SpaceShip_star_140: 8325333347830332394
+      background_SpaceShip_star_141: -1835814578084348627
+      background_SpaceShip_star_142: 1665808197378887380
+      background_SpaceShip_star_143: -1897693873987976181
+      background_SpaceShip_star_144: 2961714924732519952
+      background_SpaceShip_star_145: -5651847751524402338
+      background_SpaceShip_star_146: 9072945874503379982
+      background_SpaceShip_star_147: 6893866279991506427
+      background_SpaceShip_star_148: 2903632171777172957
+      background_SpaceShip_star_149: 8915707832883581176
+      background_SpaceShip_star_15: 4996789040674911921
+      background_SpaceShip_star_150: -3973680107597751143
+      background_SpaceShip_star_151: -5252116116376306745
+      background_SpaceShip_star_152: 8423293988145574562
+      background_SpaceShip_star_153: -969444832524170388
+      background_SpaceShip_star_154: 273454333008539863
+      background_SpaceShip_star_155: -3148160014280845942
+      background_SpaceShip_star_156: 8536227634138604336
+      background_SpaceShip_star_157: 660669177611887231
+      background_SpaceShip_star_158: -8899866500121526191
+      background_SpaceShip_star_159: -3668054394213665299
+      background_SpaceShip_star_16: 4536308687624142628
+      background_SpaceShip_star_160: -745592730176338436
+      background_SpaceShip_star_161: -6717686874582365291
+      background_SpaceShip_star_162: -7267691819449273188
+      background_SpaceShip_star_163: 5524593695168468490
+      background_SpaceShip_star_164: -2509060589013057193
+      background_SpaceShip_star_165: 9197843332902001126
+      background_SpaceShip_star_166: 8838619054531211229
+      background_SpaceShip_star_167: 4849439697860630960
+      background_SpaceShip_star_168: -946451804676420587
+      background_SpaceShip_star_169: -404096618543767736
+      background_SpaceShip_star_17: -2957644494332532654
+      background_SpaceShip_star_170: 4156555746409177390
+      background_SpaceShip_star_171: 5298253753833874683
+      background_SpaceShip_star_172: 2295339524086098678
+      background_SpaceShip_star_173: 8458701167489718145
+      background_SpaceShip_star_174: -4692516603317596594
+      background_SpaceShip_star_175: 4053895172167642951
+      background_SpaceShip_star_176: -810111824279236568
+      background_SpaceShip_star_177: 827861438436177253
+      background_SpaceShip_star_178: -5859069574397156074
+      background_SpaceShip_star_179: -7184589552956587956
+      background_SpaceShip_star_18: -8623012270014844775
+      background_SpaceShip_star_180: 7397775728221290834
+      background_SpaceShip_star_181: 4941321991823346657
+      background_SpaceShip_star_182: 3795007960407846515
+      background_SpaceShip_star_183: 8506160963130313933
+      background_SpaceShip_star_184: -861183438563957080
+      background_SpaceShip_star_185: 6961644347723008489
+      background_SpaceShip_star_186: 7634428741732896156
+      background_SpaceShip_star_187: -6578241312663609987
+      background_SpaceShip_star_188: -5534494292285633843
+      background_SpaceShip_star_189: 5006434154124343057
+      background_SpaceShip_star_19: -4424047022951154992
+      background_SpaceShip_star_190: 5123422479583996044
+      background_SpaceShip_star_191: 5284873666130438021
+      background_SpaceShip_star_192: 2349042521325769772
+      background_SpaceShip_star_193: -7592640655020140448
+      background_SpaceShip_star_194: 5264858373944116488
+      background_SpaceShip_star_195: -5912060368035019492
+      background_SpaceShip_star_196: 2640884349200827213
+      background_SpaceShip_star_197: 8692691114738121597
+      background_SpaceShip_star_198: -820822781911723419
+      background_SpaceShip_star_199: -8379658433684714336
+      background_SpaceShip_star_2: -2423247364059941689
+      background_SpaceShip_star_20: 3123673672541639840
+      background_SpaceShip_star_200: -9185838888719783513
+      background_SpaceShip_star_201: 4613886317219342793
+      background_SpaceShip_star_202: 6796539074603170220
+      background_SpaceShip_star_203: 1269257224454995143
+      background_SpaceShip_star_204: 8924946251018216457
+      background_SpaceShip_star_205: -9577773564124968
+      background_SpaceShip_star_206: 5995903983145386392
+      background_SpaceShip_star_207: -7862018917834675531
+      background_SpaceShip_star_208: 4540822388091176090
+      background_SpaceShip_star_209: 1265921276389438255
+      background_SpaceShip_star_21: 520818108798410702
+      background_SpaceShip_star_210: -8065073383506172054
+      background_SpaceShip_star_211: -5122739778293415620
+      background_SpaceShip_star_212: -7036306645581875243
+      background_SpaceShip_star_213: 5037860403065530167
+      background_SpaceShip_star_214: 3453091771569813267
+      background_SpaceShip_star_215: 8286656130187094809
+      background_SpaceShip_star_216: -4655156936414129112
+      background_SpaceShip_star_217: -8115782839221764877
+      background_SpaceShip_star_218: 4972624229893842336
+      background_SpaceShip_star_219: 3043012980464212979
+      background_SpaceShip_star_22: 6639973629433777262
+      background_SpaceShip_star_220: -971904244540271874
+      background_SpaceShip_star_221: -2525439507256262788
+      background_SpaceShip_star_222: 6318923536535257359
+      background_SpaceShip_star_223: 8084372318860588119
+      background_SpaceShip_star_224: 2222956007984161129
+      background_SpaceShip_star_225: -2474251099851402968
+      background_SpaceShip_star_226: -5467342108573345009
+      background_SpaceShip_star_227: 5636375524063162440
+      background_SpaceShip_star_228: 5971199793753191857
+      background_SpaceShip_star_229: 2172611628499513585
+      background_SpaceShip_star_23: 1515802116458606804
+      background_SpaceShip_star_230: -4128541131559905425
+      background_SpaceShip_star_231: -5210853128199450473
+      background_SpaceShip_star_232: -7275660882474488043
+      background_SpaceShip_star_233: -292125083087288118
+      background_SpaceShip_star_234: -1795835507825059999
+      background_SpaceShip_star_235: 8863463779235345273
+      background_SpaceShip_star_236: 8700253409676284554
+      background_SpaceShip_star_237: 2819569953181930506
+      background_SpaceShip_star_238: 4844272672586372106
+      background_SpaceShip_star_239: -1020769132791423484
+      background_SpaceShip_star_24: 6734854454489364153
+      background_SpaceShip_star_240: -3514662578463846902
+      background_SpaceShip_star_241: 5812169593691109001
+      background_SpaceShip_star_242: -6863554934904135142
+      background_SpaceShip_star_243: -1189066450225798053
+      background_SpaceShip_star_244: -3815158717659415151
+      background_SpaceShip_star_245: 6650052017398174136
+      background_SpaceShip_star_246: -7678065527551165807
+      background_SpaceShip_star_247: -8029747211761736452
+      background_SpaceShip_star_248: -7223798040946819851
+      background_SpaceShip_star_249: -4408877690318249946
+      background_SpaceShip_star_25: 3251877694202040531
+      background_SpaceShip_star_250: 3951892626188099916
+      background_SpaceShip_star_251: 3116819372344846101
+      background_SpaceShip_star_252: -1683359770635160796
+      background_SpaceShip_star_253: 8989866983846199384
+      background_SpaceShip_star_254: -6745585265704581735
+      background_SpaceShip_star_255: -5113877682296561787
+      background_SpaceShip_star_256: 4430614518836287810
+      background_SpaceShip_star_257: 637320595240259134
+      background_SpaceShip_star_258: 4844192458688062461
+      background_SpaceShip_star_259: 5325017313253552721
+      background_SpaceShip_star_26: 8745708043796470857
+      background_SpaceShip_star_260: -7235069013530998309
+      background_SpaceShip_star_261: 6278055267002888780
+      background_SpaceShip_star_262: -5120243478648171935
+      background_SpaceShip_star_263: 6322108170110947309
+      background_SpaceShip_star_264: -8660563307121079786
+      background_SpaceShip_star_265: 1699609485919267926
+      background_SpaceShip_star_266: 166585482676207710
+      background_SpaceShip_star_267: 3616710600813811659
+      background_SpaceShip_star_268: 8429021721363477517
+      background_SpaceShip_star_269: -352439006067996727
+      background_SpaceShip_star_27: 3813170024322487044
+      background_SpaceShip_star_270: 5291218095199352657
+      background_SpaceShip_star_271: -5030509842995177085
+      background_SpaceShip_star_272: -558290635860004229
+      background_SpaceShip_star_273: -2981083720686699869
+      background_SpaceShip_star_274: 508085787767483013
+      background_SpaceShip_star_275: 8650626081509933994
+      background_SpaceShip_star_276: -522893445724146089
+      background_SpaceShip_star_277: -8998375140008489205
+      background_SpaceShip_star_278: 1898758068481513435
+      background_SpaceShip_star_279: -3705648929368950355
+      background_SpaceShip_star_28: -9161906647278896947
+      background_SpaceShip_star_280: -4186060850472650554
+      background_SpaceShip_star_281: -2940814682192707657
+      background_SpaceShip_star_282: 8271294029938110455
+      background_SpaceShip_star_283: 3181965250167855168
+      background_SpaceShip_star_29: -5480560576891962915
+      background_SpaceShip_star_3: -44302722015210461
+      background_SpaceShip_star_30: -7296812925497849425
+      background_SpaceShip_star_31: -5470948142822770968
+      background_SpaceShip_star_32: 4245416698081552674
+      background_SpaceShip_star_33: 6973147302566121812
+      background_SpaceShip_star_34: -5966491465224306386
+      background_SpaceShip_star_35: 2186326612845876792
+      background_SpaceShip_star_36: 1676134092354211242
+      background_SpaceShip_star_37: 1752383828968732473
+      background_SpaceShip_star_38: 7577920863028042126
+      background_SpaceShip_star_39: 6123694160584951453
+      background_SpaceShip_star_4: -3440533556989949078
+      background_SpaceShip_star_40: 3695435609547906556
+      background_SpaceShip_star_41: 6206180628121305528
+      background_SpaceShip_star_42: 6817943572250357801
+      background_SpaceShip_star_43: 7416933832773090922
+      background_SpaceShip_star_44: -2634749403078637560
+      background_SpaceShip_star_45: 4126023377779085791
+      background_SpaceShip_star_46: -228760396972557563
+      background_SpaceShip_star_47: -3378273595822188108
+      background_SpaceShip_star_48: -9172731083564027940
+      background_SpaceShip_star_49: 8290773865466567260
+      background_SpaceShip_star_5: 884266509459614623
+      background_SpaceShip_star_50: 6330441116632188152
+      background_SpaceShip_star_51: 146124370095334524
+      background_SpaceShip_star_52: 1046418863546830047
+      background_SpaceShip_star_53: -6813683590770539889
+      background_SpaceShip_star_54: -5849828077228457656
+      background_SpaceShip_star_55: 7179832697973662301
+      background_SpaceShip_star_56: 309849755433042840
+      background_SpaceShip_star_57: 9068566859780749807
+      background_SpaceShip_star_58: -2960589557066709632
+      background_SpaceShip_star_59: 1526304414683706094
+      background_SpaceShip_star_6: -4318759029913537262
+      background_SpaceShip_star_60: -4436561929465609941
+      background_SpaceShip_star_61: -7995722721793067843
+      background_SpaceShip_star_62: 3663599118000400072
+      background_SpaceShip_star_63: 3748682679773250276
+      background_SpaceShip_star_64: 8344609212527790024
+      background_SpaceShip_star_65: -320689351775612895
+      background_SpaceShip_star_66: -1702383613188992773
+      background_SpaceShip_star_67: -6859233329247320875
+      background_SpaceShip_star_68: -7518569856472749265
+      background_SpaceShip_star_69: 6655573769477324704
+      background_SpaceShip_star_7: 6427749256350863595
+      background_SpaceShip_star_70: 128615101035688975
+      background_SpaceShip_star_71: -9040734561527748478
+      background_SpaceShip_star_72: 2412806248678572139
+      background_SpaceShip_star_73: -6367763781219572223
+      background_SpaceShip_star_74: -8275011885681868494
+      background_SpaceShip_star_75: 2246672524436413162
+      background_SpaceShip_star_76: 4207706427940854080
+      background_SpaceShip_star_77: 7336348409852930193
+      background_SpaceShip_star_78: 3457344888668155368
+      background_SpaceShip_star_79: 3131701821812522827
+      background_SpaceShip_star_8: 1155102446560169037
+      background_SpaceShip_star_80: 3369933405372991968
+      background_SpaceShip_star_81: -2818470116644815204
+      background_SpaceShip_star_82: -1090370091653541855
+      background_SpaceShip_star_83: -6774976608045365939
+      background_SpaceShip_star_84: -4450096944349576106
+      background_SpaceShip_star_85: -2240202547411640936
+      background_SpaceShip_star_86: -3208489279457183793
+      background_SpaceShip_star_87: 759077672456307811
+      background_SpaceShip_star_88: -4324439051519275630
+      background_SpaceShip_star_89: 2243899723338504249
+      background_SpaceShip_star_9: -6261107593699476454
+      background_SpaceShip_star_90: -3590713371459000710
+      background_SpaceShip_star_91: -2757510373575757950
+      background_SpaceShip_star_92: 6927785017234068329
+      background_SpaceShip_star_93: -4743787468104216529
+      background_SpaceShip_star_94: 6489124812750317096
+      background_SpaceShip_star_95: 5552976336768872035
+      background_SpaceShip_star_96: -1439329942009904839
+      background_SpaceShip_star_97: -3837886136096026940
+      background_SpaceShip_star_98: -7645454487238329472
+      background_SpaceShip_star_99: -8123078416758769520
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

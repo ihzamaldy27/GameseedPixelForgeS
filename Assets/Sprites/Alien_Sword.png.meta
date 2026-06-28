@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: a16e9de55318cac499e3aaaa3b1b468e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8826752702083238395
+    second: Alien_Sword_0
+  - first:
+      213: -7402046361710790040
+    second: Alien_Sword_1
+  - first:
+      213: 3635775903755006433
+    second: Alien_Sword_2
+  - first:
+      213: 6823239621520938142
+    second: Alien_Sword_3
+  - first:
+      213: 8181681175706639938
+    second: Alien_Sword_4
+  - first:
+      213: 333998107612722034
+    second: Alien_Sword_5
+  - first:
+      213: 6446416796003183273
+    second: Alien_Sword_6
+  - first:
+      213: 7535729267661322996
+    second: Alien_Sword_7
+  - first:
+      213: -5713025414657520750
+    second: Alien_Sword_8
+  - first:
+      213: 1657172561751723116
+    second: Alien_Sword_9
+  - first:
+      213: 1622596338848015547
+    second: Alien_Sword_10
+  - first:
+      213: 3628919771186092997
+    second: Alien_Sword_11
+  - first:
+      213: 6316245949506969666
+    second: Alien_Sword_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alien_Sword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 588
+        height: 592
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf904eff0dcee7a70800000000000000
+      internalID: 8826752702083238395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a714f3d06a64990800000000000000
+      internalID: -7402046361710790040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_2
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e1fd3adbeed47230800000000000000
+      internalID: 3635775903755006433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_3
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e945022e84401be50800000000000000
+      internalID: 6823239621520938142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_4
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e9e7f4eab2b8170800000000000000
+      internalID: 8181681175706639938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_5
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273b8ef528992a400800000000000000
+      internalID: 333998107612722034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_6
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aaa1efdbe5467950800000000000000
+      internalID: 6446416796003183273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_7
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 588
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fab77ac7d9449860800000000000000
+      internalID: 7535729267661322996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 588
+        height: 588
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b4f8e77a147b0b0800000000000000
+      internalID: -5713025414657520750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 588
+        height: 584
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c4cb23aa57ff610800000000000000
+      internalID: 1657172561751723116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Sword_10
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 588
+        height: 584
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4a2e6f5ce948610800000000000000
+      internalID: 1622596338848015547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a444eec7f853c0949a7c1af837ba0183
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":588.0,"y":588.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Alien_Sword_0: 8826752702083238395
+      Alien_Sword_1: -7402046361710790040
+      Alien_Sword_10: 1622596338848015547
+      Alien_Sword_11: 3628919771186092997
+      Alien_Sword_12: 6316245949506969666
+      Alien_Sword_13: -290022478
+      Alien_Sword_14: 322895794
+      Alien_Sword_15: 17842365
+      Alien_Sword_2: 3635775903755006433
+      Alien_Sword_3: 6823239621520938142
+      Alien_Sword_4: 8181681175706639938
+      Alien_Sword_5: 333998107612722034
+      Alien_Sword_6: 6446416796003183273
+      Alien_Sword_7: 7535729267661322996
+      Alien_Sword_8: -5713025414657520750
+      Alien_Sword_9: 1657172561751723116
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

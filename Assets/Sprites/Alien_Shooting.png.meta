@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 24cc0252300a838459fe3596cf83f17e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5532793243490896845
+    second: Alien_Shooting_0
+  - first:
+      213: -6354667290304162303
+    second: Alien_Shooting_1
+  - first:
+      213: 4549553180379371397
+    second: Alien_Shooting_2
+  - first:
+      213: 7342608736605768624
+    second: Alien_Shooting_3
+  - first:
+      213: -8761698950745661711
+    second: Alien_Shooting_4
+  - first:
+      213: -5267492522954597970
+    second: Alien_Shooting_5
+  - first:
+      213: 1883588897803437318
+    second: Alien_Shooting_6
+  - first:
+      213: -2146917911916619038
+    second: Alien_Shooting_7
+  - first:
+      213: 3721266972149726867
+    second: Alien_Shooting_8
+  - first:
+      213: -7474388650307956392
+    second: Alien_Shooting_9
+  - first:
+      213: 188419595778594866
+    second: Alien_Shooting_10
+  - first:
+      213: -3549029644561640495
+    second: Alien_Shooting_11
+  - first:
+      213: 4955732249177289846
+    second: Alien_Shooting_12
+  - first:
+      213: 1912206997332878093
+    second: Alien_Shooting_13
+  - first:
+      213: -7077018745643362440
+    second: Alien_Shooting_14
+  - first:
+      213: 2520760670807216977
+    second: Alien_Shooting_15
+  - first:
+      213: -3907213837428264711
+    second: Alien_Shooting_16
+  - first:
+      213: 1225099111753670445
+    second: Alien_Shooting_17
+  - first:
+      213: -1808126508705889626
+    second: Alien_Shooting_18
+  - first:
+      213: -3071839415760682552
+    second: Alien_Shooting_19
+  - first:
+      213: 8544009183912385084
+    second: Alien_Shooting_20
+  - first:
+      213: -149378886581630541
+    second: Alien_Shooting_21
+  - first:
+      213: -3058024360112435253
+    second: Alien_Shooting_22
+  - first:
+      213: 4143327329861793307
+    second: Alien_Shooting_23
+  - first:
+      213: 1502695698605913415
+    second: Alien_Shooting_24
+  - first:
+      213: 5949488008928678601
+    second: Alien_Shooting_25
+  - first:
+      213: 6060392605897332305
+    second: Alien_Shooting_26
+  - first:
+      213: 56980716512204341
+    second: Alien_Shooting_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alien_Shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcbc4f5142e68cc40800000000000000
+      internalID: 5532793243490896845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10650a794cfafc7a0800000000000000
+      internalID: -6354667290304162303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587d2435382432f30800000000000000
+      internalID: 4549553180379371397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb011e3ebf26e560800000000000000
+      internalID: 7342608736605768624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_4
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe54ebc931386680800000000000000
+      internalID: -8761698950745661711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_5
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9d340757b16e6b0800000000000000
+      internalID: -5267492522954597970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_6
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60581747f1ad32a10800000000000000
+      internalID: 1883588897803437318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_7
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 448
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea5942b88d9432e0800000000000000
+      internalID: -2146917911916619038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39eb065589894a330800000000000000
+      internalID: 3721266972149726867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851de21af13a54890800000000000000
+      internalID: -7474388650307956392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_10
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2381b13cf966d9200800000000000000
+      internalID: 188419595778594866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_11
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3929287505fbec0800000000000000
+      internalID: -3549029644561640495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_12
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674f82a593c46c440800000000000000
+      internalID: 4955732249177289846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_13
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03ea0df126898a10800000000000000
+      internalID: 1912206997332878093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_14
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 0
+        width: 448
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877952d42f069cd90800000000000000
+      internalID: -7077018745643362440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien_Shooting_15
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 0
+        width: 448
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1535d3b797a8bf220800000000000000
+      internalID: 2520760670807216977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 00db2d2143394a642a1622ba9b4a6e2c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":448.0,"y":448.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Alien_Shooting_0: 5532793243490896845
+      Alien_Shooting_1: -6354667290304162303
+      Alien_Shooting_10: 188419595778594866
+      Alien_Shooting_11: -3549029644561640495
+      Alien_Shooting_12: 4955732249177289846
+      Alien_Shooting_13: 1912206997332878093
+      Alien_Shooting_14: -7077018745643362440
+      Alien_Shooting_15: 2520760670807216977
+      Alien_Shooting_2: 4549553180379371397
+      Alien_Shooting_3: 7342608736605768624
+      Alien_Shooting_4: -8761698950745661711
+      Alien_Shooting_5: -5267492522954597970
+      Alien_Shooting_6: 1883588897803437318
+      Alien_Shooting_7: -2146917911916619038
+      Alien_Shooting_8: 3721266972149726867
+      Alien_Shooting_9: -7474388650307956392
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -182,7 +182,10 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
 
     private void ExecuteAttack()
     {
-        // Memulai fungsi Coroutine untuk memberikan jeda waktu
+        // 1. UBAH STATE SEKETIKA agar Update() tidak memanggil ini berkali-kali!
+        SwitchState(EnemyState.Attack); 
+        
+        // 2. Mulai proses serangannya
         StartCoroutine(AttackRoutine());
     }
 
@@ -190,25 +193,14 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
     {
         if (warningSignObject != null) warningSignObject.SetActive(false);
 
-        // 1. Picu animasi VFX secara acak (DENGAN ANTI-STACKING)
-        if (vfxAnim != null && slashTriggerNames.Length > 0)
-        {
-            // BERSIIHKAN SEMUA ANTREAN TRIGGER TERLEBIH DAHULU
-            foreach (string triggerName in slashTriggerNames)
-            {
-                vfxAnim.ResetTrigger(triggerName);
-            }
-
-            // BARU PILIH DAN AKTIFKAN SATU TRIGGER SECARA ACAK
-            int randomIndex = Random.Range(0, slashTriggerNames.Length);
-            vfxAnim.SetTrigger(slashTriggerNames[randomIndex]);
-        }
-
-        // 2. Berikan jeda sepersekian detik agar animasi pedang berayun dulu
+        // Bersihkan trigger lama agar tidak nyangkut, lalu panggil animasi
+        vfxAnim.ResetTrigger(slashTriggerNames[0]);
+        vfxAnim.SetTrigger(slashTriggerNames[0]); 
+        
         yield return new WaitForSeconds(0.15f); 
 
-        // 3. Pastikan musuh tidak sedang kena stun/mati saat jeda berlangsung
-        if (currentState == EnemyState.Telegraph)
+        // 3. UBAH PENGECEKAN STATE menjadi EnemyState.Attack
+        if (currentState == EnemyState.Attack)
         {
             Collider2D playerHit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
             if (playerHit != null)

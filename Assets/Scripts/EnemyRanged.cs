@@ -88,6 +88,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 ChaseLogic();
                 break;
             case EnemyState.Telegraph:
+                
                 if (stateTimer <= 0) ExecuteAttack();
                 break;
             case EnemyState.Cooldown:
