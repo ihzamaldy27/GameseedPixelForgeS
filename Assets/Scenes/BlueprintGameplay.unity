@@ -3727,14 +3727,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyRanged
   currentState: 0
-  patrolSpeed: 0
+  patrolSpeed: 0.001
   patrolWaitTime: 1.5
   groundCheck: {fileID: 1930331581}
   wallCheck: {fileID: 273559280}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  chaseSpeed: 0
+  chaseSpeed: 0.01
   sightDistance: 12
   awarenessRadius: 7
   shootRange: 9

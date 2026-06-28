@@ -84,6 +84,7 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
                     Flip(); 
                     SwitchState(EnemyState.Patrol);
                 }
+                
                 DetectPlayer();
                 break;
             case EnemyState.Chase:

@@ -17,20 +17,20 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
     [Header("Detection & Chase")]
     public float chaseSpeed = 3f;
-    public float sightDistance = 10f; // Jarak pandang biasanya lebih jauh dari Melee
+    public float sightDistance = 10f; 
     public float awarenessRadius = 4f; 
-    public float shootRange = 7f; // Jarak berhenti untuk mulai menembak
+    public float shootRange = 7f; 
     public LayerMask playerLayer;
     public Transform eyePosition; 
 
     [Header("Combat & Attack")]
     public GameObject bulletPrefab;
-    public Transform firePoint; // Titik keluarnya peluru
-    public float telegraphDuration = 0.6f; // Waktu membidik
+    public Transform firePoint; 
+    public float telegraphDuration = 0.6f; 
     public float attackCooldown = 2.5f;      
     
     [Header("VFX & Animation")]
-    public Animator enemyAnim; // Jika ada animasi menembak
+    public Animator enemyAnim; 
     public string shootTriggerName = "Shoot";
 
     [Header("Telegraph Warning")]
@@ -38,7 +38,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
     public GameObject warningSignObject;   
 
     [Header("Status & Knockback")]
-    public int maxHealth = 25; // Ranged biasanya HP-nya lebih kecil dari Melee
+    public int maxHealth = 25; 
     public float knockbackForce = 6f;
     public float stunDuration = 0.4f; 
 
@@ -80,7 +80,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 if (stateTimer <= 0) 
                 {
                     Flip(); 
-                    SwitchState(EnemyState.Patrol); // <--- Paksa kembali ke jalan setelah muter
+                    SwitchState(EnemyState.Patrol); 
                 }
                 DetectPlayer();
                 break;
@@ -88,7 +88,25 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 ChaseLogic();
                 break;
             case EnemyState.Telegraph:
+                // --- PERBAIKAN: BATAL MENEMBAK JIKA PLAYER KABUR ---
+                if (targetPlayer != null)
+                {
+                    float dist = Vector2.Distance(transform.position, targetPlayer.position);
+                    if (dist > shootRange)
+                    {
+                        // Player kabur dari jangkauan tembak! Batal nembak, lanjut kejar.
+                        if (warningSignObject != null) warningSignObject.SetActive(false);
+                        SwitchState(EnemyState.Chase);
+                        break; 
+                    }
+                }
+                else
+                {
+                    SwitchState(EnemyState.Patrol);
+                    break;
+                }
                 
+                // Jika player masih di dalam jangkauan dan waktu bidik habis, tembak!
                 if (stateTimer <= 0) ExecuteAttack();
                 break;
             case EnemyState.Cooldown:
@@ -147,13 +165,11 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
         float distanceToPlayer = Vector2.Distance(transform.position, targetPlayer.position);
         int chaseDir = targetPlayer.position.x > transform.position.x ? 1 : -1;
 
-        // Pastikan musuh selalu menghadap player saat di mode Chase
         if ((chaseDir > 0 && !isFacingRight) || (chaseDir < 0 && isFacingRight)) Flip();
 
-        // Jika player sudah masuk jarak tembak
         if (distanceToPlayer <= shootRange)
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Berhenti lari
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
             SwitchState(EnemyState.Telegraph);
             stateTimer = telegraphDuration;
             
@@ -163,17 +179,23 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
         {
             targetPlayer = null;
             SwitchState(EnemyState.Patrol);
-        } else if (!isGroundAhead || isWallAhead) 
+        } 
+        else if (!isGroundAhead || isWallAhead) 
         {
-            // Jika ada jurang atau tembok menghalangi, berhentilah mengejar!
-            targetPlayer = null; // Lupakan player
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Rem mendadak
-            SwitchState(EnemyState.Idle); // Diam sejenak sebelum berbalik arah
+            targetPlayer = null; 
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
+            
+            if (enemyAnim != null)
+            {
+                enemyAnim.ResetTrigger("Idle"); // Anti-stack untuk idle
+                enemyAnim.SetTrigger("Idle");
+            }
+            
+            SwitchState(EnemyState.Idle); 
             stateTimer = patrolWaitTime; 
         }
         else
         {
-            // Maju mendekat jika masih terlalu jauh
             rb.linearVelocity = new Vector2(chaseDir * chaseSpeed, rb.linearVelocity.y);
         }
     }
@@ -184,19 +206,16 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
         if (enemyAnim != null)
         {
+            // --- PERBAIKAN: ANTI-STACKING ---
+            enemyAnim.ResetTrigger(shootTriggerName); 
             enemyAnim.SetTrigger(shootTriggerName);
         }
 
-        // --- FIX LOGIKA ARRAH PELURU ---
         if (bulletPrefab != null && firePoint != null)
         {
-            // Jika musuh hadap kanan, pakai rotasi normal (0). Jika kiri, putar 180 derajat di sumbu Y.
             Quaternion bulletRotation = isFacingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
-            
-            // Instansiasi peluru dengan rotasi baru yang sudah disesuaikan
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
-        // -------------------------------
 
         SwitchState(EnemyState.Cooldown);
         stateTimer = attackCooldown;
@@ -207,14 +226,9 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
     private void Flip()
     {
         isFacingRight = !isFacingRight;
-        
-        // Membalik objek secara keseluruhan (termasuk firePoint)
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
-        
-        // Catatan: Jika musuh berbalik (scale X jadi negatif), 
-        // rotasi Y dari Transform secara teknis terbalik sehingga peluru akan meluncur ke arah yang benar.
     }
 
     public void ApplyKnockback(Vector2 sourcePosition) { lastHitPosition = sourcePosition; }
