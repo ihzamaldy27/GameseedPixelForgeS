@@ -156,9 +156,15 @@ public class EnemyController : MonoBehaviour, IDamageable
     {
         if (other.CompareTag("PlayerBullet"))
         {
-            // Damage from player bullets (default 1)
-            TakeDamage(1);
-            Destroy(other.gameObject);
+            //TakeDamage(1);
+            //Destroy(other.gameObject);
+            BulletController bullet = other.GetComponent<BulletController>();
+
+            if (bullet != null)
+            {
+                TakeDamage(bullet.damage);
+                bullet.ReturnToPool(); // recycle the bullet
+            }
         }
     }
 }

@@ -36,7 +36,12 @@ public class PlaneHitbox : MonoBehaviour
             // Destroy the enemy projectile
             if (other.CompareTag("EnemyBullet"))
             {
-                Destroy(other.gameObject);
+                //Destroy(other.gameObject);
+                BulletController bullet = other.GetComponent<BulletController>();
+                if (bullet != null)
+                {
+                    bullet.ReturnToPool(); // recycle the bullet
+                }
             }
         }
     }
