@@ -15,6 +15,9 @@ public class SpawnEvent
     public Vector2 spawnPosition; // local to spawner or world?
     public MovementPatternType patternType;
 
+    // For bosses: if true, enemyPrefab should be a boss prefab
+    public bool isBoss = false;
+
     // Common parameters
     public float speed = 2f;
 

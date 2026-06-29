@@ -603,12 +603,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveManager
   waves:
-  - {fileID: 11400000, guid: 9d3e9b0ceb0a5074b9c33142b24cda39, type: 2}
-  - {fileID: 11400000, guid: 23cf8107bb151784ea1aabb833610a91, type: 2}
-  - {fileID: 11400000, guid: 09f25a7050937ec47ace8b9e7ef25da6, type: 2}
-  - {fileID: 11400000, guid: f12fc5fdbd560654cbd640af76feead6, type: 2}
-  - {fileID: 11400000, guid: 5aa0420baf3f37947afcb10f596561f9, type: 2}
-  - {fileID: 11400000, guid: 3575663938b973f4b9b02b5a2daf7e77, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 0233e9fc1cd9ce448a5778b8eec3a775, type: 2}
+  - {fileID: 11400000, guid: 3e1a35d1a25f030498fa9167ebfb69e3, type: 2}
   spawnPoint: {fileID: 740586300}
 --- !u!4 &816289215
 Transform:
@@ -1691,7 +1692,7 @@ GameObject:
   - component: {fileID: 1833010422}
   - component: {fileID: 1833010423}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: CheckpointManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1882,7 +1883,7 @@ SceneRoots:
   - {fileID: 1254003064}
   - {fileID: 1919619290}
   - {fileID: 1460819184}
-  - {fileID: 816289215}
-  - {fileID: 1808951403}
   - {fileID: 1833010422}
   - {fileID: 2061552149}
+  - {fileID: 816289215}
+  - {fileID: 1808951403}

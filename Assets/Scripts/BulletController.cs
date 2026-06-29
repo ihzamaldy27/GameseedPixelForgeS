@@ -54,4 +54,9 @@ public class BulletController : MonoBehaviour
         else
             Destroy(gameObject); // fallback
     }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
 }

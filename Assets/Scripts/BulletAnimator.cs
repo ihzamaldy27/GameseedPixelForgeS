@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BulletAnimator : MonoBehaviour
 {
-    [Header("Animation Frames (4 sprites)")]
+    [Header("Animation Frames")]
     [SerializeField] private Sprite[] frames;
     [SerializeField] private float frameRate = 0.1f; // seconds per frame
 

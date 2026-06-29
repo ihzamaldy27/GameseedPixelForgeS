@@ -14,7 +14,7 @@ public class WaveManager : MonoBehaviour
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
-    private List<EnemyController> _activeEnemies = new List<EnemyController>();
+    private List<GameObject> _activeEnemies = new List<GameObject>();
 
     private void Start()
     {
@@ -46,7 +46,7 @@ public class WaveManager : MonoBehaviour
             while (_activeEnemies.Count > 0)
             {
                 // Remove any enemies that are no longer active (pool deactivates them)
-                _activeEnemies.RemoveAll(e => e == null || !e.gameObject.activeInHierarchy);
+                _activeEnemies.RemoveAll(e => e == null || !e.activeInHierarchy);
                 yield return null; // wait one frame
             }
 
@@ -64,23 +64,48 @@ public class WaveManager : MonoBehaviour
     {
         if (spawn.enemyPrefab == null) return;
 
-        EnemyController enemy = EnemyPoolManager.Instance.GetEnemy(spawn.enemyPrefab.GetComponent<EnemyController>());
-        if (enemy == null) return;
+        if (spawn.isBoss)
+        {
+            // Spawn boss directly (not pooled)
+            GameObject bossObj = Instantiate(spawn.enemyPrefab, spawnPoint.position + (Vector3)spawn.spawnPosition, Quaternion.identity);
+            // Optionally set the boss's movement stop position based on some offset
+            BossController boss = bossObj.GetComponent<BossController>();
+            if (boss != null)
+            {
+                // The boss movement component might need to know its stop position; we can set it here
+                BossMovement move = boss.GetComponent<BossMovement>();
+                if (move != null)
+                {
+                    // Optionally set stopPosition from inspector in the prefab, or configure per wave
+                    // We can leave it as set in prefab.
+                }
+            }
+            // Add to active enemies list (so wave waits for its death)
+            _activeEnemies.Add(bossObj);
 
+            // Change BGM to Boss Battle
+            AudioManager.instance.PlayBGM("Boss Battle");
+        }
+        else
+        {
+            // Normal enemy from pool
+            EnemyController enemy = EnemyPoolManager.Instance.GetEnemy(spawn.enemyPrefab.GetComponent<EnemyController>());
+            if (enemy == null) return;
 
-        // Reset internal state
-        enemy.ResetState();
+            // Reset internal state
+            enemy.ResetState();
 
-        // Position it
-        Vector3 spawnPos = spawnPoint.position + (Vector3)spawn.spawnPosition;
-        enemy.transform.position = spawnPos;
+            // Position it
+            Vector3 spawnPos = spawnPoint.position + (Vector3)spawn.spawnPosition;
+            enemy.transform.position = spawnPos;
 
-        // Set movement pattern
-        IMovementPattern pattern = CreatePattern(spawn);
-        enemy.SetMovementPattern(pattern);
+            // Set movement pattern
+            IMovementPattern pattern = CreatePattern(spawn);
+            enemy.SetMovementPattern(pattern);
 
-        // Add to active list so we can track when it's cleared
-        _activeEnemies.Add(enemy);
+            // Add to active list so we can track when it's cleared
+            _activeEnemies.Add(enemy.gameObject);
+        }
     }
 
     public void RestartFromWave(int waveIndex)
