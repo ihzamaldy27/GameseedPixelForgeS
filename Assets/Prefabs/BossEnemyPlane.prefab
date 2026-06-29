@@ -37,6 +37,7 @@ Transform:
   m_Children:
   - {fileID: 8235246356322025277}
   - {fileID: 2598331838276863447}
+  - {fileID: 6813724807952815325}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4760216714810890285
@@ -209,6 +210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAttackManager
   patternBehaviours:
   - {fileID: 8312384813609351484}
+  - {fileID: 8312384813609351484}
+  - {fileID: 2576787289178748719}
   timeBetweenAttacks: 2
   initialDelay: 2
 --- !u!1 &3665064364976579373
@@ -287,7 +290,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TripleBurstPattern
   bulletPrefab: {fileID: 7679822660283419456, guid: 17288eaaffc1f5d45879c84800fa1d0a, type: 3}
-  bulletSpeed: 3
+  bulletSpeed: -5
   bursts: 3
   burstInterval: 0.15
   angleSpread: 20
+--- !u!1 &8784996769993499283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6813724807952815325}
+  - component: {fileID: 2576787289178748719}
+  m_Layer: 0
+  m_Name: AimedSlowBulletPattern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6813724807952815325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8784996769993499283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8295351349986063950}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2576787289178748719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8784996769993499283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f21018eae7bd547b88d11d4f5f8a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AimedSlowBulletPattern
+  bulletPrefab: {fileID: 6720659507695341398, guid: be364af69c439184bb294c67662a6f70, type: 3}
+  bulletSpeed: 2
+  firePoint: {fileID: 8235246356322025277}

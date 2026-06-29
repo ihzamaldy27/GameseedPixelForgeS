@@ -1258,7 +1258,7 @@ GameObject:
   - component: {fileID: 1460819187}
   m_Layer: 0
   m_Name: PlayerPlane
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1830,7 +1830,15 @@ PrefabInstance:
     - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: bgmList.Array.data[7].clip
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: bgmList.Array.data[7].loopClip
+      value: 
       objectReference: {fileID: 8300000, guid: a6bd881f5c197fd49b2989f2ebb651f1, type: 3}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: bgmList.Array.data[7].introClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b245800e330d7964eaef1e559f031360, type: 3}
     - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

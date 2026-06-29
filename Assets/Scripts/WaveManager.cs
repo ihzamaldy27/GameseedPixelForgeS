@@ -84,7 +84,7 @@ public class WaveManager : MonoBehaviour
             _activeEnemies.Add(bossObj);
 
             // Change BGM to Boss Battle
-            AudioManager.instance.PlayBGM("Boss Battle");
+            AudioManager.instance.PlayBGMAfterDecay("Boss Battle", 1f);
         }
         else
         {

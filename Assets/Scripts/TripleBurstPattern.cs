@@ -50,7 +50,7 @@ public class TripleBurstPattern : MonoBehaviour, IBossAttackPattern
             // Optionally set the bullet's speed (if not set on prefab)
             // We can set speed via a public field in BulletController or modify its movement.
             // Since speed is set in BulletController, we can set it here:
-            // bullet.SetSpeed(bulletSpeed); // if we add a SetSpeed method
+            bullet.SetSpeed(bulletSpeed); // if we add a SetSpeed method
             // Simpler: set a speed field in BulletController and assign via Inspector.
         }
     }
