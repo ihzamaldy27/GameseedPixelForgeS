@@ -51,18 +51,21 @@ public class CheckpointManager : MonoBehaviour
     {
         if (_player == null || _waveManager == null) return;
 
-        // Reset player
-        _player.Respawn(playerSpawnPoint.position);
-
-        // Restart wave from checkpoint
-        _waveManager.RestartFromWave(_currentCheckpointWave);
-
         // Clear all active enemies (return to pool)
         EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
         foreach (var enemy in enemies)
         {
             enemy.ReturnToPool();
         }
+
+        // Clean up bosses via WaveManager
+        _waveManager.CleanUpBosses();
+
+        // Reset player
+        _player.Respawn(playerSpawnPoint.position);
+
+        // Restart wave from checkpoint
+        _waveManager.RestartFromWave(_currentCheckpointWave);
 
         Debug.Log($"Respawned at checkpoint wave {_currentCheckpointWave}");
     }

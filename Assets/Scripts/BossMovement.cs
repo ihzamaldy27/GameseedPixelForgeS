@@ -15,6 +15,7 @@ public class BossMovement : MonoBehaviour
     private State _state = State.Entry;
     private Vector3 _entryDirection; // leftwards
     private float _patrolTime;
+    private bool _movementEnabled = true;
 
     private void Start()
     {
@@ -27,6 +28,8 @@ public class BossMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!_movementEnabled) return;
+
         switch (_state)
         {
             case State.Entry:
@@ -51,6 +54,33 @@ public class BossMovement : MonoBehaviour
                 transform.position = pos;
                 break;
         }
+    }
+
+    public void PauseMovement()
+    {
+        _movementEnabled = false;
+    }
+
+    public void ResumeMovement()
+    {
+        _movementEnabled = true;
+    }
+
+    // Reset boss to a position on the right edge (for reappearing)
+    public void ResetToRightEdge(float yPosition)
+    {
+        // Get camera right edge
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null) return;
+        
+        float rightEdge = mainCamera.ViewportToWorldPoint(new Vector3(1.2f, 0f, 0f)).x;
+        transform.position = new Vector3(rightEdge, yPosition, 0f);
+        
+        // Reset state to Entry so it moves to stop position again
+        _state = State.Entry;
+        _entryDirection = (stopPosition - (Vector2)transform.position).normalized;
+        _patrolTime = 0f;
+        _movementEnabled = true;
     }
 
     // Optional: method to reset state when reused (if pooling later)

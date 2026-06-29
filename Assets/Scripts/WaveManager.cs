@@ -15,6 +15,7 @@ public class WaveManager : MonoBehaviour
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
     private List<GameObject> _activeEnemies = new List<GameObject>();
+    private List<GameObject> _activeBosses = new List<GameObject>(); // track bosses separately
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class WaveManager : MonoBehaviour
         {
             _isSpawning = true;
             _activeEnemies.Clear(); // clear list for new wave
+            _activeBosses.Clear();
             WaveDefinition wave = waves[_currentWaveIndex];
             Debug.Log($"Starting Wave {_currentWaveIndex + 1}");
 
@@ -82,6 +84,7 @@ public class WaveManager : MonoBehaviour
             }
             // Add to active enemies list (so wave waits for its death)
             _activeEnemies.Add(bossObj);
+            _activeBosses.Add(bossObj); // track as boss
 
             // Change BGM to Boss Battle
             AudioManager.instance.PlayBGMAfterDecay("Boss Battle", 1f);
@@ -116,8 +119,20 @@ public class WaveManager : MonoBehaviour
             _isSpawning = false;
         }
          _activeEnemies.Clear(); // clear any remaining references
+         _activeBosses.Clear();
         _currentWaveIndex = waveIndex;
         StartCoroutine(StartNextWave());
+    }
+
+    // Public method for CheckpointManager to clean up bosses
+    public void CleanUpBosses()
+    {
+        foreach (var bossObj in _activeBosses)
+        {
+            if (bossObj != null)
+                Destroy(bossObj);
+        }
+        _activeBosses.Clear();
     }
 
     private IMovementPattern CreatePattern(SpawnEvent spawn)
