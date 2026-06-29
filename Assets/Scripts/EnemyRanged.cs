@@ -77,6 +77,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 DetectPlayer();
                 break;
             case EnemyState.Idle:
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
                 if (stateTimer <= 0) 
                 {
                     Flip(); 
@@ -88,6 +89,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 ChaseLogic();
                 break;
             case EnemyState.Telegraph:
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
                 // --- PERBAIKAN: BATAL MENEMBAK JIKA PLAYER KABUR ---
                 if (targetPlayer != null)
                 {
@@ -110,6 +112,9 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 if (stateTimer <= 0) ExecuteAttack();
                 break;
             case EnemyState.Cooldown:
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // <-- TAMBAHKAN REM INI
+                if (stateTimer <= 0) SwitchState(EnemyState.Patrol);
+                break;
             case EnemyState.Stunned:
                 if (stateTimer <= 0) SwitchState(EnemyState.Patrol);
                 break;

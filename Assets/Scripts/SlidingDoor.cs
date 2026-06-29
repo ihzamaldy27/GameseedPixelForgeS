@@ -3,9 +3,14 @@ using UnityEngine;
 public class SlidingDoor : MonoBehaviour
 {
     public enum MoveDirection { Up, Down, Left, Right, Custom }
+    public enum DoorState { Closed, Open }
 
     [Header("Pengaturan Pergerakan")]
     public MoveDirection moveDirection = MoveDirection.Up;
+    public DoorState doorState = DoorState.Closed;
+    public SpriteRenderer doorSR;
+    public Sprite doorOpen;         // Opsional: untuk mengubah sprite saat pintu terbuka/tutup
+    public Sprite doorClosed;       // Opsional: untuk mengubah sprite saat pintu terbuka/tutup
     public float moveDistance = 3f; // Jarak bergeser (satuan unit grid Unity)
     public float moveSpeed = 3f;    // Kecepatan bergeser pintu
     public Vector2 customOffset;    // Hanya dipakai jika memilih MoveDirection.Custom
@@ -20,16 +25,23 @@ public class SlidingDoor : MonoBehaviour
         startPosition = transform.position;
         
         // Hitung posisi target berdasarkan arah dan jarak yang ditentukan
-        CalculateTargetPosition();
+        //CalculateTargetPosition();
+
+        UpdateDoorSprite();
     }
 
     void Update()
     {
+        if (doorSR != null)
+        {
+            doorSR.sprite = shouldOpen ? doorOpen : doorClosed; // Ganti sprite sesuai status pintu
+        }
+
         // Tentukan posisi tujuan saat ini (jika open ke targetPosition, jika close kembali ke startPosition)
-        Vector2 currentTarget = shouldOpen ? targetPosition : startPosition;
+        //Vector2 currentTarget = shouldOpen ? targetPosition : startPosition;
         
         // Gerakkan pintu secara halus menggunakan MoveTowards
-        transform.position = Vector2.MoveTowards(transform.position, currentTarget, moveSpeed * Time.deltaTime);
+        //transform.position = Vector2.MoveTowards(transform.position, currentTarget, moveSpeed * Time.deltaTime);
     }
 
     private void CalculateTargetPosition()
@@ -54,9 +66,23 @@ public class SlidingDoor : MonoBehaviour
         }
     }
 
+    private void UpdateDoorSprite()
+    {
+        switch (doorState)
+        {
+            case DoorState.Closed:
+                if (doorSR != null) doorSR.sprite = doorClosed; // Atau sprite pintu tertutup
+                break;
+            case DoorState.Open:
+                if (doorSR != null) doorSR.sprite = doorOpen; // Atau sprite pintu terbuka
+                break;
+        }
+    }
+
     // Fungsi ini akan dipanggil oleh script Tuas
     public void ToggleDoor(bool open)
     {
         shouldOpen = open;
+
     }
 }
