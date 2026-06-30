@@ -52,23 +52,77 @@ MonoBehaviour:
   bgmList:
   - name: Boss Battle
     clip: {fileID: 8300000, guid: 7491956934cce9f42b7e60670e0cc25d, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Chase & Spaceship Battle
     clip: {fileID: 8300000, guid: 684c46fd3d76e744dac7a03c0c846747, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Death
     clip: {fileID: 8300000, guid: 9a5398594434f384199151dd9d6fd0e5, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Ending
     clip: {fileID: 8300000, guid: 5aa3c9a93f2c7c9419c4a8d5369ee574, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: First Spawn
     clip: {fileID: 8300000, guid: 44675149b2ef4c74599c6d657034e68c, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Interior
     clip: {fileID: 8300000, guid: 730b29c3001b31941872ed7802539350, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Intro & UI
     clip: {fileID: 8300000, guid: 7f5518e21e4d01945a5c049004752d68, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   - name: Spaceship Battle
     clip: {fileID: 8300000, guid: cf39d7edea110e848bfb23e5749f50fc, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
   sfxList:
-  - name: Death
-    clip: {fileID: 8300000, guid: 9a5398594434f384199151dd9d6fd0e5, type: 3}
+  - name: Attack
+    clip: {fileID: 8300000, guid: a358e34d90e688944b0641a423e9c7b4, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: 1fab67c2e9456f24698eea314eaa78a9, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Enemy Damage 1
+    clip: {fileID: 8300000, guid: 1dac6f71107d3d04ebeb624278091f3d, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Enemy Damage 2
+    clip: {fileID: 8300000, guid: 24c49b9e46edc99419d237500e58ef26, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Explode
+    clip: {fileID: 8300000, guid: ce11a2867f351cd42b71bbe34b0577bf, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Glitch
+    clip: {fileID: 8300000, guid: fde39b7806e3e6944b326c4cc8d3ee8c, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: MC Death
+    clip: {fileID: 8300000, guid: c93c36b39e956d74e8176ffb1403f7d1, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Shooting
+    clip: {fileID: 8300000, guid: ba0600cb6fae8a641b4ec2703f033713, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Spaceship Shoot 1
+    clip: {fileID: 8300000, guid: f0ae154b6b3c9b943b36b023505fc3ee, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: UI Pause - Start
+    clip: {fileID: 8300000, guid: 30dc196d298d3004d8b7d55b5cebcf5a, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
 --- !u!82 &83065725819724939
 AudioSource:
   m_ObjectHideFlags: 0
