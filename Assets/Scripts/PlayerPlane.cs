@@ -10,6 +10,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.2f;
+    [SerializeField] private AudioClip shootSFX;
 
     [Header("Health Settings")]
     [SerializeField] private int maxHP = 5;
@@ -31,7 +32,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     {
         // Instantiate the composed objects, passing any needed dependencies
         _movement = new PlaneControlComponent(transform, moveSpeed);
-        _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+        _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate, shootSFX);
         _health = new HealthComponent(maxHP, invincibilityDuration);
 
         // Subscribe to health events
@@ -89,6 +90,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     private void HandleDeath()
     {
         Debug.Log("Player has died!");
+        AudioManager.instance.PlaySFX("Explode");
         enabled = false;
         OnPlayerDied?.Invoke();
 
@@ -109,7 +111,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         // For simplicity, we recreate shooting component as well
         if (bulletPrefab != null && firePoint != null)
         {
-            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate, shootSFX);
         }
 
         enabled = true; // re-enable controls

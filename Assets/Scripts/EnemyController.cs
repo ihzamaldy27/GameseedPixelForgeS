@@ -142,6 +142,8 @@ public class EnemyController : MonoBehaviour, IDamageable
         if (ExplosionPoolManager.Instance != null)
             ExplosionPoolManager.Instance.SpawnExplosion(transform.position, explosionScale);
 
+        AudioManager.instance.PlaySFX("Explode");
+
         ReturnToPool();
     }
 

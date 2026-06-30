@@ -154,6 +154,17 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning($"SFX dengan nama '{sfxName}' tidak ditemukan! Cek ejaan di Inspector.");
         }
     }
+    public void PlaySFXClip(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            sfxSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.LogWarning($"SFX tidak ditemukan!");
+        }
+    }
 }
 
 [Serializable]
