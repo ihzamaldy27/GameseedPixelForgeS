@@ -6,20 +6,24 @@ public class BossController : MonoBehaviour, IDamageable
     [SerializeField] private int maxHP = 20;
     [SerializeField] private float invincibilityDuration = 0.2f;
 
-    [Header("Attacks")]
-    [SerializeField] private BossAttackManager attackManager;
-
     [Header("Explosion")]
     [SerializeField] private float explosionScale = 2f; // bigger explosion
 
     [Header("Components")]
     [SerializeField] private BossMovement movement; // assign in inspector
+    [SerializeField] private BossAttackManager attackManager;
 
     private HealthComponent _health;
+
+    // Events for sprite handler
+    public event System.Action<int, int> OnHealthChanged; // currentHP, maxHP
+    public int CurrentHP => _health?.CurrentHP ?? 0;
+    public int MaxHP => _health?.MaxHP ?? maxHP;
 
     private void Awake()
     {
         _health = new HealthComponent(maxHP, invincibilityDuration);
+        _health.OnDamaged += (currentHP) => OnHealthChanged?.Invoke(currentHP, maxHP);
         _health.OnDeath += HandleDeath;
     }
 

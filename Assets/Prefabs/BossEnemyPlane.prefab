@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1537688560819274290}
   - component: {fileID: 470527992589804708}
   - component: {fileID: 1664256005326531131}
+  - component: {fileID: 3336826402442226622}
   m_Layer: 0
   m_Name: BossEnemyPlane
   m_TagString: Enemy
@@ -33,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8235246356322025277}
@@ -90,7 +91,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7749780004742372186, guid: d46ca34ffc0784c498b185f114e55f2c, type: 3}
+  m_Sprite: {fileID: 8332348081526294149, guid: 5f84fce996f0c364c9169b96d0995acf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,8 +135,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2, y: 0}
-  m_Radius: 3
+  m_Offset: {x: -1, y: 0}
+  m_Radius: 2
 --- !u!50 &8775218633664906943
 Rigidbody2D:
   serializedVersion: 5
@@ -177,9 +178,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossController
   maxHP: 50
   invincibilityDuration: 0.01
-  attackManager: {fileID: 470527992589804708}
   explosionScale: 4
   movement: {fileID: 1537688560819274290}
+  attackManager: {fileID: 470527992589804708}
 --- !u!114 &1537688560819274290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +235,33 @@ MonoBehaviour:
   stepBackSpeed: 2
   chargeSpeed: 15
   offScreenDelay: 1
+--- !u!114 &3336826402442226622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102960848245936373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d35d37e6ed3068f42ba6875d5e0fdbd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossSpriteHandler
+  damageStates:
+  - healthThreshold: 1
+    frames:
+    - {fileID: 8332348081526294149, guid: 5f84fce996f0c364c9169b96d0995acf, type: 3}
+  - healthThreshold: 0.75
+    frames:
+    - {fileID: -3432347692978053152, guid: 8a27f8484782ae540bb4c9db1bcc19cf, type: 3}
+  - healthThreshold: 0.5
+    frames:
+    - {fileID: -2543106245707401364, guid: 9a9f6fab39e0d68498fb593d59433c32, type: 3}
+  - healthThreshold: 0.25
+    frames:
+    - {fileID: 3154672060463281422, guid: 350e57f244907cc4a843571dee73ca5d, type: 3}
+  frameRate: 0.15
+  logStateChanges: 1
 --- !u!1 &3665064364976579373
 GameObject:
   m_ObjectHideFlags: 0
