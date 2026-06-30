@@ -27,7 +27,12 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
     public GameObject bulletPrefab;
     public Transform firePoint; 
     public float telegraphDuration = 0.6f; 
-    public float attackCooldown = 2.5f;      
+    public float attackCooldown = 2.5f; 
+    
+    // --- PENGATURAN PELURU DALAM 1 ANIMASI ---
+    [Header("Burst Fire Settings")]
+    public int bulletsPerShoot = 2;       // Jumlah peluru yang keluar
+    public float delayBetweenBullets = 0.15f; // Jarak/jeda waktu antar peluru
     
     [Header("VFX & Animation")]
     public Animator enemyAnim; 
@@ -90,13 +95,11 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                 break;
             case EnemyState.Telegraph:
                 rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-                // --- PERBAIKAN: BATAL MENEMBAK JIKA PLAYER KABUR ---
                 if (targetPlayer != null)
                 {
                     float dist = Vector2.Distance(transform.position, targetPlayer.position);
                     if (dist > shootRange)
                     {
-                        // Player kabur dari jangkauan tembak! Batal nembak, lanjut kejar.
                         if (warningSignObject != null) warningSignObject.SetActive(false);
                         SwitchState(EnemyState.Chase);
                         break; 
@@ -108,11 +111,19 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
                     break;
                 }
                 
-                // Jika player masih di dalam jangkauan dan waktu bidik habis, tembak!
-                if (stateTimer <= 0) ExecuteAttack();
+                // Waktu bidik habis, mulai fase ATTACK!
+                if (stateTimer <= 0) 
+                {
+                    SwitchState(EnemyState.Attack);
+                    TriggerAttackAnimation();
+                }
+                break;
+            case EnemyState.Attack:
+                // Diam di tempat. Peluru diurus oleh Animation Event
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
                 break;
             case EnemyState.Cooldown:
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // <-- TAMBAHKAN REM INI
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
                 if (stateTimer <= 0) SwitchState(EnemyState.Patrol);
                 break;
             case EnemyState.Stunned:
@@ -124,9 +135,8 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
     private void PatrolLogic()
     {
         rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * patrolSpeed, rb.linearVelocity.y);
-
-        bool isGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
-        bool isWallAhead = Physics2D.Raycast(wallCheck.position, isFacingRight ? Vector2.right : Vector2.left, 0.5f, groundLayer);
+        bool isGroundAhead = groundCheck != null ? Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer) : true;
+        bool isWallAhead = wallCheck != null ? Physics2D.Raycast(wallCheck.position, isFacingRight ? Vector2.right : Vector2.left, 0.5f, groundLayer) : false;
 
         if (!isGroundAhead || isWallAhead)
         {
@@ -138,6 +148,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
     private void DetectPlayer()
     {
+        if (eyePosition == null) return;
         Vector2 rayDir = isFacingRight ? Vector2.right : Vector2.left;
         RaycastHit2D hitForward = Physics2D.Raycast(eyePosition.position, rayDir, sightDistance, playerLayer);
 
@@ -164,8 +175,8 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
             return;
         }
 
-        bool isGroundAhead = Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer);
-        bool isWallAhead = Physics2D.Raycast(wallCheck.position, isFacingRight ? Vector2.right : Vector2.left, 0.5f, groundLayer);
+        bool isGroundAhead = groundCheck != null ? Physics2D.Raycast(groundCheck.position, Vector2.down, 1f, groundLayer) : true;
+        bool isWallAhead = wallCheck != null ? Physics2D.Raycast(wallCheck.position, isFacingRight ? Vector2.right : Vector2.left, 0.5f, groundLayer) : false;
 
         float distanceToPlayer = Vector2.Distance(transform.position, targetPlayer.position);
         int chaseDir = targetPlayer.position.x > transform.position.x ? 1 : -1;
@@ -192,7 +203,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
             
             if (enemyAnim != null)
             {
-                enemyAnim.ResetTrigger("Idle"); // Anti-stack untuk idle
+                enemyAnim.ResetTrigger("Idle"); 
                 enemyAnim.SetTrigger("Idle");
             }
             
@@ -205,26 +216,56 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
         }
     }
 
-    private void ExecuteAttack()
+    // =========================================================
+    // --- ANIMATOR EVENTS ---
+    // =========================================================
+
+    private void TriggerAttackAnimation()
     {
         if (warningSignObject != null) warningSignObject.SetActive(false);
 
         if (enemyAnim != null)
         {
-            // --- PERBAIKAN: ANTI-STACKING ---
             enemyAnim.ResetTrigger(shootTriggerName); 
             enemyAnim.SetTrigger(shootTriggerName);
         }
+    }
 
-        if (bulletPrefab != null && firePoint != null)
+    // 1. Taruh Event ini di tengah animasi saat senjata mulai menyala!
+    public void AE_SpawnBullet()
+    {
+        if (currentState != EnemyState.Attack) return;
+
+        // Memulai rentetan tembakan
+        StartCoroutine(BurstFireRoutine());
+    }
+
+    private IEnumerator BurstFireRoutine()
+    {
+        for (int i = 0; i < bulletsPerShoot; i++)
         {
-            Quaternion bulletRotation = isFacingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
-            Instantiate(bulletPrefab, firePoint.position, bulletRotation);
+            if (bulletPrefab != null && firePoint != null)
+            {
+                Quaternion bulletRotation = isFacingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
+                Instantiate(bulletPrefab, firePoint.position, bulletRotation);
+            }
+            
+            // Jeda sebelum peluru kedua keluar
+            yield return new WaitForSeconds(delayBetweenBullets);
         }
+    }
 
+    // 2. Taruh Event ini di FRAME PALING TERAKHIR animasi Shoot
+    public void AE_FinishShoot()
+    {
+        if (currentState != EnemyState.Attack) return;
+
+        // Animasi selesai (1 kali putar penuh), langsung masuk Cooldown
         SwitchState(EnemyState.Cooldown);
         stateTimer = attackCooldown;
     }
+
+    // =========================================================
 
     private void SwitchState(EnemyState newState) { currentState = newState; }
 

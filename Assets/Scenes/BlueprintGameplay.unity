@@ -4677,7 +4677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1265961681
 Animator:
   serializedVersion: 7
@@ -4875,7 +4875,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 856733993643713707, guid: faa547c003339a24d94d575aba2b3c4f, type: 3}
   firePoint: {fileID: 1723357306}
   telegraphDuration: 0.6
-  attackCooldown: 2.5
+  attackCooldown: 3
   enemyAnim: {fileID: 1265961681}
   shootTriggerName: Shoot
   useWarningSign: 1
