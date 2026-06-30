@@ -54,6 +54,14 @@ public class HealthComponent
         }
     }
 
+    public void ResetHealth()
+    {
+        _currentHP = _maxHP;
+        _isInvincible = false;
+        _invincibilityTimer = 0f;
+        OnDamaged?.Invoke(_currentHP);
+    }
+
     public bool IsDead => _currentHP <= 0;
     public int CurrentHP => _currentHP;
     public int MaxHP => _maxHP;

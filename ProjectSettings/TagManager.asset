@@ -8,6 +8,8 @@ TagManager:
   - EnemyBullet
   - PlayerBullet
   - OneWayPlatform
+  - Acid
+  - SavePoint
   layers:
   - Default
   - TransparentFX

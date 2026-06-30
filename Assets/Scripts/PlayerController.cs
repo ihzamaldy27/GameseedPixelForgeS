@@ -73,6 +73,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private Rigidbody2D rb;
     private SpriteRenderer playerSR;
+    private bool isDead = false;
+    private Coroutine flashRoutine = null; // Menyimpan referensi korutin yang sedang berjalan
 
     void Start()
     {
@@ -90,6 +92,13 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Update()
     {
+
+        if (health.CurrentHP <= 0 && !isDead)
+        {
+            isDead = true; // Kunci agar hanya jalan sekali
+            TriggerDeath();
+        }
+
         // Jika player sudah mati, hentikan semua kontrol dan update
         if (health != null && health.IsDead) return;
 
@@ -178,10 +187,17 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     private void HandleDamage(int currentHP)
     {
-        Debug.Log($"<color=red>PLAYER TERKENA HIT!</color> Sisa HP: {currentHP} / {health.MaxHP}");
-        
-        // Memutar animasi kedip merah
+        if (isDead) return; // Jangan terima damage lagi kalau sudah mati
+
+        //health.TakeDamage();
+
+        // Panggil efek visual terpisah
         StartCoroutine(FlashHit());
+
+        if (health.CurrentHP <= 0)
+        {
+            TriggerDeath();
+        }
     }
 
     private void HandleDeath()
@@ -199,24 +215,71 @@ public class PlayerController : MonoBehaviour, IDamageable
 
         // TODO: Panggil animasi mati (misal: playerAnim.SetTrigger("Die"); )
         // TODO: Munculkan panel UI Game Over
+
+        // Di dalam fungsi saat HP habis:
+        if (health.CurrentHP <= 0)
+        {
+            TriggerDeath(); // Panggil fungsi TriggerDeath() untuk memicu animasi mati dan respawn
+        }
+    }
+
+    // Tambahkan ini di tempat kamu mengecek kematian (misal di TakeDamage atau update HP)
+    public void TriggerDeath()
+    {
+        // 1. Pemicu animasi mati
+        if (playerAnim != null)
+        {
+            playerAnim.SetTrigger("Die");
+        }
+
+        // 2. Bekukan pergerakan dengan benar
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static; // Menghentikan semua pergerakan fisik
+
+        // 3. Matikan Collider agar tidak menabrak musuh lagi
+        GetComponent<Collider2D>().enabled = false;
+
+        // --- LOGIKA TENGGELAM DI ACID ---
+        // Jika pemain mati karena menyentuh Acid
+        // Kita turunkan posisinya sedikit ke bawah (misal 0.5 unit)
+        transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
+        
+        // Kita turunkan Sorting Order Sprite agar terlihat di belakang permukaan Acid
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.sortingOrder = -2; // Taruh di belakang (tergantung layer Acid-mu)
+        // ---------------------------------
+        
+        // 4. Panggil fungsi Respawn setelah 2 detik
+        Invoke("Respawn", 2.0f);
     }
 
     private IEnumerator FlashHit()
     {
-        if (playerSR != null)
-        {
-            // Berkedip merah beberapa kali untuk menandakan durasi kebal (I-frames)
-            for (int i = 0; i < 3; i++)
-            {
-                playerSR.color = new Color(1f, 0.5f, 0.5f, 0.5f); // Merah transparan
-                yield return new WaitForSeconds(0.1f);
-                playerSR.color = originalColor;
-                yield return new WaitForSeconds(0.1f);
-            }
-        }
+        // Hentikan korutin lama jika ada
+        if (flashRoutine != null) StopCoroutine(flashRoutine);
+        
+        // Simpan referensi korutin baru agar bisa dihentikan nanti
+        flashRoutine = StartCoroutine(FlashRoutine());
+        yield return null;
     }
     // ----------------------------------------------
 
+    private IEnumerator FlashRoutine()
+    {
+        if (playerSR == null) playerSR = GetComponent<SpriteRenderer>();
+
+        // Efek kedip merah
+        for (int i = 0; i < 3; i++)
+        {
+            playerSR.color = new Color(1f, 0.5f, 0.5f, 1f); 
+            yield return new WaitForSeconds(0.1f);
+            playerSR.color = Color.white;
+            yield return new WaitForSeconds(0.1f);
+        }
+        
+        // Reset referensi setelah selesai
+        flashRoutine = null;
+    }
 
     // --- INPUT SYSTEM CALLBACKS ---
     public void OnMove(InputValue value) 
@@ -384,6 +447,44 @@ public class PlayerController : MonoBehaviour, IDamageable
             comboStep = 0;
             currentAnimatingStep = 0;
             playerAnim.SetInteger("ComboStep", 0);
+        }
+    }
+
+    public void Respawn()
+    {
+        // 1. Reset Posisi & Fisika
+        transform.position = SavePoint.lastCheckpointPosition;
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        GetComponent<Collider2D>().enabled = true;
+        
+        // 2. BERSIHKAN KORUTIN SECARA TOTAL
+        if (flashRoutine != null)
+        {
+            StopCoroutine(flashRoutine);
+            flashRoutine = null;
+        }
+        
+        // 3. Reset Warna Sprite
+        if (playerSR != null) 
+        {
+            playerSR.color = Color.white;
+            playerSR.sortingOrder = 0;
+        }
+        
+        // 4. Reset Data & Animasi
+        health.ResetHealth();
+        isDead = false;
+        playerAnim.ResetTrigger("Die");
+        playerAnim.Play("IdleMC");
+        
+        this.enabled = true;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Acid"))
+        {
+            TakeDamage(100); // Langsung mati jika kena asam
         }
     }
 

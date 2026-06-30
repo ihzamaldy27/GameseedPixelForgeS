@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 19787094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.5, y: 54.4, z: 0}
+  m_LocalPosition: {x: -38.5, y: 56.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -43398,7 +43398,7 @@ GameObject:
   - component: {fileID: 315677939}
   m_Layer: 0
   m_Name: Acid
-  m_TagString: Untagged
+  m_TagString: Acid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49660,7 +49660,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_Origin: {x: -71, y: -19, z: 0}
   m_Size: {x: 105, y: 68, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -50912,7 +50912,7 @@ Transform:
   m_GameObject: {fileID: 672879506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.59, y: 54.47, z: -10}
+  m_LocalPosition: {x: -38.41, y: 56.27, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51506,7 +51506,7 @@ Transform:
   m_GameObject: {fileID: 1001327426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.59, y: 54.47, z: -10}
+  m_LocalPosition: {x: -38.41, y: 56.27, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53040,9 +53040,10 @@ GameObject:
   - component: {fileID: 1750557918}
   - component: {fileID: 1750557917}
   - component: {fileID: 1750557916}
+  - component: {fileID: 1750557920}
   m_Layer: 0
-  m_Name: SavePoint_Animation_1_0
-  m_TagString: Untagged
+  m_Name: SavePoint1
+  m_TagString: SavePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53084,7 +53085,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.47, y: 0.5}
     oldSize: {x: 1.0588236, y: 2.3529413}
     newSize: {x: 2.7, y: 6}
     adaptiveTilingThreshold: 0.5
@@ -53101,7 +53102,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750557915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4bea86075fa2f844fb1db573a9485549, type: 2}
   m_CullingMode: 0
@@ -53162,7 +53163,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4824525848266224444, guid: aba2395f79400bd49a28957a69dabad0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -53189,6 +53190,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750557920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750557915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe1651122cc91e47ab2189b181a49f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SavePoint
+  animator: {fileID: 1750557917}
+  isFirstSavePoint: 0
 --- !u!1 &1759503690
 GameObject:
   m_ObjectHideFlags: 0
