@@ -8,6 +8,9 @@ public class BulletController : MonoBehaviour
     [Header("Damage")]
     public int damage = 1;
 
+    [Header("Animation (Optional)")]
+    [SerializeField] private BulletAnimator animator;
+
     // Reference to the original prefab (used by the pool manager)
     public BulletController OriginalPrefab { get; set; }
 
@@ -22,7 +25,9 @@ public class BulletController : MonoBehaviour
 
     private void OnEnable()
     {
-        // Reset any state if needed (e.g., rotation, position is set by ShootingHandler)
+        // Reset animation to first frame when bullet is reused
+        if (animator != null)
+            animator.ResetAnimation();
     }
 
     private void Update()
@@ -48,5 +53,10 @@ public class BulletController : MonoBehaviour
             BulletPoolManager.Instance.ReturnBullet(this);
         else
             Destroy(gameObject); // fallback
+    }
+
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
     }
 }
