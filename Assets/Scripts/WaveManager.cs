@@ -11,6 +11,7 @@ public class WaveManager : MonoBehaviour
     public Transform spawnPoint; // spawn position reference (e.g., right edge)
 
     public event System.Action<int> OnWaveComplete; // passes index of completed wave
+    public event System.Action<BossController> OnBossSpawned; // new event
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
@@ -76,6 +77,8 @@ public class WaveManager : MonoBehaviour
             {
                 // The boss movement component might need to know its stop position; we can set it here
                 BossMovement move = boss.GetComponent<BossMovement>();
+                // Notify listeners that a boss was spawned
+                OnBossSpawned?.Invoke(boss);
                 if (move != null)
                 {
                     // Optionally set stopPosition from inspector in the prefab, or configure per wave

@@ -112,6 +112,16 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         // Destroy(gameObject, 1f);
     }
 
+    public void EnableControls()
+    {
+        enabled = true;
+    }
+
+    public void DisableControls()
+    {
+        enabled = false;
+    }
+
     public void Respawn(Vector3 spawnPosition)
     {
         transform.position = spawnPosition;

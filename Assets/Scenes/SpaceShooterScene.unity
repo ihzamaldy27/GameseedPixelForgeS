@@ -1440,6 +1440,7 @@ GameObject:
   - component: {fileID: 1460819188}
   - component: {fileID: 1460819189}
   - component: {fileID: 1460819190}
+  - component: {fileID: 1460819191}
   m_Layer: 0
   m_Name: PlayerPlane
   m_TagString: Player
@@ -1668,6 +1669,27 @@ MonoBehaviour:
   flickerInterval: 0.1
   flickerEnabled: 1
   spriteRenderer: {fileID: 1460819183}
+--- !u!114 &1460819191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460819182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1747b4ebebe539d4c948c063d6d2e2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerVictoryDash
+  stepBackDistance: 1
+  stepBackSpeed: 2
+  dashSpeed: 15
+  pauseBeforeDash: 0.5
+  delayBeforeVictory: 3
+  playerController: {fileID: 1460819185}
+  playerRenderer: {fileID: 1460819183}
+  playerCollider: {fileID: 752392480}
+  screenClamp: {fileID: 0}
 --- !u!1 &1463227357
 GameObject:
   m_ObjectHideFlags: 0

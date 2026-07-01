@@ -14,6 +14,7 @@ public class ScreenClampHandler : MonoBehaviour
     private float _rightBound;
     private float _bottomBound;
     private float _topBound;
+    private bool _clampingEnabled = true;
 
     private void Awake()
     {
@@ -68,7 +69,7 @@ public class ScreenClampHandler : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (_mainCamera == null) return;
+        if (!_clampingEnabled || _mainCamera == null) return;
 
         // Update bounds in case camera moved (e.g., if scrolling)
         UpdateBounds();
@@ -80,6 +81,18 @@ public class ScreenClampHandler : MonoBehaviour
         if (clampY)
             pos.y = Mathf.Clamp(pos.y, _bottomBound, _topBound);
         transform.position = pos;
+    }
+
+    // Public methods to enable/disable clamping
+    public void EnableClamping(bool enable)
+    {
+        _clampingEnabled = enable;
+        Debug.Log($"ScreenClampHandler: Clamping {(enable ? "enabled" : "disabled")}");
+    }
+
+    public bool IsClampingEnabled()
+    {
+        return _clampingEnabled;
     }
 
     // Public method to update bounds manually (e.g., if camera changes)

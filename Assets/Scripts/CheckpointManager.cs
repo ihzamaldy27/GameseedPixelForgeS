@@ -80,6 +80,11 @@ public class CheckpointManager : MonoBehaviour
                 Destroy(boss.gameObject);
         }
 
+        // Reset player victory dash state if active
+        PlayerVictoryDash victoryDash = _player.GetComponent<PlayerVictoryDash>();
+        if (victoryDash != null)
+            victoryDash.ResetState();
+
         // Reset player
         _player.Respawn(playerSpawnPoint.position);
 
