@@ -1438,6 +1438,7 @@ GameObject:
   - component: {fileID: 1460819186}
   - component: {fileID: 1460819187}
   - component: {fileID: 1460819188}
+  - component: {fileID: 1460819189}
   m_Layer: 0
   m_Name: PlayerPlane
   m_TagString: Player
@@ -1536,7 +1537,7 @@ MonoBehaviour:
   moveSpeed: 8
   bulletPrefab: {fileID: 2387719892106936262, guid: 7100ec3911451d04cb48acb4c93fcc86, type: 3}
   firePoint: {fileID: 1666143692}
-  fireRate: 0.15
+  fireRate: 0.18
   shootSFX: {fileID: 8300000, guid: f0ae154b6b3c9b943b36b023505fc3ee, type: 3}
   maxHP: 5
   invincibilityDuration: 0.5
@@ -1634,6 +1635,21 @@ MonoBehaviour:
   explosionScale: 1
   fadeTransition: {fileID: 117971093}
   respawnPoint: {fileID: 198671708}
+--- !u!114 &1460819189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460819182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0095c57446027e41bc3ae2c78843c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenClampHandler
+  padding: -0.5
+  clampX: 1
+  clampY: 1
 --- !u!1 &1463227357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,8 +2133,20 @@ PrefabInstance:
       value: Spaceship Battle
       objectReference: {fileID: 0}
     - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: sfxList.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: bgmList.Array.data[7].clip
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: sfxList.Array.data[10].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7fcd6bd79d7880c4fb958782e405f9dd, type: 3}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: sfxList.Array.data[10].name
+      value: Hit Impact
       objectReference: {fileID: 0}
     - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: bgmList.Array.data[7].loopClip

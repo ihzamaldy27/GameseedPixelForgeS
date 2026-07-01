@@ -124,6 +124,10 @@ public class EnemyController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         _health.TakeDamage(damage);
+
+        // Workaround: The hit impact only works on elite and boss enemy
+        if (maxHP > 2)
+            AudioManager.instance.PlaySFX("Hit Impact");
     }
 
     public void ReturnToPool()

@@ -38,6 +38,7 @@ public class BossController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         _health.TakeDamage(damage);
+        AudioManager.instance.PlaySFX("Hit Impact");
         // Optionally flash or trigger hit effects here
     }
 
