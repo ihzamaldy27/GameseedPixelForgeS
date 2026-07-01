@@ -1,0 +1,722 @@
+fileFormatVersion: 2
+guid: d4c5e2cd921d704498bef3cccbaf9f41
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2942460110985407755
+    second: Boss_Ride_0
+  - first:
+      213: -5637049325809133521
+    second: Boss_Ride_1
+  - first:
+      213: 5704369580125785289
+    second: Boss_Ride_2
+  - first:
+      213: 5521209357389661473
+    second: Boss_Ride_3
+  - first:
+      213: -742145774058352403
+    second: Boss_Ride_4
+  - first:
+      213: -1060510404978783422
+    second: Boss_Ride_5
+  - first:
+      213: -8915275445633849051
+    second: Boss_Ride_6
+  - first:
+      213: 7728505235877574455
+    second: Boss_Ride_7
+  - first:
+      213: -7833945637077314658
+    second: Boss_Ride_8
+  - first:
+      213: -1033826646466148811
+    second: Boss_Ride_9
+  - first:
+      213: 8167105705804229696
+    second: Boss_Ride_10
+  - first:
+      213: -6428782677192227008
+    second: Boss_Ride_11
+  - first:
+      213: -5431363363796490438
+    second: Boss_Ride_12
+  - first:
+      213: -925991961878171793
+    second: Boss_Ride_13
+  - first:
+      213: -596944980575013500
+    second: Boss_Ride_14
+  - first:
+      213: -2720531170095082328
+    second: Boss_Ride_15
+  - first:
+      213: 463899752679584429
+    second: Boss_Ride_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Ride_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0daa0191e7b5d820800000000000000
+      internalID: 2942460110985407755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f289ac9218d25c1b0800000000000000
+      internalID: -5637049325809133521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_2
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc01faf8edf92f40800000000000000
+      internalID: 5704369580125785289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_3
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12506cd68a64f9c40800000000000000
+      internalID: 5521209357389661473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_4
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d1bdb95e53b5f0800000000000000
+      internalID: -742145774058352403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_5
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b42aec76f4841f0800000000000000
+      internalID: -1060510404978783422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_6
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296b34a734964480800000000000000
+      internalID: -8915275445633849051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_7
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 1176
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737ba3d809a214b60800000000000000
+      internalID: 7728505235877574455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e931948f2fb384390800000000000000
+      internalID: -7833945637077314658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_9
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5364d0a742c17a1f0800000000000000
+      internalID: -1033826646466148811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_10
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ce6854e53675170800000000000000
+      internalID: 8167105705804229696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_11
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047c5cb573068c6a0800000000000000
+      internalID: -6428782677192227008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_12
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37e6d61ccbef94b0800000000000000
+      internalID: -5431363363796490438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_13
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f626f77373623f0800000000000000
+      internalID: -925991961878171793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_14
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485bf52f3b937b7f0800000000000000
+      internalID: -596944980575013500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_15
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 588
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4da16905bbe3ad0800000000000000
+      internalID: -2720531170095082328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2bbd10e5a107600800000000000000
+      internalID: 463899752679584429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_17
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2f85fe8be9d2249bf6dd866eb15dc9
+      internalID: 1922433295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_18
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c058352383006b4f865fbd40ccb62db
+      internalID: -119175925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_19
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe78ae4c6bd33948ac3df1ebd531606
+      internalID: 2087198600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_20
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7ea3c05a921494ba206edad44b8e8d
+      internalID: -1186605576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_21
+      rect:
+        serializedVersion: 2
+        x: 2940
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269cb177c7df677449a7428712d2341e
+      internalID: -605330253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_22
+      rect:
+        serializedVersion: 2
+        x: 3528
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747465f3d1010624c9e95ba9c799d910
+      internalID: 640830678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Ride_23
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 0
+        width: 588
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1d83f1bb9609145ae42a5b4b3a6d68
+      internalID: -417374179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f07580f09278a846968143f0a781efb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":588.0,"y":588.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Boss_Ride_0: 2942460110985407755
+      Boss_Ride_1: -5637049325809133521
+      Boss_Ride_10: 8167105705804229696
+      Boss_Ride_11: -6428782677192227008
+      Boss_Ride_12: -5431363363796490438
+      Boss_Ride_13: -925991961878171793
+      Boss_Ride_14: -596944980575013500
+      Boss_Ride_15: -2720531170095082328
+      Boss_Ride_16: 463899752679584429
+      Boss_Ride_17: 1922433295
+      Boss_Ride_18: -119175925
+      Boss_Ride_19: 2087198600
+      Boss_Ride_2: 5704369580125785289
+      Boss_Ride_20: -1186605576
+      Boss_Ride_21: -605330253
+      Boss_Ride_22: 640830678
+      Boss_Ride_23: -417374179
+      Boss_Ride_3: 5521209357389661473
+      Boss_Ride_4: -742145774058352403
+      Boss_Ride_5: -1060510404978783422
+      Boss_Ride_6: -8915275445633849051
+      Boss_Ride_7: 7728505235877574455
+      Boss_Ride_8: -7833945637077314658
+      Boss_Ride_9: -1033826646466148811
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

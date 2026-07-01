@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave6
   m_EditorClassIdentifier: Assembly-CSharp::WaveDefinition
   spawnEvents:
-  - time: 0.1
+  - time: 1.1
     enemyPrefab: {fileID: 6783052800891240959, guid: 309e58287727fc54e90bddc6c8521198, type: 3}
     spawnPosition: {x: -21, y: 3}
     patternType: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 0
-  - time: 1.1
+  - time: 2.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: -6}
     patternType: 3
@@ -35,7 +35,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 5
     initialVerticalSpeed: 3
-  - time: 1.6
+  - time: 2.6
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -2, y: -6}
     patternType: 3
@@ -46,7 +46,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4.5
     initialVerticalSpeed: 3
-  - time: 2.1
+  - time: 3.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -3, y: -6}
     patternType: 3
@@ -57,7 +57,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: 3
-  - time: 2.6
+  - time: 3.6
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -4, y: -6}
     patternType: 3
@@ -68,7 +68,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 3.5
     initialVerticalSpeed: 3
-  - time: 3.1
+  - time: 4.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -5, y: -6}
     patternType: 3
@@ -79,7 +79,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 3
     initialVerticalSpeed: 3
-  - time: 3.6
+  - time: 4.6
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -6, y: -6}
     patternType: 3
@@ -90,7 +90,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 2.5
     initialVerticalSpeed: 3
-  - time: 4.1
+  - time: 5.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -7, y: -6}
     patternType: 3
@@ -101,7 +101,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 2
     initialVerticalSpeed: 3
-  - time: 7.1
+  - time: 8.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 4}
     patternType: 2
@@ -112,7 +112,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 5
     initialVerticalSpeed: 0
-  - time: 7.6
+  - time: 8.6
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 3.5}
     patternType: 2
@@ -123,7 +123,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 4.5
     initialVerticalSpeed: 0
-  - time: 8.1
+  - time: 9.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 3}
     patternType: 2
@@ -134,7 +134,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 8.6
+  - time: 9.6
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 2.5}
     patternType: 2
@@ -145,7 +145,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 3.5
     initialVerticalSpeed: 0
-  - time: 8.6
+  - time: 9.6
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 2.5}
     patternType: 2
@@ -156,7 +156,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 3.5
     initialVerticalSpeed: 0
-  - time: 8.6
+  - time: 9.6
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 2.5}
     patternType: 2
@@ -167,7 +167,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 3.5
     initialVerticalSpeed: 0
-  - time: 9.1
+  - time: 10.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 2}
     patternType: 2
@@ -178,7 +178,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 3
     initialVerticalSpeed: 0
-  - time: 9.6
+  - time: 10.6
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 1.5}
     patternType: 2
@@ -189,40 +189,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 2.5
     initialVerticalSpeed: 0
-  - time: 10.1
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: 1}
-    patternType: 2
-    isBoss: 0
-    speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: -3
-    transitionDuration: 2
-    initialVerticalSpeed: 0
-  - time: 14.1
-    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: 3}
-    patternType: 1
-    isBoss: 0
-    speed: 3
-    amplitude: 0.5
-    frequency: 2
-    verticalSpeed: 0
-    transitionDuration: 0
-    initialVerticalSpeed: 0
-  - time: 14.1
-    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: -3}
-    patternType: 1
-    isBoss: 0
-    speed: 3
-    amplitude: 0.5
-    frequency: 2
-    verticalSpeed: 0
-    transitionDuration: 0
-    initialVerticalSpeed: 0
-  - time: 15.1
+  - time: 11.1
     enemyPrefab: {fileID: 6783052800891240959, guid: 309e58287727fc54e90bddc6c8521198, type: 3}
     spawnPosition: {x: -21, y: -3}
     patternType: 0
@@ -233,6 +200,17 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 0
+  - time: 11.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: 1}
+    patternType: 2
+    isBoss: 0
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: -3
+    transitionDuration: 2
+    initialVerticalSpeed: 0
   - time: 15.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: 3}
@@ -321,7 +299,40 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 0
+  - time: 19.1
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: 3}
+    patternType: 1
+    isBoss: 0
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+    initialVerticalSpeed: 0
+  - time: 19.1
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: -3}
+    patternType: 1
+    isBoss: 0
+    speed: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
+    initialVerticalSpeed: 0
   - time: 21.1
+    enemyPrefab: {fileID: 6783052800891240959, guid: 309e58287727fc54e90bddc6c8521198, type: 3}
+    spawnPosition: {x: -21, y: 3}
+    patternType: 0
+    isBoss: 0
+    speed: -0.75
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: 0
+    transitionDuration: 0
+    initialVerticalSpeed: 0
+  - time: 22.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 4}
     patternType: 2
@@ -332,7 +343,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 21.1
+  - time: 22.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: -6}
     patternType: 3
@@ -343,7 +354,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: 3
-  - time: 22.1
+  - time: 23.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -4}
     patternType: 2
@@ -354,7 +365,7 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 22.1
+  - time: 23.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: 6}
     patternType: 3
@@ -365,7 +376,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: -3
-  - time: 23.1
+  - time: 24.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 4}
     patternType: 2
@@ -376,7 +387,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 23.1
+  - time: 24.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: -6}
     patternType: 3
@@ -387,7 +398,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: 3
-  - time: 24.1
+  - time: 25.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -4}
     patternType: 2
@@ -398,7 +409,7 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 24.1
+  - time: 25.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: 6}
     patternType: 3
@@ -409,7 +420,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: -3
-  - time: 25.1
+  - time: 26.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 4}
     patternType: 2
@@ -420,7 +431,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 25.1
+  - time: 26.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: -6}
     patternType: 3
@@ -431,8 +442,8 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 4
     initialVerticalSpeed: 3
-  - time: 26.1
-    enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
+  - time: 27.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -4}
     patternType: 2
     isBoss: 0
@@ -442,7 +453,7 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 4
     initialVerticalSpeed: 0
-  - time: 26.1
+  - time: 27.1
     enemyPrefab: {fileID: 3670685946890833190, guid: 44a84ad1e7597c242aea04c287679278, type: 3}
     spawnPosition: {x: -1, y: 6}
     patternType: 3

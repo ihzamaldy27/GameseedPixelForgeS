@@ -11,6 +11,7 @@ public class WaveManager : MonoBehaviour
     public Transform spawnPoint; // spawn position reference (e.g., right edge)
 
     public event System.Action<int> OnWaveComplete; // passes index of completed wave
+    public event System.Action<BossController> OnBossSpawned; // new event
 
     private int _currentWaveIndex = 0;
     private bool _isSpawning = false;
@@ -76,6 +77,8 @@ public class WaveManager : MonoBehaviour
             {
                 // The boss movement component might need to know its stop position; we can set it here
                 BossMovement move = boss.GetComponent<BossMovement>();
+                // Notify listeners that a boss was spawned
+                OnBossSpawned?.Invoke(boss);
                 if (move != null)
                 {
                     // Optionally set stopPosition from inspector in the prefab, or configure per wave
@@ -118,8 +121,8 @@ public class WaveManager : MonoBehaviour
             StopAllCoroutines();
             _isSpawning = false;
         }
-         _activeEnemies.Clear(); // clear any remaining references
-         _activeBosses.Clear();
+        _activeEnemies.Clear(); // clear any remaining references
+        _activeBosses.Clear();
         _currentWaveIndex = waveIndex;
         StartCoroutine(StartNextWave());
     }
@@ -127,11 +130,28 @@ public class WaveManager : MonoBehaviour
     // Public method for CheckpointManager to clean up bosses
     public void CleanUpBosses()
     {
-        foreach (var bossObj in _activeBosses)
+        /*foreach (var bossObj in _activeBosses)
         {
             if (bossObj != null)
                 Destroy(bossObj);
+        }*/
+
+        // Find any bosses in the scene (including those in death sequence)
+        BossController[] bosses = FindObjectsByType<BossController>(FindObjectsSortMode.None);
+        foreach (var boss in bosses)
+        {
+            if (boss != null && boss.gameObject != null)
+                Destroy(boss.gameObject);
         }
+
+        // Also check for BossDeathHandler components (in case boss is destroyed but death sequence is still running)
+        BossDeathHandler[] deathHandlers = FindObjectsByType<BossDeathHandler>(FindObjectsSortMode.None);
+        foreach (var handler in deathHandlers)
+        {
+            if (handler != null && handler.gameObject != null)
+                Destroy(handler.gameObject);
+        }
+
         _activeBosses.Clear();
     }
 

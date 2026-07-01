@@ -47,7 +47,7 @@ public class DashChargePattern : MonoBehaviour, IBossAttackPattern
         // 3. Charge forward (move left) until off-screen
         Camera mainCamera = Camera.main;
         float leftEdge = mainCamera != null ? 
-            mainCamera.ViewportToWorldPoint(new Vector3(-0.5f, 0f, 0f)).x : 20f;
+            mainCamera.ViewportToWorldPoint(new Vector3(-0.3f, 0f, 0f)).x : 20f;
 
         while (_transform.position.x > leftEdge)
         {

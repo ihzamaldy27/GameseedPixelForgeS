@@ -7,7 +7,7 @@ public class BossController : MonoBehaviour, IDamageable
     [SerializeField] private float invincibilityDuration = 0.2f;
 
     [Header("Explosion")]
-    [SerializeField] private float explosionScale = 2f; // bigger explosion
+    [SerializeField] private float explosionScale = 2f; // no longer used directly
 
     [Header("Components")]
     [SerializeField] private BossMovement movement; // assign in inspector
@@ -15,8 +15,10 @@ public class BossController : MonoBehaviour, IDamageable
 
     private HealthComponent _health;
 
-    // Events for sprite handler
+    // Events
     public event System.Action<int, int> OnHealthChanged; // currentHP, maxHP
+    public event System.Action OnDeathStarted; // new event for death sequence
+    
     public int CurrentHP => _health?.CurrentHP ?? 0;
     public int MaxHP => _health?.MaxHP ?? maxHP;
 
@@ -38,12 +40,13 @@ public class BossController : MonoBehaviour, IDamageable
     public void TakeDamage(int damage)
     {
         _health.TakeDamage(damage);
+        AudioManager.instance.PlaySFX("Hit Impact");
         // Optionally flash or trigger hit effects here
     }
 
     private void HandleDeath()
     {
-        // Stop attacks when boss dies
+        /*// Stop attacks when boss dies
         if (attackManager != null)
             attackManager.StopAttacks();
 
@@ -52,7 +55,10 @@ public class BossController : MonoBehaviour, IDamageable
             ExplosionPoolManager.Instance.SpawnExplosion(transform.position, explosionScale);
 
         // Destroy the boss
-        Destroy(gameObject);
+        Destroy(gameObject);*/
+
+        // Trigger death sequence instead of immediate destruction
+        OnDeathStarted?.Invoke();
     }
 
     private void OnDestroy()

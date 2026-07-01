@@ -10,6 +10,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireRate = 0.2f;
+    [SerializeField] private AudioClip shootSFX;
 
     [Header("Health Settings")]
     [SerializeField] private int maxHP = 5;
@@ -19,6 +20,13 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [SerializeField] private SpriteDirectionComponent spriteHandler;
 
     public event System.Action OnPlayerDied;
+    public event System.Action<int> OnDamaged; // currentHP
+    public event System.Action<int> OnHealthRestored; // currentHP (if you add healing)
+    public event System.Action<bool> OnInvincibilityStateChanged; // isInvincible
+
+    // Public properties for UI
+    public int CurrentHP => _health?.CurrentHP ?? 0;
+    public int MaxHP => _health?.MaxHP ?? maxHP;
 
     // Composition: the player owns separate handlers for movement and shooting
     private PlaneControlComponent _movement;
@@ -31,7 +39,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     {
         // Instantiate the composed objects, passing any needed dependencies
         _movement = new PlaneControlComponent(transform, moveSpeed);
-        _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+        _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate, shootSFX);
         _health = new HealthComponent(maxHP, invincibilityDuration);
 
         // Subscribe to health events
@@ -54,7 +62,16 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         _shooting.HandleShoot(firePressed);
 
         // Update invincibility frames
+        bool wasInvincible = _health.IsInvincible;
         _health.UpdateInvincibility(Time.deltaTime);
+        bool isInvincible = _health.IsInvincible;
+
+        // Notify if invincibility state changed
+        if (wasInvincible != isInvincible)
+        {
+            OnInvincibilityStateChanged?.Invoke(isInvincible);
+
+        }
 
         // Update sprite based on movement direction
         if (spriteHandler != null)
@@ -82,18 +99,39 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     private void HandleDamaged(int currentHP)
     {
         Debug.Log($"Player hit! HP: {currentHP}");
+        OnDamaged?.Invoke(currentHP);
         // Optional: Trigger a sprite flash, sound, or UI update here.
         // You could raise a separate C# event here if other systems need to know.
+        if (currentHP > 0)
+            OnInvincibilityStateChanged?.Invoke(true);
+    }
+
+    // Optional: if you add health restoration (e.g., health pickups)
+    public void RestoreHealth(int amount)
+    {
+        // You would add this logic to HealthHandler
+        // Then trigger OnHealthRestored event
     }
 
     private void HandleDeath()
     {
         Debug.Log("Player has died!");
+        AudioManager.instance.PlaySFX("Explode");
         enabled = false;
         OnPlayerDied?.Invoke();
 
         // Optional: Destroy the player after a delay
         // Destroy(gameObject, 1f);
+    }
+
+    public void EnableControls()
+    {
+        enabled = true;
+    }
+
+    public void DisableControls()
+    {
+        enabled = false;
     }
 
     public void Respawn(Vector3 spawnPosition)
@@ -109,7 +147,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         // For simplicity, we recreate shooting component as well
         if (bulletPrefab != null && firePoint != null)
         {
-            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate);
+            _shooting = new ShootingComponent(firePoint, bulletPrefab, fireRate, shootSFX);
         }
 
         enabled = true; // re-enable controls

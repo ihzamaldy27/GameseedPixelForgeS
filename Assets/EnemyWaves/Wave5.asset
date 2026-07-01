@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave5
   m_EditorClassIdentifier: Assembly-CSharp::WaveDefinition
   spawnEvents:
-  - time: 0.1
+  - time: 1.1
     enemyPrefab: {fileID: 6783052800891240959, guid: 309e58287727fc54e90bddc6c8521198, type: 3}
     spawnPosition: {x: -21, y: 0}
     patternType: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 0.1
+  - time: 1.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: 3}
     patternType: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 1.1
+  - time: 2.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: -3}
     patternType: 1
@@ -46,7 +46,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 2.1
+  - time: 3.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 2}
     patternType: 2
@@ -57,7 +57,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 2
     initialVerticalSpeed: 1
-  - time: 3.1
+  - time: 4.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -2}
     patternType: 2
@@ -68,20 +68,9 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 2
     initialVerticalSpeed: 1
-  - time: 4.1
-    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: 1}
-    patternType: 1
-    isBoss: 0
-    speed: 3
-    amplitude: 0.5
-    frequency: 2
-    verticalSpeed: 0
-    transitionDuration: 0
-    initialVerticalSpeed: 1
   - time: 5.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
-    spawnPosition: {x: 0, y: -1}
+    spawnPosition: {x: 0, y: 1}
     patternType: 1
     isBoss: 0
     speed: 3
@@ -90,27 +79,16 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 9.1
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: 3}
-    patternType: 2
+  - time: 6.1
+    enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
+    spawnPosition: {x: 0, y: -1}
+    patternType: 1
     isBoss: 0
     speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: -3
-    transitionDuration: 3
-    initialVerticalSpeed: 1
-  - time: 9.1
-    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
-    spawnPosition: {x: 0, y: -3}
-    patternType: 2
-    isBoss: 0
-    speed: 3
-    amplitude: 0
-    frequency: 0
-    verticalSpeed: 3
-    transitionDuration: 3
+    amplitude: 0.5
+    frequency: 2
+    verticalSpeed: 0
+    transitionDuration: 0
     initialVerticalSpeed: 1
   - time: 10.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
@@ -156,7 +134,29 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 3
     initialVerticalSpeed: 1
-  - time: 15.1
+  - time: 12.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: 3}
+    patternType: 2
+    isBoss: 0
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: -3
+    transitionDuration: 3
+    initialVerticalSpeed: 1
+  - time: 12.1
+    enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
+    spawnPosition: {x: 0, y: -3}
+    patternType: 2
+    isBoss: 0
+    speed: 3
+    amplitude: 0
+    frequency: 0
+    verticalSpeed: 3
+    transitionDuration: 3
+    initialVerticalSpeed: 1
+  - time: 16.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: 3}
     patternType: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 15.1
+  - time: 16.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: -3}
     patternType: 1
@@ -178,7 +178,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 16.1
+  - time: 17.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 1}
     patternType: 2
@@ -189,7 +189,7 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 3
     initialVerticalSpeed: 1
-  - time: 16.1
+  - time: 17.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -1}
     patternType: 2
@@ -200,7 +200,7 @@ MonoBehaviour:
     verticalSpeed: -3
     transitionDuration: 3
     initialVerticalSpeed: 1
-  - time: 17.1
+  - time: 18.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: 3}
     patternType: 1
@@ -211,7 +211,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 17.1
+  - time: 18.1
     enemyPrefab: {fileID: 3131847612265505823, guid: bf2bab556e2616048a9f8513d2f4c9a0, type: 3}
     spawnPosition: {x: 0, y: -3}
     patternType: 1
@@ -222,7 +222,7 @@ MonoBehaviour:
     verticalSpeed: 0
     transitionDuration: 0
     initialVerticalSpeed: 1
-  - time: 18.1
+  - time: 19.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: 1}
     patternType: 2
@@ -233,7 +233,7 @@ MonoBehaviour:
     verticalSpeed: 3
     transitionDuration: 3
     initialVerticalSpeed: 1
-  - time: 18.1
+  - time: 19.1
     enemyPrefab: {fileID: 1221766738751511012, guid: e2858eaba81469b479c7e3eacba47341, type: 3}
     spawnPosition: {x: 0, y: -1}
     patternType: 2

@@ -65,4 +65,5 @@ public class HealthComponent
     public bool IsDead => _currentHP <= 0;
     public int CurrentHP => _currentHP;
     public int MaxHP => _maxHP;
+    public bool IsInvincible => _isInvincible;
 }
