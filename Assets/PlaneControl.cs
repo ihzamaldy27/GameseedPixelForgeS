@@ -412,7 +412,7 @@ public partial class @PlaneControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""49ea8d62-89f0-4a34-abb6-fdc0b507e0a4"",
-                    ""path"": ""<XInputController>/buttonSouth"",
+                    ""path"": ""<XInputController>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -423,7 +423,7 @@ public partial class @PlaneControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""d224009f-b02a-44f4-809b-d419439fca5c"",
-                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -434,7 +434,7 @@ public partial class @PlaneControl: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e3921a40-0481-4878-becf-b92ed2f9bbd9"",
-                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

@@ -20,6 +20,8 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     [SerializeField] private SpriteDirectionComponent spriteHandler;
 
     public event System.Action OnPlayerDied;
+    public event System.Action<int> OnDamaged; // currentHP
+    public event System.Action<bool> OnInvincibilityStateChanged; // isInvincible
 
     // Composition: the player owns separate handlers for movement and shooting
     private PlaneControlComponent _movement;
@@ -55,7 +57,16 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         _shooting.HandleShoot(firePressed);
 
         // Update invincibility frames
+        bool wasInvincible = _health.IsInvincible;
         _health.UpdateInvincibility(Time.deltaTime);
+        bool isInvincible = _health.IsInvincible;
+
+        // Notify if invincibility state changed
+        if (wasInvincible != isInvincible)
+        {
+            OnInvincibilityStateChanged?.Invoke(isInvincible);
+
+        }
 
         // Update sprite based on movement direction
         if (spriteHandler != null)
@@ -77,12 +88,14 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     public void TakeDamage(int damage)
     {
         _health.TakeDamage(damage);
+        OnInvincibilityStateChanged?.Invoke(true);
     }
 
     // --- Event Handlers ---
     private void HandleDamaged(int currentHP)
     {
         Debug.Log($"Player hit! HP: {currentHP}");
+        OnDamaged?.Invoke(currentHP);
         // Optional: Trigger a sprite flash, sound, or UI update here.
         // You could raise a separate C# event here if other systems need to know.
     }

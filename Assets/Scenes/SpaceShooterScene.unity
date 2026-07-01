@@ -1439,6 +1439,7 @@ GameObject:
   - component: {fileID: 1460819187}
   - component: {fileID: 1460819188}
   - component: {fileID: 1460819189}
+  - component: {fileID: 1460819190}
   m_Layer: 0
   m_Name: PlayerPlane
   m_TagString: Player
@@ -1540,7 +1541,7 @@ MonoBehaviour:
   fireRate: 0.18
   shootSFX: {fileID: 8300000, guid: f0ae154b6b3c9b943b36b023505fc3ee, type: 3}
   maxHP: 5
-  invincibilityDuration: 0.5
+  invincibilityDuration: 1
   spriteHandler: {fileID: 1460819187}
 --- !u!114 &1460819186
 MonoBehaviour:
@@ -1650,6 +1651,23 @@ MonoBehaviour:
   padding: -0.5
   clampX: 1
   clampY: 1
+--- !u!114 &1460819190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460819182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ea0060ba89dda4f92f79980206aad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHitEffect
+  hitColor: {r: 1, g: 0, b: 0, a: 1}
+  hitFlashDuration: 0.1
+  flickerInterval: 0.1
+  flickerEnabled: 1
+  spriteRenderer: {fileID: 1460819183}
 --- !u!1 &1463227357
 GameObject:
   m_ObjectHideFlags: 0
