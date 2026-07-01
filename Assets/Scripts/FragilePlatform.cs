@@ -7,6 +7,8 @@ public class FragilePlatform : MonoBehaviour
     public float delayBeforeShake = 0.5f; // Waktu tunggu sebelum mulai goyang
     public float shakeDuration = 1.0f;    // Durasi goyang
     public float respawnTime = 3.0f;      // Waktu respawn kembali
+    public Sprite glassNormal;
+    public Sprite glassCracked;
 
     private Vector2 startPosition;
     private Collider2D col;
@@ -38,6 +40,7 @@ public class FragilePlatform : MonoBehaviour
 
         // 2. Efek goyang sederhana (menggeser posisi secara acak)
         float elapsed = 0f;
+        sr.sprite = glassCracked; // Ganti sprite menjadi retak
         while (elapsed < shakeDuration)
         {
             float offsetX = Random.Range(-0.1f, 0.1f);
@@ -59,6 +62,7 @@ public class FragilePlatform : MonoBehaviour
         // 5. Respawn (Munculkan kembali)
         col.enabled = true;
         sr.enabled = true;
+        sr.sprite = glassNormal; // Kembalikan sprite ke normal
         isShaking = false;
     }
 }

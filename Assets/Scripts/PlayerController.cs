@@ -488,6 +488,15 @@ public class PlayerController : MonoBehaviour, IDamageable
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Spike"))
+        {
+            // TakeDamage(50); // Misal 50 damage untuk Spike
+            Debug.LogWarning("Player terkena Spike! Nyawa berkurang.");
+        }
+    }
+
     // --- DETEKSI SENTUHAN FISIK DENGAN MUSUH ---
     
     // Terpanggil saat pertama kali nabrak
