@@ -689,8 +689,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &120798002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1379,8 +1379,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &238635918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51082,8 +51082,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &497165887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52129,8 +52129,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &557282765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52316,8 +52316,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &603542981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52654,8 +52654,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &629114068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53330,8 +53330,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &855259079
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54817,8 +54817,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1119300879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55095,8 +55095,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1180545979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55864,8 +55864,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1316384758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56207,8 +56207,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1497803428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56580,8 +56580,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1547931627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57092,8 +57092,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1728117811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57577,8 +57577,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1760690726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57932,8 +57932,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1796186426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58828,8 +58828,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!1 &1896937487
 GameObject:
   m_ObjectHideFlags: 0
@@ -58914,8 +58914,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1946251063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59437,8 +59437,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &1999136106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59628,8 +59628,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &2006953065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59969,8 +59969,8 @@ MonoBehaviour:
   delayBeforeShake: 0.5
   shakeDuration: 1
   respawnTime: 3
-  glassNormal: {fileID: 0}
-  glassCracked: {fileID: 0}
+  glassNormal: {fileID: 21300000, guid: 977fcf6ff76ba8f49a171b685c500621, type: 3}
+  glassCracked: {fileID: 21300000, guid: 0bd5b2cbc4982984fa1e10013a59f259, type: 3}
 --- !u!61 &2139833124
 BoxCollider2D:
   m_ObjectHideFlags: 0
