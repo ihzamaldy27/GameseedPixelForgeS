@@ -43,12 +43,13 @@ public class MovingSaw : MonoBehaviour
         // Cek jika yang menginjak adalah Player
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.LogWarning("Player terkena gergaji! Nyawa berkurang.");
             // Panggil fungsi untuk mengurangi nyawa player
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(1); // Misal mengurangi 1 nyawa
-            }
+            // PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            // if (playerHealth != null)
+            // {
+            //     playerHealth.TakeDamage(1); // Misal mengurangi 1 nyawa
+            // }
         }
     }   
     
