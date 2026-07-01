@@ -88,7 +88,6 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
     public void TakeDamage(int damage)
     {
         _health.TakeDamage(damage);
-        OnInvincibilityStateChanged?.Invoke(true);
     }
 
     // --- Event Handlers ---
@@ -98,6 +97,8 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         OnDamaged?.Invoke(currentHP);
         // Optional: Trigger a sprite flash, sound, or UI update here.
         // You could raise a separate C# event here if other systems need to know.
+        if (currentHP > 0)
+            OnInvincibilityStateChanged?.Invoke(true);
     }
 
     private void HandleDeath()
