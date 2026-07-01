@@ -111,10 +111,10 @@ MonoBehaviour:
   lifeTime: 3
   playerLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
 --- !u!95 &4014950570728944678
 Animator:
   serializedVersion: 7
