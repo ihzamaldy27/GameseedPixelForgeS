@@ -21,7 +21,12 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
 
     public event System.Action OnPlayerDied;
     public event System.Action<int> OnDamaged; // currentHP
+    public event System.Action<int> OnHealthRestored; // currentHP (if you add healing)
     public event System.Action<bool> OnInvincibilityStateChanged; // isInvincible
+
+    // Public properties for UI
+    public int CurrentHP => _health?.CurrentHP ?? 0;
+    public int MaxHP => _health?.MaxHP ?? maxHP;
 
     // Composition: the player owns separate handlers for movement and shooting
     private PlaneControlComponent _movement;
@@ -99,6 +104,13 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         // You could raise a separate C# event here if other systems need to know.
         if (currentHP > 0)
             OnInvincibilityStateChanged?.Invoke(true);
+    }
+
+    // Optional: if you add health restoration (e.g., health pickups)
+    public void RestoreHealth(int amount)
+    {
+        // You would add this logic to HealthHandler
+        // Then trigger OnHealthRestored event
     }
 
     private void HandleDeath()
