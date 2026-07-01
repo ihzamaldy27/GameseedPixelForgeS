@@ -61,6 +61,25 @@ public class CheckpointManager : MonoBehaviour
         // Clean up bosses via WaveManager
         _waveManager.CleanUpBosses();
 
+        // Additional cleanup: find any boss death handlers that might be running
+        BossDeathHandler[] deathHandlers = FindObjectsByType<BossDeathHandler>(FindObjectsSortMode.None);
+        foreach (var handler in deathHandlers)
+        {
+            if (handler != null && handler.gameObject != null)
+            {
+                // Stop any coroutines and destroy the GameObject
+                Destroy(handler.gameObject);
+            }
+        }
+
+        // Also destroy any BossController that might have been missed
+        BossController[] bosses = FindObjectsByType<BossController>(FindObjectsSortMode.None);
+        foreach (var boss in bosses)
+        {
+            if (boss != null && boss.gameObject != null)
+                Destroy(boss.gameObject);
+        }
+
         // Reset player
         _player.Respawn(playerSpawnPoint.position);
 

@@ -118,8 +118,8 @@ public class WaveManager : MonoBehaviour
             StopAllCoroutines();
             _isSpawning = false;
         }
-         _activeEnemies.Clear(); // clear any remaining references
-         _activeBosses.Clear();
+        _activeEnemies.Clear(); // clear any remaining references
+        _activeBosses.Clear();
         _currentWaveIndex = waveIndex;
         StartCoroutine(StartNextWave());
     }
@@ -127,11 +127,28 @@ public class WaveManager : MonoBehaviour
     // Public method for CheckpointManager to clean up bosses
     public void CleanUpBosses()
     {
-        foreach (var bossObj in _activeBosses)
+        /*foreach (var bossObj in _activeBosses)
         {
             if (bossObj != null)
                 Destroy(bossObj);
+        }*/
+
+        // Find any bosses in the scene (including those in death sequence)
+        BossController[] bosses = FindObjectsByType<BossController>(FindObjectsSortMode.None);
+        foreach (var boss in bosses)
+        {
+            if (boss != null && boss.gameObject != null)
+                Destroy(boss.gameObject);
         }
+
+        // Also check for BossDeathHandler components (in case boss is destroyed but death sequence is still running)
+        BossDeathHandler[] deathHandlers = FindObjectsByType<BossDeathHandler>(FindObjectsSortMode.None);
+        foreach (var handler in deathHandlers)
+        {
+            if (handler != null && handler.gameObject != null)
+                Destroy(handler.gameObject);
+        }
+
         _activeBosses.Clear();
     }
 
