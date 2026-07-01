@@ -10,6 +10,7 @@ TagManager:
   - OneWayPlatform
   - Acid
   - SavePoint
+  - Spike
   layers:
   - Default
   - TransparentFX
