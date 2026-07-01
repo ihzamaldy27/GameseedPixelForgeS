@@ -199,7 +199,7 @@
                 {
                     "name": "",
                     "id": "f1cc6eaa-c2a5-4570-bfb0-5a2cc204283f",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -244,6 +244,17 @@
                     "name": "",
                     "id": "2e779ae9-25a1-417f-bbd5-fa58cebf8b61",
                     "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47703d1d-2fda-4f7e-80ea-42b69ddef990",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
