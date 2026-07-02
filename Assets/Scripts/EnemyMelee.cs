@@ -215,10 +215,12 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
         // 3. UBAH PENGECEKAN STATE menjadi EnemyState.Attack
         if (currentState == EnemyState.Attack)
         {
+            AudioManager.instance.PlaySFX("Attack");
             Collider2D playerHit = Physics2D.OverlapCircle(transform.position, attackRange, playerLayer);
             if (playerHit != null)
             {
                 IDamageable playerDamageable = playerHit.GetComponent<IDamageable>();
+
                 if (playerDamageable != null)
                 {
                     playerDamageable.TakeDamage(attackDamage);

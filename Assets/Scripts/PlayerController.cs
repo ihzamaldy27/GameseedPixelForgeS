@@ -102,11 +102,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     void Update()
     {
 
-        if (health.CurrentHP <= 0 && !isDead)
-        {
-            isDead = true; // Kunci agar hanya jalan sekali
-            TriggerDeath();
-        }
+        // if (health.CurrentHP <= 0 && !isDead)
+        // {
+        //     isDead = true; // Kunci agar hanya jalan sekali
+        //     TriggerDeath();
+        // }
 
         // Jika player sudah mati, hentikan semua kontrol dan update
         if (health != null && health.IsDead) return;
@@ -209,104 +209,80 @@ public class PlayerController : MonoBehaviour, IDamageable
         // Jika player sedang dash (Dodge), kamu bisa membatalkan damage dengan cara uncomment baris di bawah:
         if (isDashing) return; 
 
+        StartFlash(); // Efek visual kedip merah
         health.TakeDamage(damage);
     }
 
     private void HandleDamage(int currentHP)
     {
-        if (isDead) return; // Jangan terima damage lagi kalau sudah mati
-
-        //health.TakeDamage();
+        if (isDead) return; 
 
         // Panggil efek visual terpisah
         StartFlash();
 
-        if (health.CurrentHP <= 0)
-        {
-            TriggerDeath();
-        }
+        // TriggerDeath TIDAK dipanggil di sini lagi, 
+        // akan ditangani otomatis oleh event OnDeath -> HandleDeath
     }
 
     private void HandleDeath()
     {
+        if (isDead) return; // Cegah terpanggil berkali-kali
+        isDead = true;
+
         Debug.Log("<color=black>PLAYER MATI! (GAME OVER)</color>");
         
-        health.OnDamaged -= HandleDamage;
-        health.OnDeath -= HandleDeath;
+        // SANGAT PENTING: Kita HAPUS baris '-=' di sini.
+        // Player harus tetap terhubung ke sistem Health agar flash tetap menyala setelah respawn.
         
-        // Matikan velocity agar player jatuh ke tanah dan tidak meluncur
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-        
-        // Matikan script ini agar player tidak bisa dikontrol lagi
-        this.enabled = false;
-
-        // TODO: Panggil animasi mati (misal: playerAnim.SetTrigger("Die"); )
-        // TODO: Munculkan panel UI Game Over
-
-        // Di dalam fungsi saat HP habis:
-        if (health.CurrentHP <= 0)
-        {
-            TriggerDeath(); // Panggil fungsi TriggerDeath() untuk memicu animasi mati dan respawn
-        }
+        TriggerDeath(); 
     }
 
     // Tambahkan ini di tempat kamu mengecek kematian (misal di TakeDamage atau update HP)
     public void TriggerDeath()
     {
-        // 1. Pemicu animasi mati
-        if (playerAnim != null)
-        {
-            playerAnim.SetTrigger("Die");
-        }
+        AudioManager.instance.PlaySFX("MC Death");
 
-        // 2. Bekukan pergerakan dengan benar
+        if (playerAnim != null) playerAnim.SetTrigger("Die");
+
         rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Static; // Menghentikan semua pergerakan fisik
-
-        // 3. Matikan Collider agar tidak menabrak musuh lagi
+        rb.bodyType = RigidbodyType2D.Static; 
         GetComponent<Collider2D>().enabled = false;
 
-        // --- LOGIKA TENGGELAM DI ACID ---
-        // Jika pemain mati karena menyentuh Acid
-        // Kita turunkan posisinya sedikit ke bawah (misal 0.5 unit)
+        // Tenggelam ke Acid
         transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
         
-        // Kita turunkan Sorting Order Sprite agar terlihat di belakang permukaan Acid
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if (sr != null) sr.sortingOrder = -2; // Taruh di belakang (tergantung layer Acid-mu)
-        // ---------------------------------
+        if (playerSR != null) playerSR.sortingOrder = -2; 
         
-        // 4. Panggil fungsi Respawn setelah 2 detik
         Invoke("Respawn", 2.0f);
     }
 
-    private IEnumerator FlashHit()
-    {
-        // Hentikan korutin lama jika ada
-        if (flashRoutine != null) StopCoroutine(flashRoutine);
+    // private IEnumerator FlashHit()
+    // {
+    //     // Hentikan korutin lama jika ada
+    //     if (flashRoutine != null) StopCoroutine(flashRoutine);
         
-        // Simpan referensi korutin baru agar bisa dihentikan nanti
-        flashRoutine = StartCoroutine(FlashRoutine());
-        yield return null;
-    }
-    // ----------------------------------------------
+    //     // Simpan referensi korutin baru agar bisa dihentikan nanti
+    //     flashRoutine = StartCoroutine(FlashRoutine());
+    //     yield return null;
+    // }
+    // // ----------------------------------------------
 
-    private IEnumerator FlashRoutine()
-    {
-        if (playerSR == null) playerSR = GetComponent<SpriteRenderer>();
+    // private IEnumerator FlashRoutine()
+    // {
+    //     if (playerSR == null) playerSR = GetComponent<SpriteRenderer>();
 
-        // Efek kedip merah
-        for (int i = 0; i < 3; i++)
-        {
-            playerSR.color = new Color(1f, 0.5f, 0.5f, 1f); 
-            yield return new WaitForSeconds(0.1f);
-            playerSR.color = Color.white;
-            yield return new WaitForSeconds(0.1f);
-        }
+    //     // Efek kedip merah
+    //     for (int i = 0; i < 3; i++)
+    //     {
+    //         playerSR.color = new Color(1f, 0.5f, 0.5f, 1f); 
+    //         yield return new WaitForSeconds(0.1f);
+    //         playerSR.color = Color.white;
+    //         yield return new WaitForSeconds(0.1f);
+    //     }
         
-        // Reset referensi setelah selesai
-        flashRoutine = null;
-    }
+    //     // Reset referensi setelah selesai
+    //     flashRoutine = null;
+    // }
 
     public void StartFlash()
     {
@@ -453,6 +429,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void ExecuteDamageHitbox()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        AudioManager.instance.PlaySFX("Damage");
         foreach (Collider2D enemy in hitEnemies)
         {
             IKnockbackable knockbackable = enemy.GetComponent<IKnockbackable>();
@@ -489,14 +466,30 @@ public class PlayerController : MonoBehaviour, IDamageable
         rb.bodyType = RigidbodyType2D.Dynamic;
         GetComponent<Collider2D>().enabled = true;
         
+        // Reset Visual & Flash
         isFlashing = false;
         flashTimer = 0f;
-        if (playerSR != null) playerSR.color = Color.white;
+        if (playerSR != null) 
+        {
+            playerSR.color = Color.white;
+            playerSR.sortingOrder = 0; // Kembalikan ke 0 agar tidak terus-terusan tenggelam
+        }
+        
+        // --- FIX BUG ANIMASI SERANG MACET ---
+        isAttacking = false;
+        comboStep = 0;
+        currentAnimatingStep = 0;
+        if (playerAnim != null) playerAnim.SetInteger("ComboStep", 0);
+        // ------------------------------------
         
         health.ResetHealth();
         isDead = false;
-        playerAnim.ResetTrigger("Die");
-        playerAnim.Play("IdleMC");
+        
+        if (playerAnim != null)
+        {
+            playerAnim.ResetTrigger("Die");
+            playerAnim.Play("IdleMC");
+        }
         
         this.enabled = true;
     }

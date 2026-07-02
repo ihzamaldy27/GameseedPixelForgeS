@@ -93,8 +93,21 @@ public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable
                 TelegraphLogic();
                 break;
             case EnemyState.Dash:
-                // Sedang melesat, logika kecepatannya diatur di ExecuteDash()
-                if (stateTimer <= 0) 
+                Collider2D playerHit = Physics2D.OverlapCircle(transform.position, 0.7f, playerLayer);
+                if (playerHit != null)
+                {
+                    IDamageable playerDamageable = playerHit.GetComponent<IDamageable>();
+                    if (playerDamageable != null) playerDamageable.TakeDamage(attackDamage);
+                    
+                    // Nabrak player, langsung ngerem
+                    rb.linearVelocity = Vector2.zero;
+                    SwitchState(EnemyState.Cooldown);
+                    stateTimer = attackCooldown;
+                }
+                // ------------------------------------
+
+                // Jika tidak nabrak dan waktu melesat habis
+                if (stateTimer <= 0 && currentState == EnemyState.Dash) 
                 {
                     rb.linearVelocity = Vector2.zero; // Rem setelah dash selesai
                     SwitchState(EnemyState.Cooldown);
@@ -228,23 +241,23 @@ public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable
     }
 
     // --- DETEKSI SERANGAN SAAT DASH ---
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Jika sedang nge-dash dan menabrak Player, berikan damage!
-        if (currentState == EnemyState.Dash && collision.gameObject.CompareTag("Player"))
-        {
-            IDamageable playerDamageable = collision.gameObject.GetComponent<IDamageable>();
-            if (playerDamageable != null)
-            {
-                playerDamageable.TakeDamage(attackDamage);
-            }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     // Jika sedang nge-dash dan menabrak Player, berikan damage!
+    //     if (currentState == EnemyState.Dash && collision.gameObject.CompareTag("Player"))
+    //     {
+    //         IDamageable playerDamageable = collision.gameObject.GetComponent<IDamageable>();
+    //         if (playerDamageable != null)
+    //         {
+    //             playerDamageable.TakeDamage(attackDamage);
+    //         }
             
-            // Opsional: Langsung berhenti/terpental sedikit setelah menabrak player
-            rb.linearVelocity = Vector2.zero;
-            SwitchState(EnemyState.Cooldown);
-            stateTimer = attackCooldown;
-        }
-    }
+    //         // Opsional: Langsung berhenti/terpental sedikit setelah menabrak player
+    //         rb.linearVelocity = Vector2.zero;
+    //         SwitchState(EnemyState.Cooldown);
+    //         stateTimer = attackCooldown;
+    //     }
+    // }
 
     private void SwitchState(EnemyState newState) { currentState = newState; }
 
