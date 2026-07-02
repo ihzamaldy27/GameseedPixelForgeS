@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     [Header("Pengaturan Combat")]
     public float attackRange = 0.8f;
     public LayerMask enemyLayer;
-    public float damageAmount = 10f;
+    public float damageAmount = 1f;
 
     [Header("Sistem Combo")]
     public float maxComboDelay = 0.6f; 
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     private bool isGrounded;
 
     [Header("Contact Damage & Knockback")]
-    public int contactDamage = 10; // Jumlah damage saat menabrak musuh
+    public int contactDamage = 1; // Jumlah damage saat menabrak musuh
     public float knockbackForceX = 10f; // Daya dorong ke belakang
     public float knockbackForceY = 6f;  // Daya dorong ke atas (bouncing)
     public float knockbackDuration = 0.25f; // Lama player kehilangan kendali (stunned)
@@ -76,6 +76,13 @@ public class PlayerController : MonoBehaviour, IDamageable
     private bool isDead = false;
     private Coroutine flashRoutine = null; // Menyimpan referensi korutin yang sedang berjalan
 
+    [Header("Flash Settings")]
+    private float flashTimer = 0f;
+    private bool isFlashing = false;
+
+    [Header("Hitbox Contact Damage")]
+    public float contactRadius = 0.5f; // Besaran area sensor tubuh player
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -84,6 +91,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
         // 2. INISIALISASI SISTEM HEALTH
         if (playerSR != null) originalColor = playerSR.color;
+
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         
         health = new HealthComponent(maxHealth, invincibilityDuration);
         health.OnDamaged += HandleDamage;
@@ -102,20 +111,20 @@ public class PlayerController : MonoBehaviour, IDamageable
         // Jika player sudah mati, hentikan semua kontrol dan update
         if (health != null && health.IsDead) return;
 
-        if (isKnockedBack)
-        {
-            knockbackTimer -= Time.deltaTime;
-            if (knockbackTimer <= 0)
-            {
-                isKnockedBack = false;
-            }
-            else
-            {
-                // return; digunakan untuk menghentikan Update sementara.
-                // Ini mencegah player menekan tombol jalan saat sedang terpental!
-                return; 
-            }
-        }
+        // if (isKnockedBack)
+        // {
+        //     knockbackTimer -= Time.deltaTime;
+        //     if (knockbackTimer <= 0)
+        //     {
+        //         isKnockedBack = false;
+        //     }
+        //     else
+        //     {
+        //         // return; digunakan untuk menghentikan Update sementara.
+        //         // Ini mencegah player menekan tombol jalan saat sedang terpental!
+        //         return; 
+        //     }
+        // }
 
         // 3. UPDATE TIMER KEBAL PLAYER
         health.UpdateInvincibility(Time.deltaTime);
@@ -126,7 +135,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             if (dashTimeLeft <= 0)
             {
                 isDashing = false;
-                Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
+                //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), false);
             }
             if (Time.time >= nextSpawnTime)
             {
@@ -155,6 +164,24 @@ public class PlayerController : MonoBehaviour, IDamageable
             playerAnim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
 
+        if (isFlashing)
+        {
+            flashTimer -= Time.deltaTime;
+            
+            // Efek kedip cepat: nyala merah - putih - merah - putih
+            if (flashTimer > 0)
+            {
+                // Menggunakan sisa waktu untuk menentukan warna
+                playerSR.color = (Mathf.Round(flashTimer * 20) % 2 == 0) ? Color.red : Color.white;
+            }
+            else
+            {
+                playerSR.color = Color.white; // Paksa putih saat selesai
+                isFlashing = false;
+            }
+        }
+
+        CheckEnemyContactSensor();
         CheckGrounded();
         ResetCombo();
     }
@@ -192,7 +219,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         //health.TakeDamage();
 
         // Panggil efek visual terpisah
-        StartCoroutine(FlashHit());
+        StartFlash();
 
         if (health.CurrentHP <= 0)
         {
@@ -281,6 +308,12 @@ public class PlayerController : MonoBehaviour, IDamageable
         flashRoutine = null;
     }
 
+    public void StartFlash()
+    {
+        isFlashing = true;
+        flashTimer = 0.3f; // Durasi total kedip merah
+    }
+
     // --- INPUT SYSTEM CALLBACKS ---
     public void OnMove(InputValue value) 
     {
@@ -316,7 +349,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             rb.linearVelocity = Vector2.zero; 
             SpawnAfterimage(); 
             nextSpawnTime = Time.time + afterimageSpawnRate;
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
+            //Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Enemy"), true);
         }
     }
 
@@ -452,26 +485,14 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void Respawn()
     {
-        // 1. Reset Posisi & Fisika
         transform.position = SavePoint.lastCheckpointPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
         GetComponent<Collider2D>().enabled = true;
         
-        // 2. BERSIHKAN KORUTIN SECARA TOTAL
-        if (flashRoutine != null)
-        {
-            StopCoroutine(flashRoutine);
-            flashRoutine = null;
-        }
+        isFlashing = false;
+        flashTimer = 0f;
+        if (playerSR != null) playerSR.color = Color.white;
         
-        // 3. Reset Warna Sprite
-        if (playerSR != null) 
-        {
-            playerSR.color = Color.white;
-            playerSR.sortingOrder = 0;
-        }
-        
-        // 4. Reset Data & Animasi
         health.ResetHealth();
         isDead = false;
         playerAnim.ResetTrigger("Die");
@@ -492,7 +513,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         if (collision.CompareTag("Spike"))
         {
-            // TakeDamage(50); // Misal 50 damage untuk Spike
+            TakeDamage(1); // Misal 1 damage untuk Spike
             Debug.LogWarning("Player terkena Spike! Nyawa berkurang.");
         }
     }
@@ -508,13 +529,13 @@ public class PlayerController : MonoBehaviour, IDamageable
             currentOneWayPlatform = collision.gameObject;
         }
 
-        CheckEnemyContact(collision.gameObject);
+        //CheckEnemyContact(collision.gameObject);
     }
 
     // Terpanggil jika player terus menempel pada musuh (misal tersudut di tembok)
     private void OnCollisionStay2D(Collision2D collision)
     {
-        CheckEnemyContact(collision.gameObject);
+        //CheckEnemyContact(collision.gameObject);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -525,43 +546,18 @@ public class PlayerController : MonoBehaviour, IDamageable
         }
     }
 
-    private void CheckEnemyContact(GameObject enemyObj)
+    private void CheckEnemyContactSensor()
     {
-        if (enemyObj.CompareTag("Enemy") && !isKnockedBack && !isDashing) 
+        // Jangan terima damage jika sedang dash atau sudah mati
+        if (isDashing || (health != null && health.IsDead)) return;
+
+        // Bikin lingkaran tak terlihat di badan Player. Jika ada Enemy yang masuk, kena damage!
+        Collider2D enemyHit = Physics2D.OverlapCircle(transform.position, contactRadius, enemyLayer);
+        
+        if (enemyHit != null)
         {
             TakeDamage(contactDamage); 
-            isKnockedBack = true;
-            knockbackTimer = knockbackDuration;
-
-            int knockbackDir = transform.position.x < enemyObj.transform.position.x ? -1 : 1;
-            rb.linearVelocity = Vector2.zero; 
-            rb.AddForce(new Vector2(knockbackForceX * knockbackDir, knockbackForceY), ForceMode2D.Impulse);
-        }
-
-        // Pastikan yang ditabrak adalah musuh, dan player tidak sedang dalam kondisi terpental
-        if (enemyObj.CompareTag("Enemy") && !isKnockedBack)
-        {
-            // 1. Berikan Damage
-            // (Memanggil fungsi TakeDamage yang sudah ada karena player memiliki antarmuka IDamageable)
-            TakeDamage(contactDamage); 
-
-            // 2. Aktifkan status Knockback
-            isKnockedBack = true;
-            knockbackTimer = knockbackDuration;
-
-            // 3. Tentukan Arah Pentalan
-            // Jika posisi X player lebih kecil dari musuh (di kiri), pentalan ke kiri (-1). Jika tidak, ke kanan (1).
-            int knockbackDir = transform.position.x < enemyObj.transform.position.x ? -1 : 1;
-
-            // 4. Dorong Player
-            rb.linearVelocity = Vector2.zero; // Rem mendadak agar pentalannya konsisten
-            rb.AddForce(new Vector2(knockbackForceX * knockbackDir, knockbackForceY), ForceMode2D.Impulse);
-
-            // Opsional: Jika kamu punya animasi terluka, kamu bisa memicunya di sini
-            if (playerAnim != null)
-            {
-                // playerAnim.SetTrigger("Hit"); 
-            }
+            // Fungsi TakeDamage akan memicu I-Frames dan animasi Flash otomatis dari HealthComponent
         }
     }
 }
