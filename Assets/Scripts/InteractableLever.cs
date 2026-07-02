@@ -15,7 +15,7 @@ public class InteractableLever : MonoBehaviour
     [SerializeField] private InputActionReference interactAction; 
 
     private SpriteRenderer sr;
-    private bool isActivated = false;
+    [SerializeField] private bool isActivated = false;
     private bool playerInRange = false;
 
     void Start()

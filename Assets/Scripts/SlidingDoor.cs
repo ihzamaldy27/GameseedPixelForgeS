@@ -14,6 +14,7 @@ public class SlidingDoor : MonoBehaviour
     public float moveDistance = 3f; // Jarak bergeser (satuan unit grid Unity)
     public float moveSpeed = 3f;    // Kecepatan bergeser pintu
     public Vector2 customOffset;    // Hanya dipakai jika memilih MoveDirection.Custom
+    public Collider2D doorCollider; // Collider pintu, bisa diaktifkan/nonaktifkan saat pintu terbuka/tutup
 
     private Vector2 startPosition;
     private Vector2 targetPosition;
@@ -27,7 +28,7 @@ public class SlidingDoor : MonoBehaviour
         // Hitung posisi target berdasarkan arah dan jarak yang ditentukan
         //CalculateTargetPosition();
 
-        UpdateDoorSprite();
+        UpdateDoorSprite(shouldOpen);
     }
 
     void Update()
@@ -37,6 +38,15 @@ public class SlidingDoor : MonoBehaviour
             doorSR.sprite = shouldOpen ? doorOpen : doorClosed; // Ganti sprite sesuai status pintu
         }
 
+        if (shouldOpen)
+        {
+            doorState = DoorState.Open;
+        } else
+        {
+            doorState = DoorState.Closed;
+        }
+
+        //UpdateDoorSprite();
         // Tentukan posisi tujuan saat ini (jika open ke targetPosition, jika close kembali ke startPosition)
         //Vector2 currentTarget = shouldOpen ? targetPosition : startPosition;
         
@@ -66,15 +76,17 @@ public class SlidingDoor : MonoBehaviour
         }
     }
 
-    private void UpdateDoorSprite()
+    private void UpdateDoorSprite(bool open)
     {
         switch (doorState)
         {
             case DoorState.Closed:
                 if (doorSR != null) doorSR.sprite = doorClosed; // Atau sprite pintu tertutup
+                if (doorCollider != null) doorCollider.isTrigger = open; // Aktifkan collider saat pintu tertutup
                 break;
             case DoorState.Open:
                 if (doorSR != null) doorSR.sprite = doorOpen; // Atau sprite pintu terbuka
+                if (doorCollider != null) doorCollider.isTrigger = open; // Nonaktifkan collider saat pintu terbuka
                 break;
         }
     }
@@ -83,6 +95,6 @@ public class SlidingDoor : MonoBehaviour
     public void ToggleDoor(bool open)
     {
         shouldOpen = open;
-
+        UpdateDoorSprite(open);
     }
 }
