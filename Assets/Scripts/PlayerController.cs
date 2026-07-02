@@ -181,6 +181,18 @@ public class PlayerController : MonoBehaviour, IDamageable
             playerAnim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
 
+        // Logika Audio Berjalan
+        // (Pastikan kamu menyesuaikan kondisi ini. Suara hanya keluar jika player menekan tombol jalan, tidak sedang mati, dan tidak sedang dash)
+        if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing && !isDead && isGrounded)
+        {
+            AudioManager.instance.PlayWalkSFX("MC Walk");
+        }
+        else
+        {
+            // Jika berhenti, idle, atau dash, matikan suaranya
+            AudioManager.instance.StopWalkSFX();
+        }
+
         CheckEnemyContactSensor();
         CheckGrounded();
         ResetCombo();
@@ -205,6 +217,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     // --- IMPLEMENTASI IDamageable UNTUK PLAYER ---
     public void TakeDamage(int damage)
     {
+        ResetAttackState();
         // Fungsi ini akan dipanggil otomatis oleh EnemyMelee saat memukul
         // Jika player sedang dash (Dodge), kamu bisa membatalkan damage dengan cara uncomment baris di bawah:
         if (isDashing) return; 
@@ -237,6 +250,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void TriggerDeath()
     {
         AudioManager.instance.PlaySFX("MC Death");
+        AudioManager.instance.StopWalkSFX();
 
         // 1. Pemicu animasi mati
         if (playerAnim != null) playerAnim.SetTrigger("Die");
@@ -295,6 +309,11 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void OnMove(InputValue value) 
     {
         moveInput = value.Get<Vector2>();
+        if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing && isGrounded)
+        {
+            AudioManager.instance.PlaySFX("MC Walk");
+        }
+
         // if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing)
         // {
         //     playerAnim.SetFloat("Speed", Mathf.Abs(moveInput.x));
@@ -466,11 +485,20 @@ public class PlayerController : MonoBehaviour, IDamageable
             }
         }
 
-        if (!didHitAnyEnemy)
+        // Tentukan pitch berdasarkan langkah kombo saat ini
+        float currentPitch = 1f;
+        if (comboStep == 1) currentPitch = 1.0f;       // Nada normal
+        else if (comboStep == 2) currentPitch = 1.15f; // Nada sedikit lebih tinggi (lebih cepat)
+        else if (comboStep == 3) currentPitch = 1.3f;  // Nada paling tinggi (sangat agresif)
+
+        // 3. Play SFX berdasarkan hasil dengan pitch yang sudah ditentukan
+        if (didHitAnyEnemy)
         {
-            AudioManager.instance.PlaySFX("MC Attack");
-        } else {
-            AudioManager.instance.PlaySFX("Damage");
+            AudioManager.instance.PlaySFXwithPitch("Damage", currentPitch);
+        }
+        else
+        {
+            AudioManager.instance.PlaySFXwithPitch("MC Attack", currentPitch);
         }
     }
 
@@ -528,6 +556,24 @@ public class PlayerController : MonoBehaviour, IDamageable
         }
         
         this.enabled = true;
+    }
+
+    private void ResetAttackState()
+    {
+        // 1. Reset variabel logic
+        isAttacking = false;
+        comboStep = 0;
+        currentAnimatingStep = 0;
+
+        // 2. Reset Animator parameter
+        if (playerAnim != null)
+        {
+            playerAnim.SetInteger("ComboStep", 0);
+            playerAnim.ResetTrigger("Attack"); // Sesuaikan dengan nama trigger attack kamu
+            
+            // 3. Force ke posisi Idle agar tidak melayang di state Attack
+            playerAnim.Play("IdleMC");
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

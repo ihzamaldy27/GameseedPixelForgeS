@@ -11,6 +11,9 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Sources")]
     [SerializeField] private AudioSource bgmSource; 
     [SerializeField] private AudioSource sfxSource; 
+    [SerializeField] private AudioSource walkSource;
+    [SerializeField] private AudioSource sfxSourcewithPitch; // SFX source khusus untuk pitch yang bisa diubah
+
 
     [Header("Background Music")]
     [Tooltip("Ketik nama BGM yang ingin diputar otomatis saat game dimulai")]
@@ -141,12 +144,13 @@ public class AudioManager : MonoBehaviour
     }
 
     // --- FUNGSI UNTUK MEMAINKAN SFX ---
-    public void PlaySFX(string sfxName)
+    public void PlaySFX(string sfxName, float pitch = 1f)
     {
         Sound s = Array.Find(sfxList, sound => sound.name == sfxName);
         
         if (s != null)
         {
+            sfxSource.pitch = pitch;
             sfxSource.PlayOneShot(s.clip);
         }
         else
@@ -154,15 +158,53 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning($"SFX dengan nama '{sfxName}' tidak ditemukan! Cek ejaan di Inspector.");
         }
     }
-    public void PlaySFXClip(AudioClip clip)
+    public void PlaySFXClip(AudioClip clip, float pitch = 1f)
     {
         if (clip != null)
         {
+            sfxSource.pitch = pitch;
             sfxSource.PlayOneShot(clip);
         }
         else
         {
             Debug.LogWarning($"SFX tidak ditemukan!");
+        }
+    }
+
+    public void PlaySFXwithPitch(string sfxName, float pitch = 1f)
+    {
+        Sound s = Array.Find(sfxList, sound => sound.name == sfxName);
+        
+        if (s != null)
+        {
+            sfxSourcewithPitch.pitch = pitch;
+            sfxSourcewithPitch.PlayOneShot(s.clip);
+        }
+        else
+        {
+            Debug.LogWarning($"SFX dengan nama '{sfxName}' tidak ditemukan! Cek ejaan di Inspector.");
+        }
+    }
+
+    public void PlayWalkSFX(string sfxName)
+    {
+        // Jangan putar ulang jika sudah sedang berjalan (mencegah suara tumpang tindih)
+        if (walkSource.isPlaying) return; 
+        
+        Sound s = Array.Find(sfxList, sound => sound.name == sfxName);
+        if (s != null)
+        {
+            walkSource.clip = s.clip;
+            walkSource.loop = true; // Aktifkan mode looping
+            walkSource.Play();
+        }
+    }
+
+    public void StopWalkSFX()
+    {
+        if (walkSource.isPlaying)
+        {
+            walkSource.Stop();
         }
     }
 }
