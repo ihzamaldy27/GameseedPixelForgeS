@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 944e5d3c397f1bb498b780c1b64d5596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossController
-  maxHP: 50
+  maxHP: 300
   invincibilityDuration: 0.01
   explosionScale: 4
   movement: {fileID: 1537688560819274290}
