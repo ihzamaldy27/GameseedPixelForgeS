@@ -486,6 +486,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   damageAmount: 10
+  canAttack: 1
   maxComboDelay: 0.6
   groundCheck: {fileID: 1677281672}
   groundLayer:
@@ -93054,6 +93055,7 @@ MonoBehaviour:
   leverOnSprite: {fileID: 3381901382362725158, guid: 3d70b164c6ff6974bbc3c36c1e853044, type: 3}
   leverOffSprite: {fileID: 6421182849622717103, guid: 16f0b576ffbd2ac4bbfc45db9595a1f3, type: 3}
   interactAction: {fileID: 8463951808903838487, guid: 67056ad5522c7644a8b8cd72ed2eec00, type: 3}
+  isActivated: 0
 --- !u!60 &1141058128
 PolygonCollider2D:
   m_ObjectHideFlags: 0

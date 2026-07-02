@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: f4ded1bce9c86f44682542a3d152a227
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3407249627586229992
+    second: MC_Gameseed_Idle_2_0
+  - first:
+      213: 1071086960452034553
+    second: MC_Gameseed_Idle_2_1
+  - first:
+      213: 9069324509819735989
+    second: MC_Gameseed_Idle_2_2
+  - first:
+      213: 6136562214664408699
+    second: MC_Gameseed_Idle_2_3
+  - first:
+      213: -1924702776169905335
+    second: MC_Gameseed_Idle_2_4
+  - first:
+      213: -1485219440576402283
+    second: MC_Gameseed_Idle_2_5
+  - first:
+      213: -4907960993123387387
+    second: MC_Gameseed_Idle_2_6
+  - first:
+      213: -3565472984224746201
+    second: MC_Gameseed_Idle_2_7
+  - first:
+      213: -8317790517603516137
+    second: MC_Gameseed_Idle_2_8
+  - first:
+      213: 634156366744699533
+    second: MC_Gameseed_Idle_2_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6fb51eb7bf84f20800000000000000
+      internalID: 3407249627586229992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffdb496ae34dde00800000000000000
+      internalID: 1071086960452034553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf8c802796bcdd70800000000000000
+      internalID: 9069324509819735989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_3
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e082342d2792550800000000000000
+      internalID: 6136562214664408699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_4
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9434f28c5051a45e0800000000000000
+      internalID: -1924702776169905335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_5
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c60fea9c0736be0800000000000000
+      internalID: -1485219440576402283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_6
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5083861fa7b63ebb0800000000000000
+      internalID: -4907960993123387387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_7
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72538072635e48ec0800000000000000
+      internalID: -3565472984224746201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 364
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71141220895419c80800000000000000
+      internalID: -8317790517603516137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Idle_2_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 364
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82cedb0bd9fcc800800000000000000
+      internalID: 634156366744699533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5023f3524014f06438d87c6a6cfff1c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      MC_Gameseed_Idle_2_0: 3407249627586229992
+      MC_Gameseed_Idle_2_1: 1071086960452034553
+      MC_Gameseed_Idle_2_10: -322772076
+      MC_Gameseed_Idle_2_11: 603982744
+      MC_Gameseed_Idle_2_12: 1727139211
+      MC_Gameseed_Idle_2_13: 776587391
+      MC_Gameseed_Idle_2_14: 532113052
+      MC_Gameseed_Idle_2_15: 777585743
+      MC_Gameseed_Idle_2_2: 9069324509819735989
+      MC_Gameseed_Idle_2_3: 6136562214664408699
+      MC_Gameseed_Idle_2_4: -1924702776169905335
+      MC_Gameseed_Idle_2_5: -1485219440576402283
+      MC_Gameseed_Idle_2_6: -4907960993123387387
+      MC_Gameseed_Idle_2_7: -3565472984224746201
+      MC_Gameseed_Idle_2_8: -8317790517603516137
+      MC_Gameseed_Idle_2_9: 634156366744699533
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
