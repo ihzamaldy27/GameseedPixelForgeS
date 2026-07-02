@@ -3,6 +3,7 @@ using UnityEngine;
 public class DialoguePlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerController playerController;
+    [SerializeField] private Rigidbody2D rb;
 
     public void DisablePlayer()
     {
@@ -12,5 +13,10 @@ public class DialoguePlayerController : MonoBehaviour
     public void EnablePlayer()
     {
         playerController.enabled = true;
+    }
+
+    public void StopMovement()
+    {
+        rb.linearVelocity = new Vector2(0f, 0f);
     }
 }
