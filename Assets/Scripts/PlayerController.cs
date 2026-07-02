@@ -132,6 +132,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (isDashing)
         {
             dashTimeLeft -= Time.deltaTime;
+            
             if (dashTimeLeft <= 0)
             {
                 isDashing = false;
@@ -139,7 +140,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             }
             if (Time.time >= nextSpawnTime)
             {
-                SpawnAfterimage();
+                //SpawnAfterimage();
                 nextSpawnTime = Time.time + afterimageSpawnRate;
             }
             return; 
@@ -320,6 +321,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (value.isPressed && Time.time >= lastDashTime + dashCooldown && !isDashing)
         {
             isDashing = true;
+            AudioManager.instance.PlaySFX("MC Dash");
             dashTimeLeft = dashDuration;
             lastDashTime = Time.time;
             rb.linearVelocity = Vector2.zero; 
@@ -402,6 +404,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             afterimagePool.Add(poolable);
         }
         poolable.SetAfterimage(playerSR.sprite, transform.position, transform.rotation, transform.localScale);
+
     }
 
     private void Flip()
@@ -429,7 +432,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void ExecuteDamageHitbox()
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
-        AudioManager.instance.PlaySFX("Damage");
+        
         foreach (Collider2D enemy in hitEnemies)
         {
             IKnockbackable knockbackable = enemy.GetComponent<IKnockbackable>();
@@ -440,6 +443,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             {
                 int finalDamage = Mathf.RoundToInt(damageAmount);
                 damageable.TakeDamage(finalDamage);
+                AudioManager.instance.PlaySFX("MC Attack");
                 Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}! (Kirim {finalDamage} Damage)");
             }
         }

@@ -248,6 +248,7 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
             {
                 Quaternion bulletRotation = isFacingRight ? Quaternion.identity : Quaternion.Euler(0, 180, 0);
                 Instantiate(bulletPrefab, firePoint.position, bulletRotation);
+                AudioManager.instance.PlaySFX("Shooting");
             }
             
             // Jeda sebelum peluru kedua keluar

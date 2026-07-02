@@ -123,6 +123,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 30dc196d298d3004d8b7d55b5cebcf5a, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
+  - name: MC Attack
+    clip: {fileID: 8300000, guid: 647a43ffbf32d1847b2c251597f14849, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: MC Dash
+    clip: {fileID: 8300000, guid: 648341f2c4b7b40409a6f6bc4f710a92, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
 --- !u!82 &83065725819724939
 AudioSource:
   m_ObjectHideFlags: 0
