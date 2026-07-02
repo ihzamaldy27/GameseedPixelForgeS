@@ -349,7 +349,7 @@ public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable
         if (enemyAnim != null) enemyAnim.SetTrigger("DieGround");
         
         // Bunyikan SFX ledakan
-        AudioManager.instance.PlaySFX("Enemy Damage 1");
+        AudioManager.instance.PlaySFX("Enemy Flying Death");
 
         // 6. Hancurkan sisa objek setelah 1 detik (sesuaikan durasi ini dengan panjang animasi ledakanmu)
         Destroy(gameObject, 1.0f); 
