@@ -883,6 +883,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7
@@ -83496,6 +83499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7
@@ -92689,6 +92695,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7
@@ -96035,6 +96044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7
@@ -97038,6 +97050,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7
@@ -104015,6 +104030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e3860d64e2acc48aee7fa55eab42a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFlying
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   currentState: 0
   patrolSpeed: 3
   patrolRadius: 7

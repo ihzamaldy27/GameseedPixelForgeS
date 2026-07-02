@@ -5,6 +5,9 @@ using System.Collections;
 public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable 
 {
     public enum EnemyState { Patrol, Idle, Chase, Telegraph, Attack, Cooldown, Stunned }
+
+    private bool isDead = false;
+
     [Header("Current State")]
     public EnemyState currentState = EnemyState.Patrol;
 
@@ -71,6 +74,8 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
     void Update()
     {
+        if (isDead) return;
+
         health.UpdateInvincibility(Time.deltaTime);
 
         if (stateTimer > 0) stateTimer -= Time.deltaTime;
@@ -299,9 +304,39 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
     private void HandleDeath()
     {
+        if (isDead) return;
+        isDead = true;
+
+        // 1. Putus koneksi Health agar tidak error
         health.OnDamaged -= HandleDamage;
         health.OnDeath -= HandleDeath;
-        Destroy(gameObject);
+
+        // 2. Hentikan semua pergerakan seketika
+        rb.linearVelocity = Vector2.zero;
+        rb.bodyType = RigidbodyType2D.Static;
+
+        // 3. Matikan semua Collider agar Player bisa jalan menembus mayatnya
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D col in colliders)
+        {
+            col.enabled = false;
+        }
+
+        // 4. Hilangkan tanda seru (Telegraph) jika kebetulan mati saat sedang membidik
+        if (warningSignObject != null) warningSignObject.SetActive(false);
+
+        // 5. Pemicu Animasi
+        if (enemyAnim != null)
+        {
+            enemyAnim.SetTrigger("Die");
+        }
+
+        // 6. Mainkan Suara (SFX)
+        AudioManager.instance.PlaySFX("Enemy Damage 1");
+
+        // 7. Hancurkan / Hilangkan objek setelah 1.5 detik
+        // (Silakan ubah angka 1.5f menjadi durasi yang pas dengan panjang animasi Die milikmu)
+        Destroy(gameObject, 1f);
     }
 
     private IEnumerator FlashHit()

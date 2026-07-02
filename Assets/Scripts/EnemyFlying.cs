@@ -5,6 +5,10 @@ using System.Collections;
 public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable 
 {
     public enum EnemyState { Patrol, Chase, Telegraph, Dash, Cooldown, Stunned }
+
+    private bool isDead = false;
+    public LayerMask groundLayer;
+
     [Header("Current State")]
     public EnemyState currentState = EnemyState.Patrol;
 
@@ -74,6 +78,8 @@ public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable
 
     void Update()
     {
+        if (isDead) return;
+        
         health.UpdateInvincibility(Time.deltaTime);
 
         if (stateTimer > 0) stateTimer -= Time.deltaTime;
@@ -294,9 +300,59 @@ public class EnemyFlying : MonoBehaviour, IDamageable, IKnockbackable
 
     private void HandleDeath()
     {
+        if (isDead) return;
+        isDead = true;
+
+        // Putus koneksi sistem
         health.OnDamaged -= HandleDamage;
         health.OnDeath -= HandleDeath;
-        Destroy(gameObject);
+        if (warningSignObject != null) warningSignObject.SetActive(false);
+
+        // Mulai proses sinematik jatuh
+        StartCoroutine(DeathRoutine());
+    }
+
+    private IEnumerator DeathRoutine()
+    {
+        // 1. Matikan Collider agar Player tidak tertabrak mayat yang sedang jatuh
+        Collider2D[] colliders = GetComponents<Collider2D>();
+        foreach (Collider2D col in colliders) col.enabled = false;
+
+        // 2. Putar Animasi Kehilangan Sayap / Jatuh
+        if (enemyAnim != null) enemyAnim.SetTrigger("DieFall");
+
+        // 3. Paksa jatuh ke bawah (Gunakan Kinematic agar stabil dan tidak melenceng)
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.linearVelocity = new Vector2(0, -6f); // Kececepatan jatuh, besarkan angka 6 jika kurang cepat
+
+        // 4. Sensor pencarian tanah (Batas waktu 4 detik agar tidak jatuh abadi jika di atas jurang)
+        float timeout = 4f;
+        bool hitGround = false;
+
+        while (!hitGround && timeout > 0)
+        {
+            timeout -= Time.deltaTime;
+            
+            // Tembakkan sensor tak terlihat ke bawah sejauh 0.6 unit
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, groundLayer);
+            if (hit.collider != null)
+            {
+                hitGround = true; // Tanah terdeteksi!
+            }
+            yield return null; // Lanjut cek di frame berikutnya
+        }
+
+        // 5. MENDARAT / MENGHANTAM TANAH!
+        rb.linearVelocity = Vector2.zero; // Rem seketika
+        
+        // Putar animasi Meledak/Hancur di tanah
+        if (enemyAnim != null) enemyAnim.SetTrigger("DieGround");
+        
+        // Bunyikan SFX ledakan
+        AudioManager.instance.PlaySFX("Enemy Damage 1");
+
+        // 6. Hancurkan sisa objek setelah 1 detik (sesuaikan durasi ini dengan panjang animasi ledakanmu)
+        Destroy(gameObject, 1.0f); 
     }
 
     private IEnumerator FlashHit()

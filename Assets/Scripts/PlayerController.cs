@@ -117,32 +117,31 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     void Update()
     {
+        if (isFlashing)
+        {
+            flashTimer -= Time.deltaTime;
+            
+            // Efek kedip cepat: nyala merah - putih - merah - putih
+            if (flashTimer > 0)
+            {
+                // Menggunakan sisa waktu untuk menentukan warna
+                playerSR.color = (Mathf.Round(flashTimer * 20) % 2 == 0) ? Color.red : Color.white;
+            }
+            else
+            {
+                playerSR.color = Color.white; // Paksa putih saat selesai
+                isFlashing = false;
+            }
+        }
 
-        // if (health.CurrentHP <= 0 && !isDead)
-        // {
-        //     isDead = true; // Kunci agar hanya jalan sekali
-        //     TriggerDeath();
-        // }
+        if (isDead)
+        {
+            // Kunci kecepatan horizontal jadi 0, tapi biarkan kecepatan vertikal (jatuh) berjalan
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return; // Hentikan paksa seluruh fungsi Update di bawah baris ini!
+        }
 
-        // Jika player sudah mati, hentikan semua kontrol dan update
-        if (health != null && health.IsDead) return;
-
-        // if (isKnockedBack)
-        // {
-        //     knockbackTimer -= Time.deltaTime;
-        //     if (knockbackTimer <= 0)
-        //     {
-        //         isKnockedBack = false;
-        //     }
-        //     else
-        //     {
-        //         // return; digunakan untuk menghentikan Update sementara.
-        //         // Ini mencegah player menekan tombol jalan saat sedang terpental!
-        //         return; 
-        //     }
-        // }
-
-        // 3. UPDATE TIMER KEBAL PLAYER
+        
         health.UpdateInvincibility(Time.deltaTime);
 
         if (isDashing)
@@ -179,23 +178,6 @@ public class PlayerController : MonoBehaviour, IDamageable
             
             // Kirim kecepatan vertikal (positif saat naik, negatif saat turun)
             playerAnim.SetFloat("yVelocity", rb.linearVelocity.y);
-        }
-
-        if (isFlashing)
-        {
-            flashTimer -= Time.deltaTime;
-            
-            // Efek kedip cepat: nyala merah - putih - merah - putih
-            if (flashTimer > 0)
-            {
-                // Menggunakan sisa waktu untuk menentukan warna
-                playerSR.color = (Mathf.Round(flashTimer * 20) % 2 == 0) ? Color.red : Color.white;
-            }
-            else
-            {
-                playerSR.color = Color.white; // Paksa putih saat selesai
-                isFlashing = false;
-            }
         }
 
         CheckEnemyContactSensor();
@@ -255,17 +237,22 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         AudioManager.instance.PlaySFX("MC Death");
 
+        // 1. Pemicu animasi mati
         if (playerAnim != null) playerAnim.SetTrigger("Die");
 
-        rb.linearVelocity = Vector2.zero;
-        rb.bodyType = RigidbodyType2D.Static; 
-        GetComponent<Collider2D>().enabled = false;
+        // 2. Pastikan tubuh tetap Dynamic agar bisa ditarik gravitasi jatuh ke bawah
+        rb.bodyType = RigidbodyType2D.Dynamic; 
 
-        // Tenggelam ke Acid
-        transform.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
+        // 3. Matikan kecepatan jalannya, biarkan dia jatuh alami
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+        // PENTING: Kita TIDAK LAGI mematikan Collider! 
+        // Biarkan collider menyala agar saat dia jatuh, badannya akan menabrak tanah/ground.
         
+        // 4. Turunkan Sorting Order agar jika jatuh ke Acid, badannya ada di belakang gambar Acid
         if (playerSR != null) playerSR.sortingOrder = -2; 
         
+        // 5. Panggil Respawn mutlak setelah 2 detik (tidak peduli sudah nyentuh tanah atau belum)
         Invoke("Respawn", 2.0f);
     }
 
@@ -460,6 +447,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         
+        bool didHitAnyEnemy = false;
+
         foreach (Collider2D enemy in hitEnemies)
         {
             IKnockbackable knockbackable = enemy.GetComponent<IKnockbackable>();
@@ -470,9 +459,15 @@ public class PlayerController : MonoBehaviour, IDamageable
             {
                 int finalDamage = Mathf.RoundToInt(damageAmount);
                 damageable.TakeDamage(finalDamage);
-                AudioManager.instance.PlaySFX("MC Attack");
-                Debug.Log($"Kena tebas Combo ke-{currentAnimatingStep}! (Kirim {finalDamage} Damage)");
+                didHitAnyEnemy = true;
             }
+        }
+
+        if (!didHitAnyEnemy)
+        {
+            AudioManager.instance.PlaySFX("MC Attack");
+        } else {
+            AudioManager.instance.PlaySFX("Damage");
         }
     }
 
@@ -493,30 +488,36 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void Respawn()
     {
+        // 1. Kembalikan Posisi & Fisika
         transform.position = SavePoint.lastCheckpointPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
-        GetComponent<Collider2D>().enabled = true;
         
-        // Reset Visual & Flash
+        // Pastikan collider aktif (jaga-jaga)
+        if (playerCollider != null) playerCollider.enabled = true; 
+        
+        // 2. Bersihkan Visual & Efek
         isFlashing = false;
         flashTimer = 0f;
         if (playerSR != null) 
         {
             playerSR.color = Color.white;
-            playerSR.sortingOrder = 0; // Kembalikan ke 0 agar tidak terus-terusan tenggelam
+            playerSR.sortingOrder = 0; // Kembalikan agar tidak terus-terusan tenggelam
         }
         
-        // --- FIX BUG ANIMASI SERANG MACET ---
+        // 3. Bersihkan Status Combat & Input
         isAttacking = false;
+        isDashing = false;
         comboStep = 0;
         currentAnimatingStep = 0;
         if (playerAnim != null) playerAnim.SetInteger("ComboStep", 0);
-        // ------------------------------------
         
+        // 4. Reset Darah dan UI
         health.ResetHealth();
-        UpdateHealthUI();
+        UpdateHealthUI(); // Sinkronkan UI darah
+        
         isDead = false;
         
+        // 5. Reset Animasi
         if (playerAnim != null)
         {
             playerAnim.ResetTrigger("Die");
