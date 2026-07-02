@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 // 1. TAMBAHKAN IDamageable DI SINI
 public class PlayerController : MonoBehaviour, IDamageable 
 {
     [Header("Health & Status")]
-    public int maxHealth = 100;
+    public int maxHealth = 5;
     public float invincibilityDuration = 1.5f; // I-frame agar player tidak langsung mati saat dikeroyok
     private HealthComponent health;
     private Color originalColor;
+
+    public GameObject healthBarUI; // Referensi ke UI Health Bar
+
+    
+    [SerializeField] private GameObject[] healthSegments; // Array untuk menyimpan segmen-segmen health bar 
 
     [Header("Movement")]
     public float moveSpeed = 8f;
@@ -89,6 +95,16 @@ public class PlayerController : MonoBehaviour, IDamageable
         playerSR = GetComponent<SpriteRenderer>();
         playerCollider = GetComponent<Collider2D>();
 
+        if (healthBarUI != null)
+        {
+            int childCount = healthBarUI.transform.childCount;
+            healthSegments = new GameObject[childCount];
+            for (int i = 0; i < childCount; i++)
+            {
+                healthSegments[i] = healthBarUI.transform.GetChild(i).gameObject;
+            }
+        }
+
         // 2. INISIALISASI SISTEM HEALTH
         if (playerSR != null) originalColor = playerSR.color;
 
@@ -140,7 +156,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             }
             if (Time.time >= nextSpawnTime)
             {
-                //SpawnAfterimage();
+                SpawnAfterimage();
                 nextSpawnTime = Time.time + afterimageSpawnRate;
             }
             return; 
@@ -217,12 +233,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     private void HandleDamage(int currentHP)
     {
         if (isDead) return; 
-
-        // Panggil efek visual terpisah
         StartFlash();
-
-        // TriggerDeath TIDAK dipanggil di sini lagi, 
-        // akan ditangani otomatis oleh event OnDeath -> HandleDeath
+        UpdateHealthUI();
     }
 
     private void HandleDeath()
@@ -358,6 +370,21 @@ public class PlayerController : MonoBehaviour, IDamageable
         playerAnim.SetTrigger("Attack");
     }
 
+    private void UpdateHealthUI()
+    {
+        if (healthSegments == null || health == null) return;
+
+        for (int i = 0; i < healthSegments.Length; i++)
+        {
+            if (healthSegments[i] != null)
+            {
+                // Jika index (i) lebih kecil dari HP saat ini, ikon menyala (true)
+                // Jika index sama atau lebih besar, ikon mati (false)
+                healthSegments[i].SetActive(i < health.CurrentHP);
+            }
+        }
+    }
+
     private void CheckGrounded()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -487,6 +514,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         // ------------------------------------
         
         health.ResetHealth();
+        UpdateHealthUI();
         isDead = false;
         
         if (playerAnim != null)

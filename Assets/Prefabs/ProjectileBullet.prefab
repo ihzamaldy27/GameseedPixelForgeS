@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
   speed: 12
-  damage: 10
+  damage: 1
   lifeTime: 3
   playerLayer:
     serializedVersion: 2
