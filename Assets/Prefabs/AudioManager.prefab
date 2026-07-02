@@ -135,6 +135,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 4698c8cd046e14b4c8333780d2a6bed2, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
+  - name: Enemy Flying hit
+    clip: {fileID: 8300000, guid: 377f465947b30124f89cda98670bf149, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Enemy hit
+    clip: {fileID: 8300000, guid: 38d1663a7d43e8841abc0d89392cf39c, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
 --- !u!82 &83065725819724939
 AudioSource:
   m_ObjectHideFlags: 0

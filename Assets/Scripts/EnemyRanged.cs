@@ -285,7 +285,11 @@ public class EnemyRanged : MonoBehaviour, IDamageable, IKnockbackable
 
     public void ApplyKnockback(Vector2 sourcePosition) { lastHitPosition = sourcePosition; }
 
-    public void TakeDamage(int damage) { health.TakeDamage(damage); }
+    public void TakeDamage(int damage) 
+    { 
+        health.TakeDamage(damage); 
+        AudioManager.instance.PlaySFX("Enemy hit");
+    }
 
     private void HandleDamage(int currentHP)
     {

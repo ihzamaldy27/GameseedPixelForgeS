@@ -257,6 +257,7 @@ public class EnemyMelee : MonoBehaviour, IDamageable, IKnockbackable
     public void TakeDamage(int damage)
     {
         health.TakeDamage(damage);
+        AudioManager.instance.PlaySFX("Enemy hit");
     }
 
     private void HandleDamage(int currentHP)
