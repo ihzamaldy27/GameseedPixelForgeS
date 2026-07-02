@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 4a0296296eef7a94ab5f86ac150219a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5175856694049495687
+    second: MC_Gameseed_Fall_0
+  - first:
+      213: -903991842064442748
+    second: MC_Gameseed_Fall_1
+  - first:
+      213: 2834098369526153033
+    second: MC_Gameseed_Fall_2
+  - first:
+      213: 3112468380600926696
+    second: MC_Gameseed_Fall_3
+  - first:
+      213: -947515139161354416
+    second: MC_Gameseed_Fall_4
+  - first:
+      213: 5741561422664048703
+    second: MC_Gameseed_Fall_5
+  - first:
+      213: 1476116229901822879
+    second: MC_Gameseed_Fall_6
+  - first:
+      213: -4354904869355620900
+    second: MC_Gameseed_Fall_7
+  - first:
+      213: 7311670535822812148
+    second: MC_Gameseed_Fall_8
+  - first:
+      213: 2909082605200764345
+    second: MC_Gameseed_Fall_9
+  - first:
+      213: -7018806344957816854
+    second: MC_Gameseed_Fall_10
+  - first:
+      213: -1677189018203781719
+    second: MC_Gameseed_Fall_11
+  - first:
+      213: -9106953928861093913
+    second: MC_Gameseed_Fall_12
+  - first:
+      213: 3529386157469502149
+    second: MC_Gameseed_Fall_13
+  - first:
+      213: -3080297515795408818
+    second: MC_Gameseed_Fall_14
+  - first:
+      213: 1722675044520400477
+    second: MC_Gameseed_Fall_15
+  - first:
+      213: 7972983216413206893
+    second: MC_Gameseed_Fall_16
+  - first:
+      213: 7601668902030805974
+    second: MC_Gameseed_Fall_17
+  - first:
+      213: 5823593542992643222
+    second: MC_Gameseed_Fall_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9752ad672c9ab28b0800000000000000
+      internalID: -5175856694049495687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ad5ed85306473f0800000000000000
+      internalID: -903991842064442748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fbe1e837db45720800000000000000
+      internalID: 2834098369526153033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_3
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e18a586085b13b20800000000000000
+      internalID: 3112468380600926696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_4
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f8bf64000c9d2f0800000000000000
+      internalID: -947515139161354416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_5
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f302afd91bf1eaf40800000000000000
+      internalID: 5741561422664048703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_6
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bac7ae3e73c7410800000000000000
+      internalID: 1476116229901822879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_7
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5707738154093c0800000000000000
+      internalID: -4354904869355620900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 364
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3a86a0d95487560800000000000000
+      internalID: 7311670535822812148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 364
+        width: 364
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd624967332f5820800000000000000
+      internalID: 2909082605200764345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_10
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 364
+        width: 364
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef088501d0389e90800000000000000
+      internalID: -7018806344957816854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_11
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 364
+        width: 364
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a507cc597d69b8e0800000000000000
+      internalID: -1677189018203781719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_12
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 364
+        width: 364
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efe26407a99d9180800000000000000
+      internalID: -9106953928861093913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_13
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 364
+        width: 364
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca862fb206eaf030800000000000000
+      internalID: 3529386157469502149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_14
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 364
+        width: 364
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e481f70cab59045d0800000000000000
+      internalID: -3080297515795408818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_15
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 364
+        width: 364
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56911c63db28e710800000000000000
+      internalID: 1722675044520400477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 364
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69e57e1ef9b5ae60800000000000000
+      internalID: 7972983216413206893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_17
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 364
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db0ead479d8e7960800000000000000
+      internalID: 7601668902030805974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MC_Gameseed_Fall_18
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 364
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694c55ef87f81d050800000000000000
+      internalID: 5823593542992643222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f554606f70849ae409396db523f5ecc3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      MC_Gameseed_Fall_0: -5175856694049495687
+      MC_Gameseed_Fall_1: -903991842064442748
+      MC_Gameseed_Fall_10: -7018806344957816854
+      MC_Gameseed_Fall_11: -1677189018203781719
+      MC_Gameseed_Fall_12: -9106953928861093913
+      MC_Gameseed_Fall_13: 3529386157469502149
+      MC_Gameseed_Fall_14: -3080297515795408818
+      MC_Gameseed_Fall_15: 1722675044520400477
+      MC_Gameseed_Fall_16: 7972983216413206893
+      MC_Gameseed_Fall_17: 7601668902030805974
+      MC_Gameseed_Fall_18: 5823593542992643222
+      MC_Gameseed_Fall_19: -1935191344
+      MC_Gameseed_Fall_2: 2834098369526153033
+      MC_Gameseed_Fall_20: -1119223542
+      MC_Gameseed_Fall_21: -550784638
+      MC_Gameseed_Fall_22: -937359918
+      MC_Gameseed_Fall_23: 343180719
+      MC_Gameseed_Fall_3: 3112468380600926696
+      MC_Gameseed_Fall_4: -947515139161354416
+      MC_Gameseed_Fall_5: 5741561422664048703
+      MC_Gameseed_Fall_6: 1476116229901822879
+      MC_Gameseed_Fall_7: -4354904869355620900
+      MC_Gameseed_Fall_8: 7311670535822812148
+      MC_Gameseed_Fall_9: 2909082605200764345
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

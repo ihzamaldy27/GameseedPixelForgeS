@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public float attackRange = 0.8f;
     public LayerMask enemyLayer;
     public float damageAmount = 1f;
+    public bool canAttack = true; // Flag untuk mengontrol apakah player bisa menyerang atau tidak
 
     [Header("Sistem Combo")]
     public float maxComboDelay = 0.6f; 
@@ -332,6 +333,8 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void OnAttack(InputValue value)
     {
+        if (!canAttack) return; // Jika flag canAttack false, hentikan fungsi ini
+
         if (value.isPressed)
         {
             lastClickedTime = Time.time;
@@ -345,7 +348,7 @@ public class PlayerController : MonoBehaviour, IDamageable
                 comboStep++;
                 comboStep = Mathf.Clamp(comboStep, 1, 3);
             }
-        }
+        } 
     }
 
     // --- FUNGSI COMBAT & LAINNYA ---
