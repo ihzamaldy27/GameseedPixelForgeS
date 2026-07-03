@@ -87,6 +87,13 @@ public class PlayerController : MonoBehaviour, IDamageable
     private float flashTimer = 0f;
     private bool isFlashing = false;
 
+    [Header("Screen Effects (Vignette & Fade)")]
+    public CanvasGroup vignetteGroup;
+    public CanvasGroup fadeGroup;
+    public float fadeDuration = 1.5f;        // Lama waktu layar menjadi gelap
+    public float vignettePulseSpeed = 3f;  // Kecepatan detak vignette
+    private bool isLowHealth = false;
+
     [Header("Hitbox Contact Damage")]
     public float contactRadius = 0.5f; // Besaran area sensor tubuh player
 
@@ -133,6 +140,13 @@ public class PlayerController : MonoBehaviour, IDamageable
                 playerSR.color = Color.white; // Paksa putih saat selesai
                 isFlashing = false;
             }
+        }
+
+        if (isLowHealth && vignetteGroup != null && !isDead)
+        {
+            // Menggunakan Mathf.Sin untuk membuat efek detak jantung (naik turun secara halus)
+            // Alpha akan bolak-balik antara 0.3 (samar) sampai 0.8 (jelas)
+            vignetteGroup.alpha = 0.55f + Mathf.Sin(Time.time * vignettePulseSpeed) * 0.25f;
         }
 
         if (isDead)
@@ -255,38 +269,14 @@ public class PlayerController : MonoBehaviour, IDamageable
         
         // 4. Turunkan Sorting Order agar jika jatuh ke Acid, badannya ada di belakang gambar Acid
         if (playerSR != null) playerSR.sortingOrder = -2; 
+
+        isLowHealth = false;
+        if (vignetteGroup != null) vignetteGroup.alpha = 0f;
+        if (fadeGroup != null) StartCoroutine(FadeOutRoutine());
         
         // 5. Panggil Respawn mutlak setelah 2 detik (tidak peduli sudah nyentuh tanah atau belum)
         Invoke("Respawn", 2.0f);
     }
-
-    // private IEnumerator FlashHit()
-    // {
-    //     // Hentikan korutin lama jika ada
-    //     if (flashRoutine != null) StopCoroutine(flashRoutine);
-        
-    //     // Simpan referensi korutin baru agar bisa dihentikan nanti
-    //     flashRoutine = StartCoroutine(FlashRoutine());
-    //     yield return null;
-    // }
-    // // ----------------------------------------------
-
-    // private IEnumerator FlashRoutine()
-    // {
-    //     if (playerSR == null) playerSR = GetComponent<SpriteRenderer>();
-
-    //     // Efek kedip merah
-    //     for (int i = 0; i < 3; i++)
-    //     {
-    //         playerSR.color = new Color(1f, 0.5f, 0.5f, 1f); 
-    //         yield return new WaitForSeconds(0.1f);
-    //         playerSR.color = Color.white;
-    //         yield return new WaitForSeconds(0.1f);
-    //     }
-        
-    //     // Reset referensi setelah selesai
-    //     flashRoutine = null;
-    // }
 
     public void StartFlash()
     {
@@ -298,10 +288,6 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void OnMove(InputValue value) 
     {
         moveInput = value.Get<Vector2>();
-        if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing && isGrounded)
-        {
-            AudioManager.instance.PlaySFX("MC Walk");
-        }
 
         // if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing)
         // {
@@ -321,6 +307,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         else if (value.isPressed && isGrounded && !isDashing)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            AudioManager.instance.PlaySFX("MC Jump");
         }
     }
 
@@ -379,6 +366,20 @@ public class PlayerController : MonoBehaviour, IDamageable
                 // Jika index (i) lebih kecil dari HP saat ini, ikon menyala (true)
                 // Jika index sama atau lebih besar, ikon mati (false)
                 healthSegments[i].SetActive(i < health.CurrentHP);
+            }
+        }
+
+        if (health != null)
+        {
+            // Jika darah 2 atau 1, nyalakan status sekarat
+            if (health.CurrentHP <= 2 && health.CurrentHP > 0)
+            {
+                isLowHealth = true;
+            }
+            else
+            {
+                isLowHealth = false;
+                if (vignetteGroup != null) vignetteGroup.alpha = 0f; // Matikan vignette jika darah aman
             }
         }
     }
@@ -508,6 +509,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     public void Respawn()
     {
+        
         // 1. Kembalikan Posisi & Fisika
         transform.position = SavePoint.lastCheckpointPosition;
         rb.bodyType = RigidbodyType2D.Dynamic;
@@ -544,6 +546,8 @@ public class PlayerController : MonoBehaviour, IDamageable
             playerAnim.Play("IdleMC");
         }
         
+        if (fadeGroup != null) StartCoroutine(FadeInRoutine());
+
         this.enabled = true;
     }
 
@@ -635,11 +639,42 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (!isDead)
         {
             // Mencegah bug Unity memanggil event 2x di waktu yang bersamaan
-            if (Time.time - lastStepTime < 0.5f) return;
+            if (Time.time - lastStepTime < 0.15f) return;
             lastStepTime = Time.time;
             float randomPitch = Random.Range(0.9f, 1.1f);
             AudioManager.instance.PlayWalkSFX("MC Walk", randomPitch);
-            Debug.Log("Step sound played with pitch: " + randomPitch);
+            //Debug.Log("Step sound played with pitch: " + randomPitch);
         }
+    }
+
+    private IEnumerator FadeOutRoutine()
+    {
+        if (fadeGroup == null) yield break;
+        float timer = 0f;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            fadeGroup.alpha = Mathf.Lerp(0f, 1f, timer / fadeDuration); // Gelapkan layar perlahan
+            yield return null;
+        }
+        fadeGroup.alpha = 1f; // Pastikan benar-benar hitam
+    }
+
+    private IEnumerator FadeInRoutine()
+    {
+        if (fadeGroup == null) yield break;
+        float timer = 0f;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            fadeGroup.alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration); // Terangkan layar perlahan
+            yield return null;
+        }
+        fadeGroup.alpha = 0f; // Pastikan benar-benar transparan
+    }
+
+    public void LandSFX()
+    {
+        AudioManager.instance.PlaySFX("MC Landing");
     }
 }

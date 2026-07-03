@@ -144,11 +144,19 @@ MonoBehaviour:
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   - name: MC Walk
-    clip: {fileID: 8300000, guid: 66ea774ead660f24d811308359045f69, type: 3}
+    clip: {fileID: 8300000, guid: be3c7c8c837b3b847be128c1f07c5478, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   - name: Enemy hit
     clip: {fileID: 8300000, guid: 38d1663a7d43e8841abc0d89392cf39c, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: MC Jump
+    clip: {fileID: 8300000, guid: 983e6b2ebfb0a834eb86c48abc0a8bd2, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: MC Landing
+    clip: {fileID: 8300000, guid: 10a3a3be85c9a0c4fb8ef8f919b8f5f0, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
 --- !u!82 &83065725819724939
@@ -358,7 +366,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
