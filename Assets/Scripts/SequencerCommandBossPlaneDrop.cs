@@ -8,10 +8,14 @@ namespace PixelCrushers.DialogueSystem.SequencerCommands
     {
         public void Start()
         {
-            float targetY = GetParameterAsFloat(0);
-            float duration = GetParameterAsFloat(1);
+            float initX = GetParameterAsFloat(0);
+            float initY = GetParameterAsFloat(1);
+            float targetX = GetParameterAsFloat(2);
+            float targetY = GetParameterAsFloat(3);
+            float duration = GetParameterAsFloat(4);
             Transform _plane = GameObject.Find("BossPlane").transform;
-            DOTween.To(() => _plane.position, x => _plane.position = x, new Vector3(_plane.position.x, targetY, 0), duration);
+            _plane.position = new Vector2(initX, initY);
+            DOTween.To(() => _plane.position, x => _plane.position = x, new Vector3(targetX, targetY, 0), duration);
             Stop();
         }
     }

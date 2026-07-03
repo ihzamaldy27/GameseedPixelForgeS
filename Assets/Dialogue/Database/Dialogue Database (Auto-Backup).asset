@@ -614,7 +614,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 670
+        y: 770
         width: 160
         height: 30
     - id: 2
@@ -663,7 +663,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 1020
+        y: 1120
         width: 160
         height: 30
     - id: 3
@@ -718,7 +718,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 720
+        y: 820
         width: 160
         height: 30
     - id: 4
@@ -773,7 +773,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 820
+        y: 920
         width: 160
         height: 30
     - id: 5
@@ -828,7 +828,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 870
+        y: 970
         width: 160
         height: 30
     - id: 6
@@ -884,7 +884,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 920
+        y: 1020
         width: 160
         height: 30
     - id: 7
@@ -939,7 +939,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 970
+        y: 1070
         width: 160
         height: 30
     - id: 8
@@ -1507,8 +1507,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: If you wish to restore peace, then you have to fight me... on even
-          ground.
+        value: If you wish to restore peace...
         type: 0
         typeString: 
       - title: Sequence
@@ -1526,7 +1525,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 18
         destinationConversationID: 2
-        destinationDialogueID: 19
+        destinationDialogueID: 23
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1563,11 +1562,20 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: He leaves with the spaceship.
+        value: 
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'Fade(stay, 0.5, #000000);
+
+          SetActive(BossIdle, false)@0.5;
+
+          SetActive(BossPlane,
+          false)@0.5;
+
+          Fade(unstay, 0.5, #000000)@1;
+
+          Continue()@2;'
         type: 0
         typeString: 
       conversationID: 2
@@ -1592,7 +1600,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 620
+        y: 720
         width: 160
         height: 30
     - id: 20
@@ -1647,7 +1655,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 770
+        y: 870
         width: 160
         height: 30
     - id: 21
@@ -1677,14 +1685,19 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(stay, 0.5, #FFFFFF);
+        value: 'HidePanel(0);
 
-          SetActive(EnemyChase, false)@0.5;
+          Fade(stay, 0.5, #FFFFFF);
 
-          SetGirlPosition(87.2,-3.4,true)@0.5.;
+          SetActive(EnemyChase,
+          false)@0.5;
+
+          SetGirlPosition(87.2,-2.8,true)@0.5;
 
           Fade(unstay,
-          0.5, #FFFFFF)@1;'
+          0.5, #FFFFFF)@1;
+
+          Continue()@2;'
         type: 0
         typeString: 
       conversationID: 2
@@ -1712,9 +1725,123 @@ MonoBehaviour:
         y: 370
         width: 160
         height: 30
+    - id: 23
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'HidePanel(0);
+
+          BossPlaneDrop(72,-1,80,-1,1);
+
+          Continue()@2;'
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 23
+        destinationConversationID: 2
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 620
+        width: 160
+        height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ...then you have to fight me on even ground.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 24
+        destinationConversationID: 2
+        destinationDialogueID: 19
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 670
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 18.05012, y: 173.98521}
-    canvasZoom: 1.0899998
+    canvasScrollPosition: {x: 0, y: 463.6093}
+    canvasZoom: 0.7299998
   syncInfo:
     syncActors: 0
     syncItems: 0
