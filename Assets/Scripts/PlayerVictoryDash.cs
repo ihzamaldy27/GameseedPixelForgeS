@@ -166,6 +166,9 @@ public class PlayerVictoryDash : MonoBehaviour
         Debug.Log("Player victory dash complete!");
 
         _isDashing = false;
+
+        // 10. Load cutscene
+        GameSceneManager.instance.LoadSceneAsync(GameSceneManager.SceneName.CutSceneFinal);
     }
 
     // Public method to manually trigger victory (e.g., for testing)
