@@ -64,8 +64,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     public float knockbackForceY = 6f;  // Daya dorong ke atas (bouncing)
     public float knockbackDuration = 0.25f; // Lama player kehilangan kendali (stunned)
     
-    private bool isKnockedBack = false;
-    private float knockbackTimer = 0f;
+    //private bool isKnockedBack = false;
+    //private float knockbackTimer = 0f;
 
     [Header("Dash Effects")]
     [SerializeField] private GameObject afterimagePrefab; 
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     private Rigidbody2D rb;
     private SpriteRenderer playerSR;
     private bool isDead = false;
-    private Coroutine flashRoutine = null; // Menyimpan referensi korutin yang sedang berjalan
+    //private Coroutine flashRoutine = null; // Menyimpan referensi korutin yang sedang berjalan
 
     [Header("Flash Settings")]
     private float flashTimer = 0f;
@@ -181,18 +181,6 @@ public class PlayerController : MonoBehaviour, IDamageable
             playerAnim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
 
-        // Logika Audio Berjalan
-        // (Pastikan kamu menyesuaikan kondisi ini. Suara hanya keluar jika player menekan tombol jalan, tidak sedang mati, dan tidak sedang dash)
-        if (Mathf.Abs(moveInput.x) > 0.1f && !isDashing && !isDead && isGrounded)
-        {
-            AudioManager.instance.PlayWalkSFX("MC Walk");
-        }
-        else
-        {
-            // Jika berhenti, idle, atau dash, matikan suaranya
-            AudioManager.instance.StopWalkSFX();
-        }
-
         CheckEnemyContactSensor();
         CheckGrounded();
         ResetCombo();
@@ -217,7 +205,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     // --- IMPLEMENTASI IDamageable UNTUK PLAYER ---
     public void TakeDamage(int damage)
     {
-        ResetAttackState();
+        //ResetAttackState(); kalo taro disini Bug saat mati kena acid
         // Fungsi ini akan dipanggil otomatis oleh EnemyMelee saat memukul
         // Jika player sedang dash (Dodge), kamu bisa membatalkan damage dengan cara uncomment baris di bawah:
         if (isDashing) return; 
@@ -231,6 +219,7 @@ public class PlayerController : MonoBehaviour, IDamageable
         if (isDead) return; 
         StartFlash();
         UpdateHealthUI();
+        ResetAttackState();
     }
 
     private void HandleDeath()
@@ -250,7 +239,7 @@ public class PlayerController : MonoBehaviour, IDamageable
     public void TriggerDeath()
     {
         AudioManager.instance.PlaySFX("MC Death");
-        AudioManager.instance.StopWalkSFX();
+        //AudioManager.instance.StopWalkSFX();
 
         // 1. Pemicu animasi mati
         if (playerAnim != null) playerAnim.SetTrigger("Die");
@@ -633,6 +622,24 @@ public class PlayerController : MonoBehaviour, IDamageable
         {
             TakeDamage(contactDamage); 
             // Fungsi TakeDamage akan memicu I-Frames dan animasi Flash otomatis dari HealthComponent
+        }
+    }
+
+    // Fungsi ini dipanggil otomatis oleh Animation Event di klip RunMC
+    // Variabel timer untuk mencegah bug suara menumpuk saat transisi animasi
+    private float lastStepTime = 0f; 
+
+    // Fungsi ini dipanggil otomatis oleh Animation Event di klip RunMC
+    public void PlayStepSound()
+    {
+        if (!isDead)
+        {
+            // Mencegah bug Unity memanggil event 2x di waktu yang bersamaan
+            if (Time.time - lastStepTime < 0.5f) return;
+            lastStepTime = Time.time;
+            float randomPitch = Random.Range(0.9f, 1.1f);
+            AudioManager.instance.PlayWalkSFX("MC Walk", randomPitch);
+            Debug.Log("Step sound played with pitch: " + randomPitch);
         }
     }
 }

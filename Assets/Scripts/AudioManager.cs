@@ -186,17 +186,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayWalkSFX(string sfxName)
+    public void PlayWalkSFX(string sfxName, float pitch = 1f)
     {
-        // Jangan putar ulang jika sudah sedang berjalan (mencegah suara tumpang tindih)
-        if (walkSource.isPlaying) return; 
-        
         Sound s = Array.Find(sfxList, sound => sound.name == sfxName);
         if (s != null)
         {
-            walkSource.clip = s.clip;
-            walkSource.loop = true; // Aktifkan mode looping
-            walkSource.Play();
+            walkSource.pitch = pitch;
+            
+            // Gunakan PlayOneShot agar suara kiri dan kanan bisa menyambung natural
+            // PlayOneShot akan otomatis mengikuti settingan Volume pada komponen walkSource!
+            walkSource.PlayOneShot(s.clip);
+        }
+        else
+        {
+            Debug.LogWarning($"SFX Walk '{sfxName}' tidak ditemukan!");
         }
     }
 
