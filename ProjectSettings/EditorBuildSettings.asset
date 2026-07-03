@@ -9,14 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: e84c97506044f2f43a1d14e404b6fccc
   - enabled: 1
-    path: Assets/Scenes/BlueprintGameplay.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Outdoor1.unity
+    guid: ca5ea01bf4cbe03478b861139f7fe961
   - enabled: 1
-    path: Assets/Scenes/Indoor1.unity
-    guid: 0f3e21cbce58aba48bdb6e5fd8aac6b5
+    path: Assets/Scenes/Indoor2.unity
+    guid: 37fae1427d220ac41b46a99505c1d070
+  - enabled: 1
+    path: Assets/Scenes/Outdoor2.unity
+    guid: 10b64b28e7117a04cb81dba47dba9041
   - enabled: 1
     path: Assets/Scenes/SpaceShooterScene.unity
     guid: dfb4c90ec2a3c0a448148ac845a68970
+  - enabled: 1
+    path: Assets/Scenes/CutSceneFinal.unity
+    guid: e6495c4d876cc0749aefe12ea29a45f9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

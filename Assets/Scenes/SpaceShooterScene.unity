@@ -1195,6 +1195,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525127478}
   m_CullTransparentMesh: 1
+--- !u!1 &648607668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648607670}
+  - component: {fileID: 648607669}
+  m_Layer: 0
+  m_Name: BGMInitiator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &648607669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648607668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22ce1622190162459c2247952a736d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BGMInitiator
+  bGMName: Spaceship Battle
+--- !u!4 &648607670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648607668}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.36987, y: -3.62354, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740586299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,6 +2753,67 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1431540873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 407103929803347848, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: startingBGMName
+      value: Spaceship Battle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.34769
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
 --- !u!1 &1460819182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3742,99 +3848,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxBG
   parallaxSpeed: 0.15
   spriteWidth: 34.63
---- !u!1001 &2061552149
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 407103929803347848, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: startingBGMName
-      value: Spaceship Battle
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: sfxList.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: bgmList.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: sfxList.Array.data[10].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7fcd6bd79d7880c4fb958782e405f9dd, type: 3}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: sfxList.Array.data[10].name
-      value: Hit Impact
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: sfxList.Array.data[11].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 70dec5b06c3ad2f42b13b45bead1e504, type: 3}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: sfxList.Array.data[11].name
-      value: Boss Explosion
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: bgmList.Array.data[7].loopClip
-      value: 
-      objectReference: {fileID: 8300000, guid: a6bd881f5c197fd49b2989f2ebb651f1, type: 3}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: bgmList.Array.data[7].introClip
-      value: 
-      objectReference: {fileID: 8300000, guid: b245800e330d7964eaef1e559f031360, type: 3}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
 --- !u!1 &2076826929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,10 +3931,11 @@ SceneRoots:
   - {fileID: 1919619290}
   - {fileID: 1460819184}
   - {fileID: 1907042881}
-  - {fileID: 2061552149}
   - {fileID: 1833010422}
   - {fileID: 816289215}
   - {fileID: 1808951403}
   - {fileID: 1314540762}
   - {fileID: 1145406460}
   - {fileID: 1759338966}
+  - {fileID: 1431540873}
+  - {fileID: 648607670}

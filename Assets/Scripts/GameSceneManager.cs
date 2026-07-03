@@ -12,9 +12,11 @@ public class GameSceneManager : MonoBehaviour
     public enum SceneName 
     {
         MainMenu,
-        BlueprintGameplay,
+        Outdoor1,
         Indoor2,
-        SpaceShooterScene
+        Outdoor2,
+        SpaceShooterScene,
+        CutSceneFinal
     }
 
     private void Awake()

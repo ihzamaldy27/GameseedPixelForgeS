@@ -511,7 +511,7 @@ Transform:
   m_GameObject: {fileID: 19787094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -91.3, y: 62.2, z: 0}
+  m_LocalPosition: {x: -99.66, y: -17.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -924,7 +924,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &36294954
+--- !u!1001 &36716133
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -932,29 +932,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 83065725819724939, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: m_Volume
-      value: 0.481
-      objectReference: {fileID: 0}
     - target: {fileID: 407103929803347848, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: startingBGMName
-      value: Chase & Spaceship Battle
-      objectReference: {fileID: 0}
-    - target: {fileID: 525983289185065013, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
-      propertyPath: bgmList.Array.data[1].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ef391aac4924d4848b33ca45e2ee4392, type: 3}
     - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.48222
+      value: -4.38249
       objectReference: {fileID: 0}
     - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.96695
+      value: -2.97822
       objectReference: {fileID: 0}
     - target: {fileID: 2115339720585850726, guid: ae464b2e88c0f5944a2637cdcb31eb5f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -88805,6 +88793,50 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &578804382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578804384}
+  - component: {fileID: 578804383}
+  m_Layer: 0
+  m_Name: GameSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &578804383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578804382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8399c5289443af14ca03a5a5527fc341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSceneManager
+--- !u!4 &578804384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578804382}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.35021, y: 10.40587, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &601046095
 GameObject:
   m_ObjectHideFlags: 0
@@ -90175,7 +90207,7 @@ Transform:
   m_GameObject: {fileID: 672879506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -91.21001, y: 62.390003, z: -10}
+  m_LocalPosition: {x: -96.49737, y: -17.094381, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96008,7 +96040,7 @@ Transform:
   m_GameObject: {fileID: 1001327426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -91.21001, y: 62.390003, z: -10}
+  m_LocalPosition: {x: -99.57001, y: -17.090002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -113354,6 +113386,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 162188861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2033979102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2033979104}
+  - component: {fileID: 2033979103}
+  m_Layer: 0
+  m_Name: BGMInitiator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2033979103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033979102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22ce1622190162459c2247952a736d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BGMInitiator
+  bGMName: Chase & Spaceship Battle
+--- !u!4 &2033979104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033979102}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.36987, y: -3.62354, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034762136
 GameObject:
   m_ObjectHideFlags: 0
@@ -115386,9 +115463,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 672879509}
   - {fileID: 19787095}
+  - {fileID: 36716133}
   - {fileID: 1001327430}
   - {fileID: 2186689}
-  - {fileID: 36294954}
   - {fileID: 1103680821}
   - {fileID: 931168844}
   - {fileID: 1009958564}
@@ -115466,3 +115543,5 @@ SceneRoots:
   - {fileID: 2106721628}
   - {fileID: 1435348352}
   - {fileID: 509647244}
+  - {fileID: 2033979104}
+  - {fileID: 578804384}
