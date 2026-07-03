@@ -94,6 +94,7 @@ public class AudioManager : MonoBehaviour
                 bgmSource.loop = true;
                 bgmSource.Play();
             }
+            bgmSource.volume = 1f;
         }
         else
         {
@@ -121,6 +122,11 @@ public class AudioManager : MonoBehaviour
         {
             Debug.LogWarning($"BGM dengan nama '{bgmName}' tidak ditemukan! Cek ejaan di Inspector.");
         }
+    }
+
+    public void StopBGM(float decayTime)
+    {
+        DOTween.To(() => bgmSource.volume, x => bgmSource.volume = x, 0, decayTime);
     }
 
     // Coroutine to handle intro → loop transition

@@ -59,7 +59,7 @@ MonoBehaviour:
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   - name: Chase & Spaceship Battle
-    clip: {fileID: 8300000, guid: 684c46fd3d76e744dac7a03c0c846747, type: 3}
+    clip: {fileID: 8300000, guid: ef391aac4924d4848b33ca45e2ee4392, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   - name: Death
@@ -83,7 +83,11 @@ MonoBehaviour:
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   - name: Spaceship Battle
-    clip: {fileID: 8300000, guid: cf39d7edea110e848bfb23e5749f50fc, type: 3}
+    clip: {fileID: 0}
+    introClip: {fileID: 8300000, guid: b245800e330d7964eaef1e559f031360, type: 3}
+    loopClip: {fileID: 8300000, guid: a6bd881f5c197fd49b2989f2ebb651f1, type: 3}
+  - name: Chase
+    clip: {fileID: 8300000, guid: 465670e527a829c4ca586ab93509c054, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   sfxList:
@@ -157,6 +161,10 @@ MonoBehaviour:
     loopClip: {fileID: 0}
   - name: MC Landing
     clip: {fileID: 8300000, guid: 10a3a3be85c9a0c4fb8ef8f919b8f5f0, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: Boss Explosion
+    clip: {fileID: 8300000, guid: 70dec5b06c3ad2f42b13b45bead1e504, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
 --- !u!82 &83065725819724939
