@@ -13,7 +13,7 @@ public class GameSceneManager : MonoBehaviour
     {
         MainMenu,
         BlueprintGameplay,
-        Indoor1,
+        Indoor2,
         SpaceShooterScene
     }
 

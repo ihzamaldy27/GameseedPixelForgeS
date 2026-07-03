@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Memulai Game! Memuat gameplay...");
         
         // Memanggil Singleton menggunakan Enum! Tidak perlu lagi mengetik "Indoor1" manual.
-        GameSceneManager.instance.LoadScene(GameSceneManager.SceneName.Indoor1 );
+        GameSceneManager.instance.LoadScene(GameSceneManager.SceneName.Indoor2);
         
         // ATAU, jika kamu mau mencoba fitur transisi Async:
         // GameSceneManager.instance.LoadSceneAsync(GameSceneManager.SceneName.BlueprintGameplay);
