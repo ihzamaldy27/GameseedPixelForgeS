@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 4068c8c2e8032774190e2f327315f8a3
+guid: be2a1af124362b64cacb6dc7ab70f49a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -201117988294632978
-    second: Misterious_Girl_Idle_1_0
+      213: 1426960900664238822
+    second: MC_Gameseed_Wake_0
   - first:
-      213: -7250990099680990108
-    second: Misterious_Girl_Idle_1_1
+      213: 294787704958565087
+    second: MC_Gameseed_Wake_1
   - first:
-      213: -5194770647814371904
-    second: Misterious_Girl_Idle_1_2
+      213: 7841423159675094826
+    second: MC_Gameseed_Wake_2
   - first:
-      213: 2364172171414912083
-    second: Misterious_Girl_Idle_1_3
+      213: 5248919690231150368
+    second: MC_Gameseed_Wake_3
   - first:
-      213: -6866624774351179211
-    second: Misterious_Girl_Idle_1_4
+      213: -5105953943392246251
+    second: MC_Gameseed_Wake_4
   - first:
-      213: 3210188444425025917
-    second: Misterious_Girl_Idle_1_5
+      213: -8729297085299995286
+    second: MC_Gameseed_Wake_5
   - first:
-      213: 6598867621796875007
-    second: Misterious_Girl_Idle_1_6
+      213: 4810956626973185820
+    second: MC_Gameseed_Wake_6
   - first:
-      213: 2473757066682708561
-    second: Misterious_Girl_Idle_1_7
-  - first:
-      213: 6468685988766454849
-    second: Misterious_Girl_Idle_1_8
-  - first:
-      213: 5497965123535374092
-    second: Misterious_Girl_Idle_1_9
+      213: -8946321015709858072
+    second: MC_Gameseed_Wake_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,15 +117,28 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_0
+      name: MC_Gameseed_Wake_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -142,18 +149,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee9d1c5514c753df0800000000000000
-      internalID: -201117988294632978
+      spriteID: 6e2a678f0659dc310800000000000000
+      internalID: 1426960900664238822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_1
+      name: MC_Gameseed_Wake_1
       rect:
         serializedVersion: 2
         x: 364
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -164,18 +171,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46ce3a6fbee4f5b90800000000000000
-      internalID: -7250990099680990108
+      spriteID: fda35361bdb471400800000000000000
+      internalID: 294787704958565087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_2
+      name: MC_Gameseed_Wake_2
       rect:
         serializedVersion: 2
         x: 728
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -186,18 +193,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c5066f6e9778e7b0800000000000000
-      internalID: -5194770647814371904
+      spriteID: a2784fd61d452dc60800000000000000
+      internalID: 7841423159675094826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_3
+      name: MC_Gameseed_Wake_3
       rect:
         serializedVersion: 2
         x: 1092
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -208,18 +215,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35cbc01601a3fc020800000000000000
-      internalID: 2364172171414912083
+      spriteID: 027f7c6f5a8e7d840800000000000000
+      internalID: 5248919690231150368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_4
+      name: MC_Gameseed_Wake_4
       rect:
         serializedVersion: 2
         x: 1456
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -230,18 +237,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 532b6ee0629d4b0a0800000000000000
-      internalID: -6866624774351179211
+      spriteID: 516a994e0f10429b0800000000000000
+      internalID: -5105953943392246251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_5
+      name: MC_Gameseed_Wake_5
       rect:
         serializedVersion: 2
         x: 1820
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -252,18 +259,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d797404c161ec8c20800000000000000
-      internalID: 3210188444425025917
+      spriteID: a6d47dbfc8e4bd680800000000000000
+      internalID: -8729297085299995286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_6
+      name: MC_Gameseed_Wake_6
       rect:
         serializedVersion: 2
         x: 2184
-        y: 364
+        y: 0
         width: 364
         height: 364
       alignment: 0
@@ -274,39 +281,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ffa8705c323e39b50800000000000000
-      internalID: 6598867621796875007
+      spriteID: c175c8c0093f3c240800000000000000
+      internalID: 4810956626973185820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_7
+      name: MC_Gameseed_Wake_7
       rect:
         serializedVersion: 2
         x: 2548
-        y: 364
-        width: 364
-        height: 364
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1523c3412fc845220800000000000000
-      internalID: 2473757066682708561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_8
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 364
         height: 364
@@ -318,30 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14498fb52a365c950800000000000000
-      internalID: 6468685988766454849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Misterious_Girl_Idle_1_9
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 0
-        width: 364
-        height: 364
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0700df7622bc4c40800000000000000
-      internalID: 5497965123535374092
+      spriteID: 8e680049f6848d380800000000000000
+      internalID: -8946321015709858072
       vertices: []
       indices: 
       edges: []
@@ -350,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7ebedf8f505bcbc4a9ebf726f1a886f3
+    spriteID: fde65b083c05c964fa9ab269fbd982a7
     internalID: 0
     vertices: []
     indices: 
@@ -360,24 +323,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Misterious_Girl_Idle_1_0: -201117988294632978
-      Misterious_Girl_Idle_1_1: -7250990099680990108
-      Misterious_Girl_Idle_1_10: -1592478405
-      Misterious_Girl_Idle_1_11: -408063845
-      Misterious_Girl_Idle_1_12: -1218636383
-      Misterious_Girl_Idle_1_13: -544113465
-      Misterious_Girl_Idle_1_14: 2138551618
-      Misterious_Girl_Idle_1_15: -454839795
-      Misterious_Girl_Idle_1_2: -5194770647814371904
-      Misterious_Girl_Idle_1_3: 2364172171414912083
-      Misterious_Girl_Idle_1_4: -6866624774351179211
-      Misterious_Girl_Idle_1_5: 3210188444425025917
-      Misterious_Girl_Idle_1_6: 6598867621796875007
-      Misterious_Girl_Idle_1_7: 2473757066682708561
-      Misterious_Girl_Idle_1_8: 6468685988766454849
-      Misterious_Girl_Idle_1_9: 5497965123535374092
+      MC_Gameseed_Wake_0: 1426960900664238822
+      MC_Gameseed_Wake_1: 294787704958565087
+      MC_Gameseed_Wake_2: 7841423159675094826
+      MC_Gameseed_Wake_3: 5248919690231150368
+      MC_Gameseed_Wake_4: -5105953943392246251
+      MC_Gameseed_Wake_5: -8729297085299995286
+      MC_Gameseed_Wake_6: 4810956626973185820
+      MC_Gameseed_Wake_7: -8946321015709858072
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

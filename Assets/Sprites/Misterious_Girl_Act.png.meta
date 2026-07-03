@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: 2eea1de1a65fd6d478a1ab5a2727c889
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -194327991481803983
+    second: Misterious_Girl_Act_0
+  - first:
+      213: -1642175187458428934
+    second: Misterious_Girl_Act_1
+  - first:
+      213: -8618859855328865565
+    second: Misterious_Girl_Act_2
+  - first:
+      213: 5666838446544402040
+    second: Misterious_Girl_Act_3
+  - first:
+      213: 8887838043302334884
+    second: Misterious_Girl_Act_4
+  - first:
+      213: -138016264075163994
+    second: Misterious_Girl_Act_5
+  - first:
+      213: -343404599244619525
+    second: Misterious_Girl_Act_6
+  - first:
+      213: 4947903230196410465
+    second: Misterious_Girl_Act_7
+  - first:
+      213: -542790075602876418
+    second: Misterious_Girl_Act_8
+  - first:
+      213: 5886223557548695065
+    second: Misterious_Girl_Act_9
+  - first:
+      213: -8711662329034721980
+    second: Misterious_Girl_Act_10
+  - first:
+      213: -4693398633612777507
+    second: Misterious_Girl_Act_11
+  - first:
+      213: -5878818247753562409
+    second: Misterious_Girl_Act_12
+  - first:
+      213: -472639819855472869
+    second: Misterious_Girl_Act_13
+  - first:
+      213: 8245754226862291166
+    second: Misterious_Girl_Act_14
+  - first:
+      213: -5381525581172090391
+    second: Misterious_Girl_Act_15
+  - first:
+      213: -3139450349996716648
+    second: Misterious_Girl_Act_16
+  - first:
+      213: 6757344204889535957
+    second: Misterious_Girl_Act_17
+  - first:
+      213: -4686265490915993803
+    second: Misterious_Girl_Act_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13bdfc9a8bb9d4df0800000000000000
+      internalID: -194327991481803983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_1
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff649c1e52d539e0800000000000000
+      internalID: -1642175187458428934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e29f3250a8a36880800000000000000
+      internalID: -8618859855328865565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_3
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8763ecdfa87a4ae40800000000000000
+      internalID: 5666838446544402040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_4
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a11d305c91f75b70800000000000000
+      internalID: 8887838043302334884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_5
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a6c29660faa51ef0800000000000000
+      internalID: -138016264075163994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_6
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf00acf165bfb3bf0800000000000000
+      internalID: -343404599244619525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_7
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 728
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1686dd2d5cb7aa440800000000000000
+      internalID: 4947903230196410465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef745145d4f9778f0800000000000000
+      internalID: -542790075602876418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_9
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ed938932110b150800000000000000
+      internalID: 5886223557548695065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_10
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445bbb2a445f91780800000000000000
+      internalID: -8711662329034721980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_11
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7e4363fc2bddeb0800000000000000
+      internalID: -4693398633612777507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_12
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6809373fd3a6ea0800000000000000
+      internalID: -5878818247753562409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_13
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b175fc68698d079f0800000000000000
+      internalID: -472639819855472869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_14
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed87d4d08cdce6270800000000000000
+      internalID: 8245754226862291166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_15
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 364
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e95f881ffaf055b0800000000000000
+      internalID: -5381525581172090391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d487a4a8e6e64d0800000000000000
+      internalID: -3139450349996716648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_17
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d53c7d90c8e6cd50800000000000000
+      internalID: 6757344204889535957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Misterious_Girl_Act_18
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 364
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537d7ca6d5a07feb0800000000000000
+      internalID: -4686265490915993803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0cb64acc476b9b849984edab759e5cf3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":3.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Misterious_Girl_Act_0: -194327991481803983
+      Misterious_Girl_Act_1: -1642175187458428934
+      Misterious_Girl_Act_10: -8711662329034721980
+      Misterious_Girl_Act_11: -4693398633612777507
+      Misterious_Girl_Act_12: -5878818247753562409
+      Misterious_Girl_Act_13: -472639819855472869
+      Misterious_Girl_Act_14: 8245754226862291166
+      Misterious_Girl_Act_15: -5381525581172090391
+      Misterious_Girl_Act_16: -3139450349996716648
+      Misterious_Girl_Act_17: 6757344204889535957
+      Misterious_Girl_Act_18: -4686265490915993803
+      Misterious_Girl_Act_19: 305042476
+      Misterious_Girl_Act_2: -8618859855328865565
+      Misterious_Girl_Act_20: -1150890024
+      Misterious_Girl_Act_21: -48228718
+      Misterious_Girl_Act_22: 1065503464
+      Misterious_Girl_Act_23: 515154794
+      Misterious_Girl_Act_3: 5666838446544402040
+      Misterious_Girl_Act_4: 8887838043302334884
+      Misterious_Girl_Act_5: -138016264075163994
+      Misterious_Girl_Act_6: -343404599244619525
+      Misterious_Girl_Act_7: 4947903230196410465
+      Misterious_Girl_Act_8: -542790075602876418
+      Misterious_Girl_Act_9: 5886223557548695065
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
