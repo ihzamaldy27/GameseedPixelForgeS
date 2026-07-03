@@ -130,6 +130,9 @@ public class PlayerVictoryDash : MonoBehaviour
         // 5. Brief pause before dashing
         yield return new WaitForSeconds(pauseBeforeDash);
 
+        // 5.5 Disable the music
+        AudioManager.instance.StopBGM(2f);
+
         // 6. Dash forward (move right) until off-screen
         Camera mainCamera = Camera.main;
         float rightEdge = mainCamera != null ? 
