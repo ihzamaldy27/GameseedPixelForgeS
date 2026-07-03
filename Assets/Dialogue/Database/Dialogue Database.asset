@@ -613,8 +613,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 620
+        x: 33.296707
+        y: 720
         width: 160
         height: 30
     - id: 2
@@ -663,7 +663,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 970
+        y: 1070
         width: 160
         height: 30
     - id: 3
@@ -718,7 +718,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 670
+        y: 770
         width: 160
         height: 30
     - id: 4
@@ -773,7 +773,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 770
+        y: 870
         width: 160
         height: 30
     - id: 5
@@ -828,7 +828,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 820
+        y: 920
         width: 160
         height: 30
     - id: 6
@@ -884,7 +884,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 870
+        y: 970
         width: 160
         height: 30
     - id: 7
@@ -939,7 +939,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 920
+        y: 1020
         width: 160
         height: 30
     - id: 8
@@ -1228,7 +1228,12 @@ MonoBehaviour:
       - title: Sequence
         value: 'HidePanel(0);
 
-          Continue()@3;'
+          AnimatorPlay(Run, EnemyChase);
+
+          SetVariable(isChasing,
+          true);
+
+          Continue()@2;'
         type: 0
         typeString: 
       conversationID: 2
@@ -1283,7 +1288,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: 'SetVariable(isChasing, false);
+
+          AnimatorPlay(Idle, EnemyChase);'
         type: 0
         typeString: 
       conversationID: 2
@@ -1297,7 +1304,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 14
         destinationConversationID: 2
-        destinationDialogueID: 15
+        destinationDialogueID: 21
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1363,7 +1370,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 370
+        y: 420
         width: 160
         height: 30
     - id: 16
@@ -1419,7 +1426,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 420
+        y: 470
         width: 160
         height: 30
     - id: 17
@@ -1474,7 +1481,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 470
+        y: 520
         width: 160
         height: 30
     - id: 18
@@ -1530,7 +1537,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 520
+        y: 570
         width: 160
         height: 30
     - id: 19
@@ -1574,7 +1581,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 19
         destinationConversationID: 2
-        destinationDialogueID: 1
+        destinationDialogueID: 22
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1585,7 +1592,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 570
+        y: 620
         width: 160
         height: 30
     - id: 20
@@ -1640,12 +1647,136 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 720
+        y: 820
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'HidePanel(0);
+
+          Fade(stay, 0.5, #FFFFFF);
+
+          SetActive(EnemyChase,
+          false)@0.5;
+
+          SetGirlPosition(87.2,-3.4,true)@0.5;
+
+          Fade(unstay,
+          0.5, #FFFFFF)@1;'
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 21
+        destinationConversationID: 2
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 370
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 'HidePanel(0);
+
+          AnimatorPlay(Idle, MysteriousGirl);
+
+          SetGirlPosition(87.2,-3.4,false)@2.;'
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 22
+        destinationConversationID: 2
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 670
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 469.03378}
-    canvasZoom: 0.5800001
+    canvasScrollPosition: {x: 0, y: 226.19824}
+    canvasZoom: 0.7299997
   syncInfo:
     syncActors: 0
     syncItems: 0

@@ -130,12 +130,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 363
-        width: 135
-        height: 198
+        x: 0
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -152,12 +152,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_1
       rect:
         serializedVersion: 2
-        x: 454
-        y: 363
-        width: 135
-        height: 198
+        x: 364
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_2
       rect:
         serializedVersion: 2
-        x: 818
-        y: 363
-        width: 135
-        height: 198
+        x: 728
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_3
       rect:
         serializedVersion: 2
-        x: 1182
-        y: 363
-        width: 135
-        height: 198
+        x: 1092
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_4
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 363
-        width: 135
-        height: 205
+        x: 1456
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,12 +240,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_5
       rect:
         serializedVersion: 2
-        x: 1910
-        y: 363
-        width: 135
-        height: 205
+        x: 1820
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_6
       rect:
         serializedVersion: 2
-        x: 2274
-        y: 363
-        width: 135
-        height: 205
+        x: 2184
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -284,12 +284,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_7
       rect:
         serializedVersion: 2
-        x: 2638
-        y: 363
-        width: 135
-        height: 205
+        x: 2548
+        y: 364
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,12 +306,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_8
       rect:
         serializedVersion: 2
-        x: 90
+        x: 0
         y: 0
-        width: 135
-        height: 204
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,12 +328,12 @@ TextureImporter:
       name: Misterious_Girl_Idle_1_9
       rect:
         serializedVersion: 2
-        x: 454
+        x: 364
         y: 0
-        width: 135
-        height: 197
+        width: 364
+        height: 364
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -350,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7ebedf8f505bcbc4a9ebf726f1a886f3
     internalID: 0
     vertices: []
     indices: 
@@ -358,10 +358,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":364.0,"y":364.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Misterious_Girl_Idle_1_0: -201117988294632978
       Misterious_Girl_Idle_1_1: -7250990099680990108
+      Misterious_Girl_Idle_1_10: -1592478405
+      Misterious_Girl_Idle_1_11: -408063845
+      Misterious_Girl_Idle_1_12: -1218636383
+      Misterious_Girl_Idle_1_13: -544113465
+      Misterious_Girl_Idle_1_14: 2138551618
+      Misterious_Girl_Idle_1_15: -454839795
       Misterious_Girl_Idle_1_2: -5194770647814371904
       Misterious_Girl_Idle_1_3: 2364172171414912083
       Misterious_Girl_Idle_1_4: -6866624774351179211
