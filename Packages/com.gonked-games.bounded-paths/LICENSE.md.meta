@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 636557f6f2efd2a4c81fd9a3b18d1f85
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307182
+  packageName: Bounded Paths
+  packageVersion: 1.0
+  assetPath: Packages/com.gonked-games.bounded-paths/LICENSE.md
+  uploadId: 726741

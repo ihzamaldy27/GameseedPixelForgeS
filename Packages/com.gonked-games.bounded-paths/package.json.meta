@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d1c6d3d6fd36baa4cbc6e47583409ad6
+PackageManifestImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307182
+  packageName: Bounded Paths
+  packageVersion: 1.0
+  assetPath: Packages/com.gonked-games.bounded-paths/package.json
+  uploadId: 726741
