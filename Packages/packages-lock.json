@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.gonked-games.bounded-paths": {
+      "version": "file:com.gonked-games.bounded-paths",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.splines": "2.2.1",
+        "com.unity.burst": "1.8.4"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "13.0.4",
       "depth": 1,
@@ -110,7 +119,7 @@
     },
     "com.unity.burst": {
       "version": "1.8.28",
-      "depth": 2,
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",

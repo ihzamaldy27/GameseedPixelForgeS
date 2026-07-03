@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b7ec8bc27d4d4354cb8fe3832997e1b2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307182
+  packageName: Bounded Paths
+  packageVersion: 1.0
+  assetPath: Packages/com.gonked-games.bounded-paths/Editor/Settings/BoundedPathSettings.cs
+  uploadId: 726741

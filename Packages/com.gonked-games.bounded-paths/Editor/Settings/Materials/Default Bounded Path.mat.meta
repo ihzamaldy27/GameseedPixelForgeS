@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 61ecb9d1829f85f41be4d335f4261354
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307182
+  packageName: Bounded Paths
+  packageVersion: 1.0
+  assetPath: Packages/com.gonked-games.bounded-paths/Editor/Settings/Materials/Default
+    Bounded Path.mat
+  uploadId: 726741
