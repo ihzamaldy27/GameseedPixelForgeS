@@ -389,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 19787094}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.3, y: -0.7, z: 0}
+  m_LocalPosition: {x: -98.5, y: -15.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -495,8 +495,8 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   contactDamage: 1
   knockbackForceX: 10
-  knockbackForceY: 0
-  knockbackDuration: 0.1
+  knockbackForceY: 5
+  knockbackDuration: 0.05
   afterimagePrefab: {fileID: 1437562994499158253, guid: 8ec405d29cea19f42b7ae9b548ee0280, type: 3}
   afterimageSpawnRate: 0.05
   contactRadius: 0.5
@@ -908,7 +908,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 977619051}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &50596403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83684,7 +83684,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 1453285709}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &459813027
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87232,7 +87232,7 @@ Transform:
   m_GameObject: {fileID: 672879506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.39, y: -0.51, z: -10}
+  m_LocalPosition: {x: -96.488174, y: -15.012689, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -91234,7 +91234,7 @@ Transform:
   m_GameObject: {fileID: 1001327426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.39, y: -0.51, z: -10}
+  m_LocalPosition: {x: -98.41, y: -15.009999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -92883,7 +92883,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 476735356}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &1126260020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96496,7 +96496,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 2112118287}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &1445324576
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97502,7 +97502,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 2028483073}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &1496642889
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104482,7 +104482,7 @@ MonoBehaviour:
   warningSignObject: {fileID: 451289487}
   maxHealth: 20
   knockbackForce: 6
-  stunDuration: 0.4
+  stunDuration: 0.1
 --- !u!58 &2032859451
 CircleCollider2D:
   m_ObjectHideFlags: 0
