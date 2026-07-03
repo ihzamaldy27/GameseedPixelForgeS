@@ -52,7 +52,7 @@ MonoBehaviour:
   sfxSource: {fileID: 722843359276700720}
   walkSource: {fileID: 815693302214986443}
   sfxSourcewithPitch: {fileID: 1290173446613769186}
-  startingBGMName: Interior
+  startingBGMName: GoodNine
   bgmList:
   - name: Boss Battle
     clip: {fileID: 8300000, guid: 7491956934cce9f42b7e60670e0cc25d, type: 3}
@@ -88,6 +88,10 @@ MonoBehaviour:
     loopClip: {fileID: 8300000, guid: a6bd881f5c197fd49b2989f2ebb651f1, type: 3}
   - name: Chase
     clip: {fileID: 8300000, guid: 465670e527a829c4ca586ab93509c054, type: 3}
+    introClip: {fileID: 0}
+    loopClip: {fileID: 0}
+  - name: GoodNine
+    clip: {fileID: 8300000, guid: 7bd7c7cf9b3200f40936f4722f5e1f60, type: 3}
     introClip: {fileID: 0}
     loopClip: {fileID: 0}
   sfxList:
