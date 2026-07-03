@@ -18,9 +18,14 @@ public class EnemyChase : MonoBehaviour
         if (DialogueLua.GetVariable("isChasing").AsBool)
         {
             // Chase the player to the right
-            Vector2 targetPos = new Vector2(player.position.x, rb.position.y);
-            Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, chaseSpeed * Time.deltaTime);
-            rb.MovePosition(newPos);
+            //Vector2 targetPos = new Vector2(player.position.x, rb.position.y);
+            //ector2 newPos = Vector2.MoveTowards(rb.position, targetPos, chaseSpeed * Time.deltaTime);
+            //rb.MovePosition(newPos);
+            rb.linearVelocity = new Vector2(chaseSpeed, rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
 }
