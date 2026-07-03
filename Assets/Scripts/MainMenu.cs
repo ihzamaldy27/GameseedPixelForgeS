@@ -3,6 +3,8 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
 
+    public GameObject CreditPanel;
+
     public void PlayGame()
     {
         Debug.Log("Memulai Game! Memuat gameplay...");
@@ -12,6 +14,13 @@ public class MainMenu : MonoBehaviour
         
         // ATAU, jika kamu mau mencoba fitur transisi Async:
         // GameSceneManager.instance.LoadSceneAsync(GameSceneManager.SceneName.BlueprintGameplay);
+    }
+
+    public void CreditScene()
+    {
+        Debug.Log("Memuat Credit Scene...");
+        
+
     }
 
     public void QuitGame()
