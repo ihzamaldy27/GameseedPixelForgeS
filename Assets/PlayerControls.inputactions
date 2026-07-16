@@ -187,17 +187,6 @@
                 },
                 {
                     "name": "",
-                    "id": "9025671a-a32b-4c48-bee8-f2279dd5654e",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "f1cc6eaa-c2a5-4570-bfb0-5a2cc204283f",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
