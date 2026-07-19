@@ -234,6 +234,8 @@ public class PlayerController : MonoBehaviour, IDamageable
         StartFlash();
         UpdateHealthUI();
         ResetAttackState();
+
+        GamepadVibrationManager.instance.TriggerRumble(0.3f, 0.8f, 0.2f);
     }
 
     private void HandleDeath()
@@ -254,6 +256,8 @@ public class PlayerController : MonoBehaviour, IDamageable
     {
         AudioManager.instance.PlaySFX("MC Death");
         //AudioManager.instance.StopWalkSFX();
+
+        GamepadVibrationManager.instance.TriggerRumble(0.3f, 0.8f, 0.2f);
 
         // 1. Pemicu animasi mati
         if (playerAnim != null) playerAnim.SetTrigger("Die");

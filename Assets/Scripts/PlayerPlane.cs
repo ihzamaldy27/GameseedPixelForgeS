@@ -131,6 +131,9 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         UpdateHealthUI();
         // Optional: Trigger a sprite flash, sound, or UI update here.
         // You could raise a separate C# event here if other systems need to know.
+
+        GamepadVibrationManager.instance.TriggerRumble(0.3f, 0.8f, 0.2f);
+
         if (currentHP > 0)
             OnInvincibilityStateChanged?.Invoke(true);
     }
@@ -147,6 +150,7 @@ public class PlayerPlane : MonoBehaviour, IDamageable, PlaneControl.IPlayerActio
         Debug.Log("Player has died!");
         AudioManager.instance.PlaySFX("Explode");
         enabled = false;
+        GamepadVibrationManager.instance.TriggerRumble(0.3f, 0.8f, 0.2f);
         OnPlayerDied?.Invoke();
         isLowHealth = false;
         if (vignetteGroup != null) vignetteGroup.alpha = 0f;
